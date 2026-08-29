@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+            type="application/xml" schematypens="http://relaxng.org/ns/1.0"?>
+ 
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Alchemist</title>
+                <author ref="#SB">Bertelli Samuele</author>
+                <respStmt xml:id="SB">
+                    <resp>Project Creator</resp>
+                    <persName>Samuele Bertelli</persName>
+                </respStmt>
+                <respStmt xml:id="FT">
+                    <resp>TEI Coding Review</resp>
+                    <persName>Francesca Tomasi</persName>
+                </respStmt>
+                <respStmt xml:id="MD">
+                    <resp>TEI Coding Review</resp>
+                    <persName>Marilena Daquino</persName>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Università Degli Studi Di Bologna, Dipartimento di Filologia Classica e Italianistica, Digital Humanities and Digital Knowledge Course</publisher>
+                <address>
+                    <settlement>Bologna</settlement>
+                </address>
+                <availability>
+                    <p>This project is fully accessible for download and review.</p>
+                </availability>
+                <date when="2026-07-16">16 Luglio 2026</date>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>
+                    <title>The Alchemist</title>. <title>Wikipedia, The Free Encyclopedia</title>.
+                    <ptr target="https://en.wikipedia.org/wiki/The_Alchemist_(novel)"/>
+                    <note>Licenza CC BY-SA 4.0. Checked on 2026-07-06</note>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="section" xml:id="Introduction">
+                <p> <title ref="#theAlchemist">The Alchemist</title> (Portuguese: O Alquimista) is a novel by Brazilian author <persName ref="#coelho">Paulo Coelho</persName> which was first published in <date when="1988">1988</date>. 
+                    Originally written in Portuguese, it became a widely translated international bestseller. The story follows <persName ref="#santiago">Santiago</persName>, 
+                    a shepherd boy, in his journey across <placeName ref="#northAfrica">North Africa</placeName> to the <placeName ref="#egyptianPyramids">Egyptian pyramids</placeName> after he dreams of finding treasure there. 
+                    It has since been translated into more than 65 languages and has sold more than 150 million copies worldwide.</p>
+            </div>
+ 
+            <div type="section" xml:id="plot">
+
+                <p> An Andalusian shepherd boy named <persName ref="#santiago">Santiago</persName> dreams of a treasure while in a ruined church. He consults a Gitano fortune-teller 
+                    about the meaning of the recurring dream. The woman interprets it as a prophecy, telling the boy that he will discover a 
+                    treasure at the <placeName ref="#egyptianPyramids">Egyptian pyramids</placeName>.</p>
+                
+                <p> After <persName ref="#santiago">Santiago</persName> sets out, he meets <persName ref="#melchizedek">Melchizedek</persName>, the king of <placeName ref="#salem">Salem</placeName>, who tells him to sell his sheep so as to travel to <placeName ref="#egypt">Egypt</placeName> and 
+                    accomplish his "<term type="concept" ref="#personalLegend">Personal Legend</term>". Early on his arrival in <placeName ref="#tangiers">Tangiers</placeName>, a man who claims to be able to take <persName ref="#santiago">Santiago</persName> to the pyramids 
+                    instead robs him and takes all the money he made from selling his sheep. <persName ref="#santiago">Santiago</persName> then has to work for a crystal merchant to earn 
+                    enough to continue his journey.</p>
+                
+                <p> Along the way, the boy meets an Englishman who has come in search of an alchemist who can turn any metal to gold, and continues his 
+                    travels with his new companion. When they reach an oasis, <persName ref="#santiago">Santiago</persName> meets and falls in love with an Arabian girl named <persName ref="#fatima">Fatima</persName>, to whom 
+                    he proposes marriage. She promises to marry him only after he completes his journey. Frustrated at first, he later learns that true love 
+                    will not stop you from achieving what you want to do nor one must sacrifice one's destiny to it, since to do so robs it of truth.</p>
+                
+                <p> The boy then encounters the wise alchemist, who teaches him to realise his true self. Together, they risk a journey through the territory of warring tribes, 
+                    where <persName ref="#santiago">Santiago</persName> is forced to demonstrate his oneness with the "<term type="concept" ref="#soulOfTheWorld">Soul of the World</term>" by turning himself into a dust storm before he is allowed to proceed.</p>
+                
+                <p> When he reaches the pyramids and begins digging, he is robbed by thieves, who ask him what he is digging for; he replies that a dream has led him to buried 
+                    treasure. The thieves scoff, and the leader remarks about a dream he once had about treasure under a tree at a ruined church. <persName ref="#santiago">Santiago</persName> realises that the treasure 
+                    he sought was where he had his original dream all along. After finding the treasure back at the ruined church, he decides to go back to <persName ref="#fatima">Fatima</persName>, who awaits him.</p>
+            
+            </div>
+ 
+            <div type="section" xml:id="themes">
+                
+                <p> The plot of the novel builds on the international folktale type classified as no. 1645 ("The Treasure at Home") in the <title ref="#aarnethompsonIndex">Aarne–Thompson–Uther Index</title> of folktales: "<cit><quote>A man dreams that 
+                    if he goes to a distant city he will find treasure on a certain bridge. Finding no treasure, he tells his dream to a man who says that he too has dreamed of treasure at certain place. 
+                    He describes the place, which is the first man's home. When the latter returns home he finds the treasure</quote><bibl><ptr target="#aarnethompsonIndex"/></bibl></cit>." The earliest known version of this tale type is a poem by the 13th-century 
+                    Persian poet <persName ref="#rumi">Rumi</persName>, and a variant of the tale appears in the <title ref="#onethousandAndonenights">One Thousand and One Nights</title> collection of Arabic folktales.</p>
+                
+                <p> The book's main theme is about finding one's destiny, although according to <orgName ref="#nyt">The New York Times</orgName>, <title ref="#theAlchemist">The Alchemist</title> is <cit>"<quote>more self-help than literature</quote>"<bibl><ptr target="#nyt"/></bibl></cit>. 
+                    The advice given to <persName ref="#santiago">Santiago</persName> that "<quote source="#theAlchemist">when you really want something to happen, the whole universe will conspire so that your wish comes true</quote>" is the core of the novel's thinking. 
+                    <persName ref="#coelho">Coelho</persName> originally wrote <title ref="#theAlchemist">The Alchemist</title> in only two weeks, explaining later that he was able to work at this pace because the story was <cit>"<quote>already written in [his] soul</quote><bibl><ptr target="#coelho"/></bibl></cit>."</p>
+            
+            </div>
+ 
+            <div type="section" xml:id="adaptations">
+                <p> In <date when="1994">1994</date>, a comic book adaptation was published by <persName ref="#ajubran">Alexandre Jubran</persName>. <orgName ref="#harperOne">HarperOne</orgName>, a <orgName ref="#harperCollins">HarperCollins</orgName> imprint, produced an illustrated version of the novel, with paintings by the French artist 
+                    <persName ref="#moebius">Mœbius</persName>, but failed to convince <persName ref="#coelho">Coelho</persName> "to consent to the full graphic-novel treatment". <title ref="#theAlchemistgraphic">The Alchemist: A Graphic Novel</title> was published in <date when="2010">2010</date>, adapted by <persName ref="#derekr">Derek Ruiz</persName> and with artwork by 
+                    <persName ref="#danielSampere">Daniel Sampere</persName>.</p>
+                
+                <p> <title ref="#thealchemistSymphony">The Alchemist's Symphony</title> by the young <persName ref="#wtieb">Walter Taieb</persName> was released in <date when="1997">1997</date> with the support of <persName ref="#coelho">Paulo Coelho</persName>, who wrote an original text for the CD booklet. 
+                    The work has eight movements and five interludes.</p>
+                
+                <p> In <date when="2002">2002</date>, a theatrical adaptation of <title ref="#theAlchemist">The Alchemist</title> was produced and performed in <placeName ref="#london">London</placeName>. Since then there have been several productions by the <orgName ref="#cornishCollective">Cornish Collective</orgName>. A later <placeName ref="#london">London</placeName> performance 
+                    was visited by the producer <persName ref="#ashvingidwani">Ashvin Gidwani</persName> who, finding it "verbose but colourful", decided to commission a new 90-minute version of the book from <persName ref="#deepaGahlot">Deepa Gahlot</persName> for the Indian stage. This was 
+                    eventually launched in <date when="2009">2009</date>.</p>
+                
+                <p> In <date when="2006">2006</date>, <orgName ref="#mistakenIdentityband">Mistaken Identity</orgName>, a <placeName ref="#singapore">Singapore</placeName> indie rock band, adapted the story of the novel into what they claimed was "essentially our attempt at writing a musical" and released the track as "
+                    The Alchemist". <title ref="#kochavvaPaulocoelho">Kochavva Paulo Ayyappa Coelho</title>, an Indian Malayalam-language film written and directed by <persName ref="#sidharthaSiva">Sidhartha Siva</persName>, has its title inspired by novelist <persName ref="#coelho">Paulo Coelho</persName>, and a central theme 
+                    is inspired from <title ref="#theAlchemist">The Alchemist</title>.</p>
+                
+                <p> In <date when="2024">2024</date>, <orgName ref="#kadokawaCorp">Kadokawa Corporation</orgName> announced that a manga adaptation illustrated by <persName ref="#tamakiNakamura">Tamaki Nakamura</persName> would be released under their new <orgName ref="#kadokawamasterpieceComics">Kadokawa Masterpiece Comics</orgName> label in November <date when="2024">2024</date>.</p>
+ 
+                <div type="subsection" xml:id="film-proposals">
+                    <p> In <date when="2008">2008</date>, the <orgName ref="#weinsteincomp">Weinstein Company</orgName> bought the film rights, but the project stalled after the <date when="2017">2017</date> <persName ref="#harveyWeinstein">Harvey Weinstein</persName> sexual abuse scandal. In <date when="2016">2016</date>, <orgName ref="#palmstarMedia">PalmStar Media</orgName> acquired the film rights. In <date when="2023">2023</date>, <orgName ref="#legendaryEnt">Legendary Entertainment</orgName> got the film, television, and ancillary rights to make a film adaptation with <orgName ref="#tristarPictures">TriStar Pictures</orgName> and <orgName ref="#palmstarMedia">Palmstar Media</orgName> with <persName ref="#jackThorne">Jack Thorne</persName> attached as a writer.</p>
+                </div>
+            </div>
+        </body>
+ 
+        <back>
+            <listPerson>
+
+                <person xml:id="coelho">
+                    <persName>Paulo Coelho</persName>
+                    <birth when="1947-08-24"/>
+                    <idno type="Wikidata">http://www.wikidata.org/entity/Q12881</idno>
+                    <idno type="VIAF">https://viaf.org/viaf/52700</idno>
+                </person>
+
+                <person xml:id="rumi">
+                    <persName>Rumi</persName>
+                    <birth when="1207"/>
+                    <death when="1273"/>
+                    <idno type="Wikidata">http://www.wikidata.org/entity/Q43347</idno>
+                </person>
+
+                <person xml:id="ajubran">
+                    <persName>Alexandre Jubran</persName>
+                    <birth when="1967"/>
+                    <idno type="Wikidata">http://www.wikidata.org/entity/Q48871908</idno>
+                </person>
+
+                <person xml:id="moebius">
+                    <persName full="abb">Mœbius</persName>
+                    <persName full="yes">Jean Giraud</persName>
+                    <birth when="1938"/>
+                    <death when="2012"/>
+                    <idno type="Wikidata">http://www.wikidata.org/entity/Q309240</idno>
+                </person>
+
+                    <person xml:id="derekr">
+                    <persName>Derek Ruiz</persName>
+                </person>
+
+                <person xml:id="danielSampere">
+                    <persName>Daniel Sampere</persName>
+                    <birth when="1985"/>
+                    <idno type="Wikidata">http://www.wikidata.org/entity/Q112521933</idno>
+                </person>
+
+                <person xml:id="wtieb">
+                    <persName>Walter Taieb</persName>
+                    <birth when="1973"/>
+                    <idno type="Wikidata">http://www.wikidata.org/entity/Q7966251</idno>
+                </person>
+
+                <person xml:id="ashvingidwani">
+                    <persName>Ashvin Gidwani</persName>
+                    <idno type="Wikidata">http://www.wikidata.org/entity/Q125538019</idno>
+                </person>
+
+                <person xml:id="deepaGahlot">
+                    <persName>Deepa Gahlot</persName>
+                    <idno type="Wikidata">http://www.wikidata.org/entity/Q27863006</idno>
+                </person>
+
+                <person xml:id="sidharthaSiva">
+                    <persName>Sidhartha Siva</persName>
+                    <idno type="Wikidata">http://www.wikidata.org/entity/Q13220286</idno>
+                </person>
+                <person xml:id="tamakiNakamura">
+                    <persName>Tamaki Nakamura</persName>
+                </person>
+
+                <person xml:id="harveyWeinstein">
+                    <persName>Harvey Weinstein</persName>
+                    <birth when="1952"/>
+                    <idno type="Wikidata">http://www.wikidata.org/entity/Q531599</idno>
+                </person>
+
+                <person xml:id="jackThorne">
+                    <persName>Jack Thorne</persName>
+                    <birth when="1978"/>
+                    <idno type="Wikidata">http://www.wikidata.org/entity/Q6115483</idno>
+                </person>
+                
+                <!-- Fictional Characters: There isn't a personal authority -->
+
+                <person xml:id="santiago">
+                    <persName>Santiago</persName>
+                    <note>Protagonist of the novel, he is the Andalusian shepherd boy.</note>
+                </person>
+
+                <person xml:id="fatima">
+                    <persName>Fatima</persName>
+                    <note>Arabian woman Santiago meets at a certain point during the story.</note>
+                </person>
+
+                <person xml:id="melchizedek">
+                    <persName>Melchizedek</persName>
+                    <note>The king of Salem in the novel, based on the biblical figure.</note>
+                </person>
+
+            </listPerson>
+
+            <listOrg>
+                <org xml:id="nyt">
+                    <orgName>The New York Times</orgName>
+                    <idno type="Wikidata">http://www.wikidata.org/entity/Q9684</idno>
+                </org>
+
+                <org xml:id="cornishCollective">
+                    <orgName>Cornish Collective</orgName>
+                </org>
+
+                <org xml:id="harperOne">
+                    <orgName>HarperOne</orgName>
+                </org>
+
+                <org xml:id="harperCollins">
+                    <orgName>HarperCollins</orgName>
+                    <idno type="Wikidata">http://www.wikidata.org/entity/Q120534611</idno>
+                </org>
+
+                <org xml:id="mistakenIdentityband">
+                    <orgName>Mistaken Identity</orgName>
+                </org>
+
+                <org xml:id="kadokawaCorp">
+                    <orgName>Kadokawa Corporation</orgName>
+                    <idno type="Wikidata">http://www.wikidata.org/entity/Q17224985</idno>
+                </org>
+
+                <org xml:id="kadokawamasterpieceComics">
+                    <orgName>Kadokawa Masterpiece Comics</orgName>
+                    <idno type="Wikidata">http://www.wikidata.org/entity/Q115754348</idno>
+                </org>
+
+                <org xml:id="weinsteincomp">
+                    <orgName>The Weinstein Company</orgName>
+                    <idno type="Wikidata">http://www.wikidata.org/entity/Q1138789</idno>
+                </org>
+
+                <org xml:id="palmstarMedia">
+                    <orgName>PalmStar Media</orgName>
+                    <idno type="Wikidata">http://www.wikidata.org/entity/Q24913707</idno>
+                </org>
+
+                <org xml:id="legendaryEnt">
+                    <orgName>Legendary Entertainment</orgName>
+                    <idno type="Wikidata">http://www.wikidata.org/entity/Q621364</idno>
+                </org>
+
+                <org xml:id="tristarPictures">
+                    <orgName>TriStar Pictures</orgName>
+                    <idno type="Wikidata">http://www.wikidata.org/entity/Q651454</idno>
+                </org>
+            </listOrg>
+
+            <listPlace>
+
+                <place xml:id="london">
+                    <placeName>London</placeName>
+                    <idno type="Wikidata">http://www.wikidata.org/entity/Q84</idno>
+                </place>
+
+                <place xml:id="northAfrica">
+                    <placeName>North Africa</placeName>
+                    <idno type="Wikidata">http://www.wikidata.org/entity/Q27381</idno>
+                </place>
+
+                <place xml:id="egyptianPyramids">
+                    <placeName>Egyptian pyramids</placeName>
+                    <note>Giza pyramid complex.</note>
+                    <idno type="Wikidata">http://www.wikidata.org/entity/Q12508</idno>
+                </place>
+
+                <place xml:id="salem">
+                    <placeName>Salem</placeName>
+                </place>
+
+                <place xml:id="egypt">
+                    <placeName>Egypt</placeName>
+                    <idno type="Wikidata">http://www.wikidata.org/entity/Q79</idno>
+                </place>
+
+                <place xml:id="tangiers">
+                    <placeName>Tangier</placeName>
+                    <idno type="Wikidata">http://www.wikidata.org/entity/Q126148</idno>
+                </place>
+
+                <place xml:id="singapore">
+                    <placeName>Singapore</placeName>
+                    <idno type="Wikidata">http://www.wikidata.org/entity/Q344</idno>
+                </place>
+            </listPlace>
+
+            <listBibl>
+
+                <bibl xml:id="theAlchemist">
+                    <title>The Alchemist</title>
+                    <author ref="#coelho">Paulo Coelho</author>
+                    <date when="1988">1988</date>
+                    <idno type="Wikidata">http://www.wikidata.org/entity/Q179021</idno>
+                    <idno type="VIAF">https://viaf.org/viaf/204618447</idno>
+                </bibl>
+
+                <bibl xml:id="theAlchemistgraphic">
+                    <title>The Alchemist: A Graphic Novel</title>
+                    <date when="2010">2010</date>
+                </bibl>
+
+                <bibl xml:id="thealchemistSymphony">
+                    <title>The Alchemist's Symphony</title>
+                    <author ref="#wtieb">Walter Taieb</author>
+                    <date when="1997">1997</date>
+                </bibl>
+
+                <bibl xml:id="kochavvaPaulocoelho">
+                    <title>Kochavva Paulo Ayyappa Coelho</title>
+                    <idno type="Wikidata">http://www.wikidata.org/entity/Q24807275</idno>
+                </bibl>
+
+                <bibl xml:id="onethousandAndonenights">
+                    <title>One Thousand and One Nights</title>
+                    <idno type="Wikidata">http://www.wikidata.org/entity/Q8258</idno>
+                </bibl>
+
+                <bibl xml:id="aarnethompsonIndex">
+                    <title>Aarne-Thompson-Uther Index</title>
+                    <idno type="Wikidata">http://www.wikidata.org/entity/Q136488217</idno>
+                </bibl>
+
+            </listBibl>
+
+            <list type="concept">
+
+                <item xml:id="personalLegend">
+                    <term>Personal Legend</term>
+                </item>
+
+                <item xml:id="soulOfTheWorld">
+                    <term>Soul of the World</term>
+                </item>
+
+            </list>
+
+            <listRelation>
+
+                <relation name="author" active="#coelho" passive="#theAlchemist"/>
+            
+                <relation name="characterIn" active="#santiago #fatima #melchizedek" passive="#theAlchemist"/>
+            
+                <relation name="loves" mutual="#santiago #fatima"/>
+                
+                <relation name="mentor" active="#melchizedek" passive="#santiago"/>
+                
+                <relation name="imprintOf" active="#harperOne" passive="#harperCollins"/>
+
+                <relation name="imprintOf" active="#kadokawamasterpieceComics" passive="#kadokawaCorp"/>
+
+                <relation name="adaptationOf" active="#theAlchemistgraphic" passive="#theAlchemist"/>
+
+                <relation name="adapter" active="#derekr" passive="#theAlchemistgraphic"/>
+
+                <relation name="illustrator" active="#danielSampere" passive="#theAlchemistgraphic"/>
+
+                <relation name="inspiredBy" active="#thealchemistSymphony #kochavvaPaulocoelho" passive="#theAlchemist" />
+
+                <relation name="filmRightsHolder" active="#weinsteincomp #palmstarMedia #legendaryEnt" passive="#theAlchemist" />
+
+                <relation name="basedOn" active="#melchizedek" passive="http://www.wikidata.org/entity/Q219395"/>
+            
+            </listRelation>
+            
+        </back>
+    </text>
+</TEI>
