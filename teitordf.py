@@ -6,10 +6,11 @@ Input_file = "Alchemist.xml"
 Output_file = "alchemist-data.ttl"
 
 TEI_ns = {"tei": "http://www.tei-c.org/ns/1.0"}
-Wikidata_base = "http://www.wikidata.org/entity"
+Wikidata_base = "http://www.wikidata.org/entity/"
 
 alch = Namespace("https://w3id.org/alchemist/ontology#")
-foaf = Namespace("http://xmlns.com/foaf/0.1/")
+dbo = Namespace("http://dbpedia.org/ontology/")
+marcrel = Namespace("http://id.loc.gov/vocabulary/relators/")
 schema = Namespace("https://schema.org/")
 dcterms = Namespace("http://purl.org/dc/terms/")
 rel = Namespace("http://purl.org/vocab/relationship/")
@@ -29,13 +30,16 @@ def choose_typedate(value):
         return XSD.date
     return None
 
-def add_wikidata_link(entity_uri, element):
+def add_authority_links(entity_uri, element):
     for idno in element.findall("tei:idno", namespaces=TEI_ns):
+        if not idno.text:
+            continue
+        value = idno.text.strip()
         idno_type = (idno.get("type") or "").lower()
-        if idno_type == "wikidata" and idno.text:
-            value = idno.text.strip()
-            wd_uri = URIRef(value if value.startswith("http") else Wikidata_base+value)
-            g.add((entity_uri, RDFS.seeAlso, wd_uri))
+        if value.startswith("http"):
+            g.add((entity_uri, RDFS.seeAlso, URIRef(value)))
+        elif idno_type == "wikidata":
+            g.add((entity_uri, RDFS.seeAlso, URIRef(Wikidata_base + value)))
 
 def resolve_entity(ref):
     ref = ref.strip()
@@ -55,7 +59,7 @@ def process_entity(list_xpath, item_tag, rdf_class, label_tag, label_prop=RDFS.l
         label_el = item.find(f"tei:{label_tag}", namespaces=TEI_ns)
         if label_el is not None and label_el.text:
             g.add((uri, label_prop, Literal(label_el.text.strip(), lang="eng")))
-        add_wikidata_link(uri, item)
+        add_authority_links(uri, item)
         if extra:
             extra(uri, item)
 
@@ -69,6 +73,14 @@ def extraperson(uri, element):
             if dtype:
                 g.add((uri, prop, Literal(when.strip(), datatype=dtype)))
 
+def extrabibl(uri, element):
+    el = element.find("tei:date", namespaces=TEI_ns)
+    if el is not None:
+        when = el.get("when")
+        dtype = choose_typedate(when)
+        if dtype:
+            g.add((uri, schema.datePublished, Literal(when.strip(), datatype=dtype)))
+
 def extraevent(uri, element):
     for attr, prop in [("when", schema.startDate), ("from", schema.startDate), ("to", schema.endDate)]:
         val = element.get(attr)
@@ -81,37 +93,51 @@ tree = etree.parse(Input_file)
 root = tree.getroot()
 
 g= Graph()
+
 g.bind("alch", alch)
-g.bind("foaf", foaf)
+g.bind("dbo", dbo)
+g.bind("marcrel", marcrel)
 g.bind("schema", schema)
 g.bind("dcterms", dcterms)
 g.bind("rel", rel)
 g.bind("skos", SKOS)
 
-process_entity(".//tei:listPerson", "person", foaf.Person, "persName", foaf.name, extraperson)
-process_entity(".//tei:listOrg",    "org",    schema.Organization, "orgName")
-process_entity(".//tei:listPlace",  "place",  schema.Place, "placeName")
-process_entity(".//tei:listBibl",   "bibl",   schema.CreativeWork, "title")
+process_entity(".//tei:listPerson", "person", schema.Person, "persName", schema.name, extraperson)
+process_entity(".//tei:listPerson", "personGrp", schema.Person, "name", schema.name)
+process_entity(".//tei:listOrg",    "org",    schema.Organization, "orgName", schema.name)
+process_entity(".//tei:listPlace",  "place",  schema.Place, "placeName", schema.name)
+process_entity(".//tei:listBibl",   "bibl",   schema.CreativeWork, "title", schema.name, extrabibl)
 process_entity(".//tei:list[@type='concept']", "item", SKOS.Concept, "term", SKOS.prefLabel)
-process_entity(".//tei:listEvent",  "event",  schema.Event, "label", extra=extraevent)
+process_entity(".//tei:listEvent",  "event",  schema.Event, "label", schema.name, extraevent)
 
 relation_map = {
-    "author": dcterms.creator,
-    "characterIn": schema.character,
-    "loves": rel["hasRomanticRelationshipWith"],
-    "mentor": rel.mentorOf,
-    "imprintOf": schema.parentOrganization,
-    "adaptationOf": schema.isBasedOn,
-    "adapter": schema.contributor,
-    "illustrator": schema.illustrator,
-    "inspiredBy": schema.isBasedOn,
-    "filmRightsHolder": dcterms.rightsHolder,
-    "basedOn": schema.isBasedOn,
+    "author":             dcterms.creator,
+    "about":              schema.about,
+    "characterIn":        schema.character,
+    "loves":              rel.engagedTo,
+    "mentor":             rel.mentorOf,
+    "imprintOf":          schema.parentOrganization,
+    "adaptationOf":       dcterms.isVersionOf,
+    "adapter":            marcrel.adp,
+    "illustrator":        schema.illustrator,
+    "inspiredBy":         schema.isBasedOn,
+    "illustratedVersionOf": dcterms.isVersionOf,
+    "filmRightsHolder":   dcterms.rightsHolder,
+    "basedOn":            schema.isBasedOn,
+    "earliestVersionBy":  dcterms.creator,
+    "containsVariantOf":  dcterms.isVersionOf,
+    "setIn":              schema.contentLocation,
+    "language":           dcterms.language,
+    "location":           schema.location,
+    "subject":            dcterms.subject,
+    "publisher":          dcterms.publisher,
+    "producer":           schema.producer,
+    "producerOrg":        schema.producer,
 }
 
-inverted = {"characterIn", "imprintOf"}
+inverted = {"author", "characterIn", "adapter", "illustrator",
+            "filmRightsHolder", "earliestVersionBy", "subject", "producer", "producerOrg"}
 
-symmetricrel = {"loves"}
 
 relations = root.findall(".//tei:listRelation/tei:relation", namespaces=TEI_ns)
 print(f"Found {len(relations)} relations.")
@@ -145,6 +171,10 @@ for relation in relations:
                 g.add((p_uri, predicate, a_uri))
             else:
                 g.add((a_uri, predicate, p_uri))
+
+for character in set(g.objects(None, schema.character)):
+    g.remove((character, RDF.type, schema.Person))
+    g.add((character, RDF.type, dbo.FictionalCharacter))
 
 g.serialize(destination=Output_file, format="turtle")
 print(f"Graph saved in {Output_file}. Total triples: {len(g)}")

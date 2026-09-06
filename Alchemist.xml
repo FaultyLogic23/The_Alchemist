@@ -35,7 +35,7 @@
                 <bibl>
                     <title>The Alchemist</title>. <title>Wikipedia, The Free Encyclopedia</title>.
                     <ptr target="https://en.wikipedia.org/wiki/The_Alchemist_(novel)"/>
-                    <note>Licenza CC BY-SA 4.0. Checked on 2026-07-06</note>
+                    <note>License CC BY-SA 4.0. Checked on 2026-07-06</note>
                 </bibl>
             </sourceDesc>
         </fileDesc>
@@ -51,24 +51,24 @@
  
             <div type="section" xml:id="plot">
 
-                <p> An Andalusian shepherd boy named <persName ref="#santiago">Santiago</persName> dreams of a treasure while in a ruined church. He consults a Gitano fortune-teller 
+                <p> An Andalusian shepherd boy named <persName ref="#santiago">Santiago</persName> dreams of a treasure while in a ruined church. He consults a <rs type="person" ref="#gitanoTeller">Gitano fortune-teller</rs> 
                     about the meaning of the recurring dream. The woman interprets it as a prophecy, telling the boy that he will discover a 
                     treasure at the <placeName ref="#egyptianPyramids">Egyptian pyramids</placeName>.</p>
                 
                 <p> After <persName ref="#santiago">Santiago</persName> sets out, he meets <persName ref="#melchizedek">Melchizedek</persName>, the king of <placeName ref="#salem">Salem</placeName>, who tells him to sell his sheep so as to travel to <placeName ref="#egypt">Egypt</placeName> and 
-                    accomplish his "<term type="concept" ref="#personalLegend">Personal Legend</term>". Early on his arrival in <placeName ref="#tangiers">Tangiers</placeName>, a man who claims to be able to take <persName ref="#santiago">Santiago</persName> to the pyramids 
-                    instead robs him and takes all the money he made from selling his sheep. <persName ref="#santiago">Santiago</persName> then has to work for a crystal merchant to earn 
+                    accomplish his "<term type="concept" ref="#personalLegend">Personal Legend</term>". Early on his arrival in <placeName ref="#tangiers">Tangiers</placeName>, a <rs type="person" ref="#bandit">man</rs> who claims to be able to take <persName ref="#santiago">Santiago</persName> to the pyramids 
+                    instead robs him and takes all the money he made from selling his sheep. <persName ref="#santiago">Santiago</persName> then has to work for a <rs type="person" ref="#crystalMerch">crystal merchant</rs> to earn 
                     enough to continue his journey.</p>
                 
-                <p> Along the way, the boy meets an Englishman who has come in search of an alchemist who can turn any metal to gold, and continues his 
+                <p> Along the way, the boy meets an <rs type="person" ref="#theEnglishMan">Englishman</rs> who has come in search of an <rs type="person" ref="#alchemistPers">alchemist</rs> who can turn any metal to gold, and continues his 
                     travels with his new companion. When they reach an oasis, <persName ref="#santiago">Santiago</persName> meets and falls in love with an Arabian girl named <persName ref="#fatima">Fatima</persName>, to whom 
                     he proposes marriage. She promises to marry him only after he completes his journey. Frustrated at first, he later learns that true love 
                     will not stop you from achieving what you want to do nor one must sacrifice one's destiny to it, since to do so robs it of truth.</p>
                 
-                <p> The boy then encounters the wise alchemist, who teaches him to realise his true self. Together, they risk a journey through the territory of warring tribes, 
+                <p> The boy then encounters the wise <rs type="person" ref="#alchemistPers">alchemist</rs>, who teaches him to realise his true self. Together, they risk a journey through the territory of warring tribes, 
                     where <persName ref="#santiago">Santiago</persName> is forced to demonstrate his oneness with the "<term type="concept" ref="#soulOfTheWorld">Soul of the World</term>" by turning himself into a dust storm before he is allowed to proceed.</p>
                 
-                <p> When he reaches the pyramids and begins digging, he is robbed by thieves, who ask him what he is digging for; he replies that a dream has led him to buried 
+                <p> When he reaches the pyramids and begins digging, he is robbed by <rs type="person" ref="#pyramidsThieves">thieves</rs>, who ask him what he is digging for; he replies that a dream has led him to buried 
                     treasure. The thieves scoff, and the leader remarks about a dream he once had about treasure under a tree at a ruined church. <persName ref="#santiago">Santiago</persName> realises that the treasure 
                     he sought was where he had his original dream all along. After finding the treasure back at the ruined church, he decides to go back to <persName ref="#fatima">Fatima</persName>, who awaits him.</p>
             
@@ -81,14 +81,14 @@
                     He describes the place, which is the first man's home. When the latter returns home he finds the treasure</quote><bibl><ptr target="#aarnethompsonIndex"/></bibl></cit>." The earliest known version of this tale type is a poem by the 13th-century 
                     Persian poet <persName ref="#rumi">Rumi</persName>, and a variant of the tale appears in the <title ref="#onethousandAndonenights">One Thousand and One Nights</title> collection of Arabic folktales.</p>
                 
-                <p> The book's main theme is about finding one's destiny, although according to <orgName ref="#nyt">The New York Times</orgName>, <title ref="#theAlchemist">The Alchemist</title> is <cit>"<quote>more self-help than literature</quote>"<bibl><ptr target="#nyt"/></bibl></cit>. 
+                <p> The book's main theme is about finding one's destiny, although according to <orgName ref="#nyt">The New York Times</orgName>, <title ref="#theAlchemist">The Alchemist</title> is <cit>"<quote>more self-help than literature</quote>"<bibl><ptr target="#nytArticle"/></bibl></cit>. 
                     The advice given to <persName ref="#santiago">Santiago</persName> that "<quote source="#theAlchemist">when you really want something to happen, the whole universe will conspire so that your wish comes true</quote>" is the core of the novel's thinking. 
-                    <persName ref="#coelho">Coelho</persName> originally wrote <title ref="#theAlchemist">The Alchemist</title> in only two weeks, explaining later that he was able to work at this pace because the story was <cit>"<quote>already written in [his] soul</quote><bibl><ptr target="#coelho"/></bibl></cit>."</p>
+                    <persName ref="#coelho">Coelho</persName> originally wrote <title ref="#theAlchemist">The Alchemist</title> in only two weeks, explaining later that he was able to work at this pace because the story was <cit>"<quote>already written in [his] soul</quote><bibl><ptr target="#coelhoStatement"/></bibl></cit>."</p>
             
             </div>
  
             <div type="section" xml:id="adaptations">
-                <p> In <date when="1994">1994</date>, a comic book adaptation was published by <persName ref="#ajubran">Alexandre Jubran</persName>. <orgName ref="#harperOne">HarperOne</orgName>, a <orgName ref="#harperCollins">HarperCollins</orgName> imprint, produced an illustrated version of the novel, with paintings by the French artist 
+                <p> In <date when="1994">1994</date>, a <rs type="work" ref="#comicJubran">comic book adaptation</rs> was published by <persName ref="#ajubran">Alexandre Jubran</persName>. <orgName ref="#harperOne">HarperOne</orgName>, a <orgName ref="#harperCollins">HarperCollins</orgName> imprint, produced an <rs type="work" ref="#illustratedEdition">illustrated version</rs> of the novel, with paintings by the French artist 
                     <persName ref="#moebius">Mœbius</persName>, but failed to convince <persName ref="#coelho">Coelho</persName> "to consent to the full graphic-novel treatment". <title ref="#theAlchemistgraphic">The Alchemist: A Graphic Novel</title> was published in <date when="2010">2010</date>, adapted by <persName ref="#derekr">Derek Ruiz</persName> and with artwork by 
                     <persName ref="#danielSampere">Daniel Sampere</persName>.</p>
                 
@@ -96,17 +96,17 @@
                     The work has eight movements and five interludes.</p>
                 
                 <p> In <date when="2002">2002</date>, a theatrical adaptation of <title ref="#theAlchemist">The Alchemist</title> was produced and performed in <placeName ref="#london">London</placeName>. Since then there have been several productions by the <orgName ref="#cornishCollective">Cornish Collective</orgName>. A later <placeName ref="#london">London</placeName> performance 
-                    was visited by the producer <persName ref="#ashvingidwani">Ashvin Gidwani</persName> who, finding it "verbose but colourful", decided to commission a new 90-minute version of the book from <persName ref="#deepaGahlot">Deepa Gahlot</persName> for the Indian stage. This was 
+                    was visited by the producer <persName ref="#ashvingidwani">Ashvin Gidwani</persName> who, finding it "verbose but colourful", decided to commission <rs type="work" ref="#indianStage">a new 90-minute version of the book</rs> from <persName ref="#deepaGahlot">Deepa Gahlot</persName> for the Indian stage. This was 
                     eventually launched in <date when="2009">2009</date>.</p>
                 
                 <p> In <date when="2006">2006</date>, <orgName ref="#mistakenIdentityband">Mistaken Identity</orgName>, a <placeName ref="#singapore">Singapore</placeName> indie rock band, adapted the story of the novel into what they claimed was "essentially our attempt at writing a musical" and released the track as "
                     The Alchemist". <title ref="#kochavvaPaulocoelho">Kochavva Paulo Ayyappa Coelho</title>, an Indian Malayalam-language film written and directed by <persName ref="#sidharthaSiva">Sidhartha Siva</persName>, has its title inspired by novelist <persName ref="#coelho">Paulo Coelho</persName>, and a central theme 
                     is inspired from <title ref="#theAlchemist">The Alchemist</title>.</p>
                 
-                <p> In <date when="2024">2024</date>, <orgName ref="#kadokawaCorp">Kadokawa Corporation</orgName> announced that a manga adaptation illustrated by <persName ref="#tamakiNakamura">Tamaki Nakamura</persName> would be released under their new <orgName ref="#kadokawamasterpieceComics">Kadokawa Masterpiece Comics</orgName> label in November <date when="2024">2024</date>.</p>
+                <p> In <date when="2024">2024</date>, <orgName ref="#kadokawaCorp">Kadokawa Corporation</orgName> announced that <rs type="work" ref="#mangaAdaptation">a manga adaptation</rs> illustrated by <persName ref="#tamakiNakamura">Tamaki Nakamura</persName> would be released under their new <orgName ref="#kadokawamasterpieceComics">Kadokawa Masterpiece Comics</orgName> label in November <date when="2024">2024</date>.</p>
  
                 <div type="subsection" xml:id="film-proposals">
-                    <p> In <date when="2008">2008</date>, the <orgName ref="#weinsteincomp">Weinstein Company</orgName> bought the film rights, but the project stalled after the <date when="2017">2017</date> <persName ref="#harveyWeinstein">Harvey Weinstein</persName> sexual abuse scandal. In <date when="2016">2016</date>, <orgName ref="#palmstarMedia">PalmStar Media</orgName> acquired the film rights. In <date when="2023">2023</date>, <orgName ref="#legendaryEnt">Legendary Entertainment</orgName> got the film, television, and ancillary rights to make a film adaptation with <orgName ref="#tristarPictures">TriStar Pictures</orgName> and <orgName ref="#palmstarMedia">Palmstar Media</orgName> with <persName ref="#jackThorne">Jack Thorne</persName> attached as a writer.</p>
+                    <p> In <date when="2008">2008</date>, the <orgName ref="#weinsteincomp">Weinstein Company</orgName> bought the film rights, but the project stalled after the <date when="2017">2017</date> <persName ref="#harveyWeinstein">Harvey Weinstein</persName> sexual abuse scandal. In <date when="2016">2016</date>, <orgName ref="#palmstarMedia">PalmStar Media</orgName> acquired the film rights. In <date when="2023">2023</date>, <orgName ref="#legendaryEnt">Legendary Entertainment</orgName> got the film, television, and ancillary rights to make <rs type="work" ref="#filmAdaptation">a film adaptation</rs> with <orgName ref="#tristarPictures">TriStar Pictures</orgName> and <orgName ref="#palmstarMedia">Palmstar Media</orgName> with <persName ref="#jackThorne">Jack Thorne</persName> attached as a writer.</p>
                 </div>
             </div>
         </body>
@@ -205,6 +205,41 @@
                     <note>The king of Salem in the novel, based on the biblical figure.</note>
                 </person>
 
+                <person xml:id="alchemistPers">
+                    <persName>The Alchemist</persName>
+                    <note>Unnamed character, designated only by his role. The novel
+                    takes its title from him; he is Santiago's true mentor.</note>
+                </person>
+
+                <person xml:id="theEnglishMan">
+                    <persName>The Englishman</persName>
+                    <note>Unnamed character, travels in search of the alchemist and
+                    accompanies Santiago across the desert.</note>
+                </person>
+
+                <person xml:id="crystalMerch">
+                    <persName>The crystal merchant</persName>
+                    <note>Unnamed character, employs Santiago in Tangier.</note>
+                </person>
+
+                <person xml:id="gitanoTeller">
+                    <persName>The Gitano fortune-teller</persName>
+                    <note>Interprets Santiago's recurring dream
+                    as a prophecy.</note>
+                </person>
+
+                <person xml:id="bandit">
+                    <persName>The thief of Tangier</persName>
+                    <note>Robs Santiago of the money from the
+                    sale of his sheep.</note>
+                </person>
+
+                <personGrp xml:id="pyramidsThieves">
+                    <name>The thieves at the pyramids</name>
+                    <note>Their leader unknowingly
+                    reveals the location of the treasure.</note>
+                </personGrp>
+
             </listPerson>
 
             <listOrg>
@@ -223,7 +258,7 @@
 
                 <org xml:id="harperCollins">
                     <orgName>HarperCollins</orgName>
-                    <idno type="Wikidata">http://www.wikidata.org/entity/Q120534611</idno>
+                    <idno type="Wikidata">http://www.wikidata.org/entity/Q95149</idno>
                 </org>
 
                 <org xml:id="mistakenIdentityband">
@@ -306,7 +341,6 @@
                     <author ref="#coelho">Paulo Coelho</author>
                     <date when="1988">1988</date>
                     <idno type="Wikidata">http://www.wikidata.org/entity/Q179021</idno>
-                    <idno type="VIAF">https://viaf.org/viaf/204618447</idno>
                 </bibl>
 
                 <bibl xml:id="theAlchemistgraphic">
@@ -335,6 +369,50 @@
                     <idno type="Wikidata">http://www.wikidata.org/entity/Q136488217</idno>
                 </bibl>
 
+                <bibl xml:id="nytArticle">
+                    <title level="a">[Article on Paulo Coelho and The Alchemist]</title>
+                    <publisher><orgName ref="#nyt">The New York Times</orgName></publisher>
+                </bibl>
+
+                <bibl xml:id="coelhoStatement">
+                    <title level="a">[Statement by Paulo Coelho on the writing of The Alchemist]</title>
+                    <author ref="#coelho">Paulo Coelho</author>
+                </bibl>
+
+                                <bibl xml:id="comicJubran">
+                    <title>The Alchemist (comic book adaptation)</title>
+                    <author ref="#ajubran">Alexandre Jubran</author>
+                    <date when="1994">1994</date>
+                    <note>The source designates
+                    this work by description only.</note>
+                </bibl>
+
+                <bibl xml:id="illustratedEdition">
+                    <title>The Alchemist (illustrated edition)</title>
+                    <publisher><orgName ref="#harperOne">HarperOne</orgName></publisher>
+                    <note>Illustrated with paintings
+                    by Mœbius; Coelho did not consent to a full graphic-novel treatment.</note>
+                </bibl>
+
+                <bibl xml:id="indianStage">
+                    <title>The Alchemist (Indian stage version)</title>
+                    <date when="2009">2009</date>
+                    <note>Ninety-minute version
+                    commissioned by Ashvin Gidwani from Deepa Gahlot.</note>
+                </bibl>
+
+                <bibl xml:id="mangaAdaptation">
+                    <title>The Alchemist (manga adaptation)</title>
+                    <date when="2024">2024</date>
+                    <note>Published under the Kadokawa Masterpiece Comics label.</note>
+                </bibl>
+
+                <bibl xml:id="filmAdaptation">
+                    <title>The Alchemist (film adaptation)</title>
+                    <note>Announced, not yet
+                    released at the time of encoding.</note>
+                </bibl>
+
             </listBibl>
 
             <list type="concept">
@@ -349,32 +427,166 @@
 
             </list>
 
+             <listEvent>
+
+                <event xml:id="ev1994comic" when="1994">
+                    <label>Publication of the comic book adaptation</label>
+                    <desc>Comic book adaptation published by Alexandre Jubran.</desc>
+                </event>
+
+                <event xml:id="ev1997symphony" when="1997">
+                    <label>Release of The Alchemist's Symphony</label>
+                    <desc>Musical work by Walter Taieb, released with the support
+                    of Paulo Coelho, who wrote an original text for the CD booklet.</desc>
+                </event>
+
+                <event xml:id="ev2002theatre" when="2002">
+                    <label>First theatrical adaptation</label>
+                    <desc>Theatrical adaptation produced and performed in London.</desc>
+                </event>
+
+                <event xml:id="ev2006track" when="2006">
+                    <label>Release of the track "The Alchemist"</label>
+                    <desc>Adaptation of the story by the Singapore indie rock band
+                    Mistaken Identity.</desc>
+                </event>
+
+                <event xml:id="ev2008rights" when="2008">
+                    <label>Purchase of the film rights by The Weinstein Company</label>
+                    <desc>The project stalled after the 2017 Harvey Weinstein
+                    sexual abuse scandal.</desc>
+                </event>
+
+                <event xml:id="ev2009indian" when="2009">
+                    <label>Launch of the Indian stage version</label>
+                    <desc>Ninety-minute version commissioned by Ashvin Gidwani
+                    from Deepa Gahlot after a London performance.</desc>
+                </event>
+
+                <event xml:id="ev2010graphic" when="2010">
+                    <label>Publication of The Alchemist: A Graphic Novel</label>
+                    <desc>Adapted by Derek Ruiz, with artwork by Daniel Sampere.</desc>
+                </event>
+
+                <event xml:id="ev2016rights" when="2016">
+                    <label>Acquisition of the film rights by PalmStar Media</label>
+                </event>
+
+                <event xml:id="ev2023rights" when="2023">
+                    <label>Acquisition of the film, television and ancillary rights
+                    by Legendary Entertainment</label>
+                    <desc>Film adaptation to be made with TriStar Pictures and
+                    PalmStar Media, with Jack Thorne attached as a writer.</desc>
+                </event>
+
+                <event xml:id="ev2024manga" when="2024">
+                    <label>Announcement of the manga adaptation</label>
+                    <desc>Announced by Kadokawa Corporation, illustrated by Tamaki
+                    Nakamura, for the Kadokawa Masterpiece Comics label.</desc>
+                </event>
+
+            </listEvent>
             <listRelation>
 
+                <!-- The novel and its author -->
+
                 <relation name="author" active="#coelho" passive="#theAlchemist"/>
-            
-                <relation name="characterIn" active="#santiago #fatima #melchizedek" passive="#theAlchemist"/>
-            
+
+                <relation name="subject" active="#theAlchemist" passive="#personalLegend #soulOfTheWorld"/>
+
+                <relation name="setIn" active="#theAlchemist"
+                          passive="#northAfrica #egypt #tangiers #egyptianPyramids #salem"/>
+
+                <!-- Characters -->
+
+                <relation name="characterIn"
+                          active="#santiago #fatima #melchizedek #alchemistPers #theEnglishMan #crystalMerch #gitanoTeller #bandit #pyramidsThieves"
+                          passive="#theAlchemist"/>
+
                 <relation name="loves" mutual="#santiago #fatima"/>
-                
+
                 <relation name="mentor" active="#melchizedek" passive="#santiago"/>
-                
-                <relation name="imprintOf" active="#harperOne" passive="#harperCollins"/>
 
-                <relation name="imprintOf" active="#kadokawamasterpieceComics" passive="#kadokawaCorp"/>
+                <relation name="mentor" active="#alchemistPers" passive="#santiago"/>
 
-                <relation name="adaptationOf" active="#theAlchemistgraphic" passive="#theAlchemist"/>
+                <relation name="basedOn" active="#melchizedek" passive="http://www.wikidata.org/entity/Q219395"/>
+
+                <!-- Sources of the plot -->
+
+                <relation name="basedOn" active="#theAlchemist" passive="#aarnethompsonIndex"/>
+
+                <relation name="earliestVersionBy" active="#rumi" passive="#aarnethompsonIndex"/>
+
+                <relation name="containsVariantOf" active="#onethousandAndonenights" passive="#aarnethompsonIndex"/>
+
+                <!-- Adaptations and derivative works -->
+
+                <relation name="adaptationOf"
+                          active="#theAlchemistgraphic #comicJubran #indianStage #mangaAdaptation #filmAdaptation"
+                          passive="#theAlchemist"/>
+
+                <relation name="illustratedVersionOf" active="#illustratedEdition" passive="#theAlchemist"/>
+
+                <relation name="inspiredBy" active="#thealchemistSymphony #kochavvaPaulocoelho" passive="#theAlchemist"/>
+
+                <!-- Contributors to the derivative works -->
 
                 <relation name="adapter" active="#derekr" passive="#theAlchemistgraphic"/>
 
                 <relation name="illustrator" active="#danielSampere" passive="#theAlchemistgraphic"/>
 
-                <relation name="inspiredBy" active="#thealchemistSymphony #kochavvaPaulocoelho" passive="#theAlchemist" />
+                <relation name="author" active="#ajubran" passive="#comicJubran"/>
 
-                <relation name="filmRightsHolder" active="#weinsteincomp #palmstarMedia #legendaryEnt" passive="#theAlchemist" />
+                <relation name="illustrator" active="#moebius" passive="#illustratedEdition"/>
 
-                <relation name="basedOn" active="#melchizedek" passive="http://www.wikidata.org/entity/Q219395"/>
-            
+                <relation name="adapter" active="#deepaGahlot" passive="#indianStage"/>
+
+                <relation name="producer" active="#ashvingidwani" passive="#indianStage"/>
+
+                <relation name="illustrator" active="#tamakiNakamura" passive="#mangaAdaptation"/>
+
+                <relation name="author" active="#jackThorne" passive="#filmAdaptation"/>
+
+                <relation name="producerOrg" active="#tristarPictures" passive="#filmAdaptation"/>
+
+                <relation name="author" active="#wtieb" passive="#thealchemistSymphony"/>
+
+                <relation name="adapter" active="#sidharthaSiva" passive="#kochavvaPaulocoelho"/>
+
+                <relation name="producerOrg" active="#cornishCollective #mistakenIdentityband" passive="#theAlchemist"/>
+
+                <!-- Organisations -->
+
+                <relation name="imprintOf" active="#harperOne" passive="#harperCollins"/>
+
+                <relation name="imprintOf" active="#kadokawamasterpieceComics" passive="#kadokawaCorp"/>
+
+                <relation name="filmRightsHolder" active="#weinsteincomp #palmstarMedia #legendaryEnt" passive="#theAlchemist"/>
+
+                <!-- Cited sources -->
+
+                <relation name="author" active="#coelho" passive="#coelhoStatement"/>
+
+                <relation name="publisher" active="#nyt" passive="#nytArticle"/>
+
+                <!-- Events -->
+
+                <relation name="about"
+                          active="#ev1994comic #ev2002theatre #ev2006track #ev2008rights #ev2016rights #ev2023rights"
+                          passive="#theAlchemist"/>
+
+                <relation name="about" active="#ev2010graphic" passive="#theAlchemistgraphic"/>
+
+                <relation name="about" active="#ev1997symphony" passive="#thealchemistSymphony"/>
+
+                <relation name="about" active="#ev2009indian" passive="#indianStage"/>
+
+                <relation name="about" active="#ev2024manga" passive="#mangaAdaptation"/>
+
+                <relation name="location" active="#ev2002theatre" passive="#london"/>
+
+                <relation name="location" active="#ev2006track" passive="#singapore"/>
+
             </listRelation>
             
         </back>

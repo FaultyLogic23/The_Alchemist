@@ -1,42 +1,237 @@
 <!DOCTYPE HTML>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-    </head>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Alchemist</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital:wght@400">
+</head>
 
 <body>
+
     <h1>
         The Alchemist
     </h1>
-    <div id="Introduction">
-        <p> 
-            The Alchemist is a project based on the book wrote by Paulo Coelho. 
 
-            <h4>Why i have chosen this work?</h4> 
+    <nav>
+        <ul>
+            <li class="breadcrumb"><a href="#introduction">Introduction</a></li>
+            <li class="breadcrumb"><a href="#domain-study">Domain Study</a></li>
+            <li class="breadcrumb"><a href="#entities">Entities</a></li>
+            <li class="breadcrumb"><a href="#conceptual-model">Conceptual Model</a></li>
+            <li class="breadcrumb"><a href="#theoretical-model">Theoretical Model</a></li>
+        </ul>
+    </nav>
 
-            This is the first book which actually brought "changes" in my life. The narrative, the writing and the symbolism used
-            to create this "work" amazed me from the start but above all there is the "simplicity" 
-        </p>
+    <div id="introduction">
         <p>
-            The project is made a-top an existing Wikipedia article which can be found
-            by following this link <link href="https://en.wikipedia.org/wiki/Aaron_Swartz">https://en.wikipedia.org/wiki/Aaron_Swartz</link>
+            The Alchemist is a project based on the book wrote by Paulo Coelho.
+
+            It is made a-top an existing Wikipedia article which can be found
+            by following this link <a
+                href="https://en.wikipedia.org/wiki/The_Alchemist_(novel)">https://en.wikipedia.org/wiki/The_Alchemist_(novel)</a>
             and the main goal is to create a machine-readable RDF dataset based on the encoding
             i made.
         </p>
     </div>
-    <div id="DomainStudy">
+
+    <div id="domain-study">
         <p>
-            The first thing to do is to identify the entities in the Wikipedia article. 
-            I have identified [...] entities and used [...] categories, each one of them
-            is reconciled to one external authority file which comes from Wikidata, VIAF, LCSH and
-            Fabio.        
+            Every person, place, organization, work and concept mentioned in the article is
+            marked in TEI and resolved against a back-matter authority list, where each entity
+            carries a Wikidata identifier.
         </p>
     </div>
 
+    <div id="conceptual-model">
+        <p>
+            The conceptual model groups the article's entities into five categories
+            and shows how each of them relates to the novel.
+        </p>
+    </div>
+
+    <div id="conceptmod-img">
+        <img src="" />
+    </div>
+
+    <div id="theoretical-model">
+        <p>
+            The theoretical model translates the same picture into the vocabulary
+            of TEI and RDF: each category becomes a class, each relation a typed
+            property and the whole graph is expressed in terms that a machine can read
+            and query.
+        </p>
+    </div>
+
+    <div id="theomod-img">
+        <img src="" />
+    </div>
+
+    <div id="entities">
+
+        <table class="authorities">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Wikidata</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th colspan="2">Persons</th>
+                </tr>
+                <tr>
+                    <td>Alexandre Jubran</td>
+                    <td><a href="http://www.wikidata.org/entity/Q48871908">Q48871908</a></td>
+                </tr>
+                <tr>
+                    <td>Ashvin Gidwani</td>
+                    <td><a href="http://www.wikidata.org/entity/Q125538019">Q125538019</a></td>
+                </tr>
+                <tr>
+                    <td>Daniel Sampere</td>
+                    <td><a href="http://www.wikidata.org/entity/Q112521933">Q112521933</a></td>
+                </tr>
+                <tr>
+                    <td>Deepa Gahlot</td>
+                    <td><a href="http://www.wikidata.org/entity/Q27863006">Q27863006</a></td>
+                </tr>
+                <tr>
+                    <td>Harvey Weinstein</td>
+                    <td><a href="http://www.wikidata.org/entity/Q531599">Q531599</a></td>
+                </tr>
+                <tr>
+                    <td>Jack Thorne</td>
+                    <td><a href="http://www.wikidata.org/entity/Q6115483">Q6115483</a></td>
+                </tr>
+                <tr>
+                    <td>Mœbius (Jean Giraud)</td>
+                    <td><a href="http://www.wikidata.org/entity/Q309240">Q309240</a></td>
+                </tr>
+                <tr>
+                    <td>Paulo Coelho</td>
+                    <td><a href="http://www.wikidata.org/entity/Q12881">Q12881</a></td>
+                </tr>
+                <tr>
+                    <td>Rumi</td>
+                    <td><a href="http://www.wikidata.org/entity/Q43347">Q43347</a></td>
+                </tr>
+                <tr>
+                    <td>Sidhartha Siva</td>
+                    <td><a href="http://www.wikidata.org/entity/Q13220286">Q13220286</a></td>
+                </tr>
+                <tr>
+                    <td>Walter Taieb</td>
+                    <td><a href="http://www.wikidata.org/entity/Q7966251">Q7966251</a></td>
+                </tr>
+            </tbody>
+
+            <tbody>
+                <tr>
+                    <th colspan="2">Places</th>
+                </tr>
+                <tr>
+                    <td>Egypt</td>
+                    <td><a href="http://www.wikidata.org/entity/Q79">Q79</a></td>
+                </tr>
+                <tr>
+                    <td>Egyptian pyramids</td>
+                    <td><a href="http://www.wikidata.org/entity/Q12508">Q12508</a></td>
+                </tr>
+                <tr>
+                    <td>London</td>
+                    <td><a href="http://www.wikidata.org/entity/Q84">Q84</a></td>
+                </tr>
+                <tr>
+                    <td>North Africa</td>
+                    <td><a href="http://www.wikidata.org/entity/Q27381">Q27381</a></td>
+                </tr>
+                <tr>
+                    <td>Singapore</td>
+                    <td><a href="http://www.wikidata.org/entity/Q344">Q344</a></td>
+                </tr>
+                <tr>
+                    <td>Tangier</td>
+                    <td><a href="http://www.wikidata.org/entity/Q126148">Q126148</a></td>
+                </tr>
+            </tbody>
+
+            <tbody>
+                <tr>
+                    <th colspan="2">Organizations</th>
+                </tr>
+                <tr>
+                    <td>HarperCollins</td>
+                    <td><a href="http://www.wikidata.org/entity/Q120534611">Q120534611</a></td>
+                </tr>
+                <tr>
+                    <td>Kadokawa Corporation</td>
+                    <td><a href="http://www.wikidata.org/entity/Q17224985">Q17224985</a></td>
+                </tr>
+                <tr>
+                    <td>Kadokawa Masterpiece Comics</td>
+                    <td><a href="http://www.wikidata.org/entity/Q115754348">Q115754348</a></td>
+                </tr>
+                <tr>
+                    <td>Legendary Entertainment</td>
+                    <td><a href="http://www.wikidata.org/entity/Q621364">Q621364</a></td>
+                </tr>
+                <tr>
+                    <td>PalmStar Media</td>
+                    <td><a href="http://www.wikidata.org/entity/Q24913707">Q24913707</a></td>
+                </tr>
+                <tr>
+                    <td>The New York Times</td>
+                    <td><a href="http://www.wikidata.org/entity/Q9684">Q9684</a></td>
+                </tr>
+                <tr>
+                    <td>The Weinstein Company</td>
+                    <td><a href="http://www.wikidata.org/entity/Q1138789">Q1138789</a></td>
+                </tr>
+                <tr>
+                    <td>TriStar Pictures</td>
+                    <td><a href="http://www.wikidata.org/entity/Q651454">Q651454</a></td>
+                </tr>
+            </tbody>
+
+            <tbody>
+                <tr>
+                    <th colspan="2">Works</th>
+                </tr>
+                <tr>
+                    <td>Aarne-Thompson-Uther Index</td>
+                    <td><a href="http://www.wikidata.org/entity/Q136488217">Q136488217</a></td>
+                </tr>
+                <tr>
+                    <td>Kochavva Paulo Ayyappa Coelho</td>
+                    <td><a href="http://www.wikidata.org/entity/Q24807275">Q24807275</a></td>
+                </tr>
+                <tr>
+                    <td>One Thousand and One Nights</td>
+                    <td><a href="http://www.wikidata.org/entity/Q8258">Q8258</a></td>
+                </tr>
+                <tr>
+                    <td>The Alchemist</td>
+                    <td><a href="http://www.wikidata.org/entity/Q179021">Q179021</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    </div>
+
     <footer>
-        Project made for the Information Science and Cultural Heritage Course
+        <p>Project made for the Information Science and Cultural Heritage Course</p>
         <p>UniBo - Digital Humanities and Digital Knowledge</p>
     </footer>
-</body>    
+</body>
+
 </html>

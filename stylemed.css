@@ -1,0 +1,158 @@
+/* stylemed.css — The Alchemist, LODLAM project */
+
+:root {
+    --person:  #f6ddd8;
+    --person-b: #b5623f;
+    --org:     #d9e4f2;
+    --org-b:   #3d5a80;
+    --place:   #dcecd8;
+    --place-b: #4d7a3a;
+    --concept: #e8dcf0;
+    --concept-b: #7a4d8a;
+    --work:    #f7e9c8;
+    --work-b:  #9a6b00;
+    --ink:     #1f1f1f;
+    --muted:   #6b6b6b;
+    --rule:    #ddd8ce;
+    --paper:   #fdfcfa;
+}
+
+/* ---------- page ---------- */
+
+body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+main {
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 2.5rem 1.2rem 5rem;
+}
+
+h1 {
+    font-size: 2.4rem;
+    line-height: 1.15;
+    margin: 0 0 2.5rem;
+    padding-bottom: .8rem;
+    border-bottom: 3px solid var(--ink);
+}
+
+h2 {
+    font-size: 1.4rem;
+    margin: 3rem 0 1rem;
+    padding-bottom: .3rem;
+    border-bottom: 1px solid var(--rule);
+    text-transform: capitalize;
+}
+
+h3 { font-size: 1.15rem; margin: 2rem 0 .7rem; }
+
+section { margin-bottom: 1rem; }
+
+p { margin: 0 0 1.2rem; text-align: justify; hyphens: auto; }
+
+/* ---------- annotated entities ---------- */
+
+.person, .org, .place, .concept, .work, .entity {
+    padding: .08em .25em;
+    border-radius: 3px;
+    color: inherit;
+    text-decoration: none;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+}
+
+.person  { background: var(--person);  box-shadow: inset 0 -2px 0 var(--person-b); }
+.org     { background: var(--org);     box-shadow: inset 0 -2px 0 var(--org-b); }
+.place   { background: var(--place);   box-shadow: inset 0 -2px 0 var(--place-b); }
+.concept { background: var(--concept); box-shadow: inset 0 -2px 0 var(--concept-b); }
+.work    { background: var(--work);    box-shadow: inset 0 -2px 0 var(--work-b); font-style: italic; }
+
+.entity  { background: #eeeae4; box-shadow: inset 0 -2px 0 var(--muted); }
+
+
+span.person, span.org, span.place, span.concept, span.work, span.entity {
+    box-shadow: none;
+    border-bottom: 1px dotted var(--muted);
+    cursor: help;
+}
+
+a.person:hover, a.org:hover, a.place:hover,
+a.concept:hover, a.work:hover, a.entity:hover {
+    filter: brightness(.94);
+}
+
+/* ---------- dates ---------- */
+
+time {
+    font-variant-numeric: oldstyle-nums;
+    border-bottom: 1px dotted var(--muted);
+    cursor: help;
+}
+
+/* ---------- quotations and citations ---------- */
+
+q {
+    font-style: italic;
+    quotes: none;               /* the source text already has its own */
+}
+
+.cit { }
+
+.bibl { font-size: .8em; }
+
+a.ptr {
+    font-size: .72em;
+    vertical-align: super;
+    margin-left: .1em;
+    padding: 0 .25em;
+    border-radius: 2px;
+    background: #e8eef5;
+    color: var(--org-b);
+    text-decoration: none;
+    font-family: -apple-system, system-ui, sans-serif;
+    font-style: normal;
+}
+
+a.ptr:hover { background: var(--org-b); color: #fff; }
+
+/* ---------- legend ----------                                                              */
+
+.legend {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin: -1.5rem 0 2.5rem;
+    padding: 0;
+    font-family: -apple-system, system-ui, sans-serif;
+    font-size: .78rem;
+}
+
+.legend span { border-bottom: none; cursor: default; }
+
+/* ---------- small screens ---------- */
+
+@media (max-width: 640px) {
+    body { font-size: 17px; }
+    main { padding: 1.5rem 1rem 3rem; }
+    h1 { font-size: 1.9rem; }
+    p { text-align: left; }
+}
+
+/* ---------- print ---------- */
+
+@media print {
+    body { background: #fff; font-size: 11pt; }
+    a { color: inherit; }
+    a.ptr { background: none; }
+    .person, .org, .place, .concept, .work, .entity {
+        box-shadow: none;
+        border-bottom: 1px solid #999;
+    }
+}
