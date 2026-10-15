@@ -1,3 +1,15 @@
+'''
+Some documentation about what this file do. It converts the TEI file "Alchemist.xml" based on the Wikipedia Article
+which can be found at https://en.wikipedia.org/wiki/The_Alchemist_(novel).
+'''
+
+# First Phase
+'''
+We define the input and output files, we declare the namespace
+and declare the unique xml_id of the document (we need it to link the mentions
+in the text with the forms of the entities).
+'''
+
 from lxml import etree
 
 input_file = "Alchemist.xml"
@@ -8,9 +20,18 @@ css_file = "stylemed.css"
 
 tei_ns = "http://www.tei-c.org/ns/1.0"
 nsmap = {"tei": tei_ns}
-XML_ID = "{http://www.w3.org/XML/1998/namespace}id"
+xml_id = "{http://www.w3.org/XML/1998/namespace}id"
 
-# parsing
+'''
+Then we load the XML file and analyse by recognizing opening, closing tags
+and attributen. After it we build the tree starting by the root, following
+the body and so on, respecting the HTML hierarchy.
+
+Then we create an empty dictionary which is going to be filled
+with the entities' index.
+'''
+
+# Parsing
 
 tree = etree.parse(input_file)
 root = tree.getroot()
@@ -18,12 +39,14 @@ root = tree.getroot()
 body = root.find(".//tei:body", namespaces=nsmap)
 
 sections = body.findall("./tei:div", namespaces=nsmap)
-print(f"Trovate {len(sections)} sezioni nel body del TEI.")
+print(f"Found {len(sections)} sections in the TEI body.") # Debug
 
 entities = {}
 
+# Second Phase, Entity building
+
 for element in root.iter():
-    xml_id = element.get(XML_ID)
+    xml_id = element.get(xml_id)
     if not xml_id:
         continue
     if etree.QName(element).localname not in ("person", "personGrp", "org", "place", "bibl", "item", "event"):
@@ -44,9 +67,9 @@ for element in root.iter():
 
     entities[xml_id] = {"label": label, "uri": uri}
 
-print(f"Indicizzate {len(entities)} entità dal back matter.")
+print(f"Indexed {len(entities)} entities from the back matter.") # Debug
 
-# Mapping TAG TEI
+# Mapping TEI tags
 
 entity_map = {
     "persName": "person",
@@ -121,11 +144,7 @@ structure_map = {
 }
 
 def transform_element(element, div_level=0):
-    """
-    Trasforma un elemento TEI in HTML, ricorsivamente sui figli.
-    div_level tiene traccia dell'annidamento delle sezioni
-    (per decidere h2 vs h3).
-    """
+    
     tag_local = etree.QName(element).localname
 
     if tag_local in entity_map or tag_local == "rs":
@@ -133,7 +152,7 @@ def transform_element(element, div_level=0):
 
     if tag_local == "div":
         section = etree.Element("section")
-        xml_id = element.get(XML_ID)
+        xml_id = element.get(xml_id)
         if xml_id:
             section.set("id", xml_id)
             heading = etree.SubElement(section, "h2" if div_level <= 1 else "h3")
@@ -203,7 +222,7 @@ viewport.set("name", "viewport")
 viewport.set("content", "width=device-width, initial-scale=1")
 
 title = etree.SubElement(head, "title")
-title.text = "The Alchemist — Annotated Wikipedia Article"
+title.text = "The Alchemist, Annotated Wikipedia Article"
 
 link = etree.SubElement(head, "link")
 link.set("rel", "stylesheet")
@@ -233,8 +252,13 @@ html_string = "<!DOCTYPE html>\n" + etree.tostring(
 with open(output_file, "w", encoding="utf-8") as f:
     f.write(html_string)
 
-print(f"\nHTML salvato in {output_file}.")
+print(f"\nHTML saved in {output_file}.")
 
+# Debug
+'''
+This last section is used to report the refs
+which do not correspond with any entity.
+'''
 
 orph = set()
 for element in body.iter():
