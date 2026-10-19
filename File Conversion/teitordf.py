@@ -58,7 +58,7 @@ def process_entity(list_xpath, item_tag, rdf_class, label_tag, label_prop=RDFS.l
         g.add((uri, RDF.type, rdf_class))
         label_el = item.find(f"tei:{label_tag}", namespaces=TEI_ns)
         if label_el is not None and label_el.text:
-            g.add((uri, label_prop, Literal(label_el.text.strip(), lang="eng")))
+            g.add((uri, label_prop, Literal(label_el.text.strip(), lang="en")))
         add_authority_links(uri, item)
         if extra:
             extra(uri, item)
@@ -114,6 +114,8 @@ relation_map = {
     "author":             dcterms.creator,
     "about":              schema.about,
     "characterIn":        schema.character,
+    "founder":            schema.founder,
+    "homeLocation":       schema.homeLocation,
     "loves":              rel.engagedTo,
     "mentor":             rel.mentorOf,
     "imprintOf":          schema.parentOrganization,
@@ -124,19 +126,21 @@ relation_map = {
     "illustratedVersionOf": dcterms.isVersionOf,
     "filmRightsHolder":   dcterms.rightsHolder,
     "basedOn":            schema.isBasedOn,
-    "earliestVersionBy":  dcterms.creator,
+    "earliestVersionBy":  dcterms.relation,
     "containsVariantOf":  dcterms.isVersionOf,
     "setIn":              schema.contentLocation,
     "language":           dcterms.language,
     "location":           schema.location,
     "subject":            dcterms.subject,
+    "performer":          schema.performer,
     "publisher":          dcterms.publisher,
     "producer":           schema.producer,
     "producerOrg":        schema.producer,
+    
 }
 
-inverted = {"author", "characterIn", "adapter", "illustrator",
-            "filmRightsHolder", "earliestVersionBy", "subject", "producer", "producerOrg"}
+inverted = {"author", "characterIn", "adapter", "founder", "illustrator",
+            "filmRightsHolder", "earliestVersionBy", "producer", "producerOrg", "performer", "publisher"}
 
 
 relations = root.findall(".//tei:listRelation/tei:relation", namespaces=TEI_ns)
