@@ -46,8 +46,8 @@ entities = {}
 # Second Phase, Entity building
 
 for element in root.iter():
-    xml_id = element.get(xml_id)
-    if not xml_id:
+    entity_id = element.get(xml_id)
+    if not entity_id:
         continue
     if etree.QName(element).localname not in ("person", "personGrp", "org", "place", "bibl", "item", "event"):
         continue
@@ -65,7 +65,7 @@ for element in root.iter():
             uri = idno.text.strip()
             break
 
-    entities[xml_id] = {"label": label, "uri": uri}
+    entities[entity_id] = {"label": label, "uri": uri}
 
 print(f"Indexed {len(entities)} entities from the back matter.") # Debug
 
@@ -152,11 +152,11 @@ def transform_element(element, div_level=0):
 
     if tag_local == "div":
         section = etree.Element("section")
-        xml_id = element.get(xml_id)
-        if xml_id:
-            section.set("id", xml_id)
+        div_id = element.get(xml_id)
+        if div_id:
+            section.set("id", div_id)
             heading = etree.SubElement(section, "h2" if div_level <= 1 else "h3")
-            heading.text = xml_id.replace("-", " ").capitalize()
+            heading.text = div_id.replace("-", " ").capitalize()
 
         for child in element:
             child_html = transform_element(child, div_level + 1)

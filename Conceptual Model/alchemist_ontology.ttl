@@ -1,0 +1,205 @@
+@prefix : <https://w3id.org/alchemist/ontology#> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rel: <http://purl.org/vocab/relationship/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <https://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix marcrel: <http://id.loc.gov/vocabulary/relators/> .
+@base <https://w3id.org/alchemist/ontology#> .
+
+<https://w3id.org/alchemist/ontology> rdf:type owl:Ontology ;
+                                       <http://purl.org/dc/elements/1.1/creator> "A project created by Samuele Bertelli"@en ;
+                                       rdfs:comment "The Alchemist LOD project aim to represent The Alchemist Novel written by Paulo Coelho beyond the book itself by stating how many other works inspired and what inspired the author to write it."@en ;
+                                       rdfs:label "The Alchemist LOD project"@en .
+
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://id.loc.gov/vocabulary/relators/adp
+marcrel:adp rdf:type owl:ObjectProperty ;
+            rdfs:comment "Links an adaptation to the person who adapted the work."@en .
+
+
+###  http://purl.org/dc/terms/creator
+dcterms:creator rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/dc/terms/isVersionOf
+dcterms:isVersionOf rdf:type owl:ObjectProperty ;
+                    rdfs:comment "Links an adaptation to the work it adapts."@en .
+
+
+###  http://purl.org/dc/terms/publisher
+dcterms:publisher rdf:type owl:ObjectProperty ;
+                  rdfs:comment "Links a work to the organisation that published it."@en .
+
+
+###  http://purl.org/dc/terms/relations
+dcterms:relation rdf:type owl:ObjectProperty ;
+                  rdfs:comment "Generic link between the ATU 1645 tale type and Rumi, author of its earliest known version."@en .
+
+
+###  http://purl.org/dc/terms/rightsHolder
+dcterms:rightsHolder rdf:type owl:ObjectProperty ;
+                     rdfs:comment "Links the novel to the companies that held its film rights."@en .
+
+
+###  http://purl.org/dc/terms/subject
+dcterms:subject rdf:type owl:ObjectProperty ;
+                rdfs:comment "Links the novel to its main themes."@en .
+
+
+###  http://purl.org/vocab/relationship/engagedTo
+rel:engagedTo rdf:type owl:ObjectProperty ;
+              rdfs:comment "Links Santiago and Fatima, who promise to marry."@en .
+
+
+###  http://purl.org/vocab/relationship/mentorOf
+rel:mentorOf rdf:type owl:ObjectProperty ;
+             rdfs:comment "Links a character to the character he guides."@en .
+
+
+###  https://schema.org/about
+<https://schema.org/about> rdf:type owl:ObjectProperty ;
+                          rdfs:comment "Links an event or a text to the work it concerns."@en .
+
+
+###  https://schema.org/character
+<https://schema.org/character> rdf:type owl:ObjectProperty ;
+                              rdfs:comment "Links the novel to its characters."@en .
+
+
+###  https://schema.org/contentLocation
+<https://schema.org/contentLocation> rdf:type owl:ObjectProperty ;
+                                    rdfs:comment "Links the novel to the places where the story is set."@en .
+
+
+###  https://schema.org/founder
+<https://schema.org/founder> rdf:type owl:ObjectProperty ;
+                            rdfs:comment "Links a company to its founder."@en .
+
+
+###  https://schema.org/homeLocation
+<https://schema.org/homeLocation> rdf:type owl:ObjectProperty ;
+                                 rdfs:comment "Links a character to his home place."@en .
+
+
+###  https://schema.org/illustrator
+<https://schema.org/illustrator> rdf:type owl:ObjectProperty ;
+                                rdfs:comment "Links a work to its illustrator."@en .
+
+
+###  https://schema.org/isBasedOn
+<https://schema.org/isBasedOn> rdf:type owl:ObjectProperty ;
+                              rdfs:comment "Links a work to a source of inspiration that is not a direct adaptation."@en .
+
+
+###  https://schema.org/location
+<https://schema.org/location> rdf:type owl:ObjectProperty ;
+                             rdfs:comment "Links an event to the place where it happened."@en .
+
+
+###  https://schema.org/parentOrganization
+<https://schema.org/parentOrganization> rdf:type owl:ObjectProperty ;
+                                       rdfs:comment "Links an imprint to its parent company."@en .
+
+
+###  https://schema.org/performer
+<https://schema.org/performer> rdf:type owl:ObjectProperty ;
+                              rdfs:comment "Links an event to the band that performed."@en .
+
+
+###  https://schema.org/producer
+<https://schema.org/producer> rdf:type owl:ObjectProperty ;
+                             rdfs:comment "Links a work to the person or organisation that produced it."@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://schema.org/birthDate
+<https://schema.org/birthDate> rdf:type owl:DatatypeProperty ;
+                              rdfs:comment "Year or date of birth of a person."@en .
+
+
+###  https://schema.org/datePublished
+<https://schema.org/datePublished> rdf:type owl:DatatypeProperty ;
+                                  rdfs:comment "Year of publication or release of a work."@en .
+
+
+###  https://schema.org/deathDate
+<https://schema.org/deathDate> rdf:type owl:DatatypeProperty ;
+                              rdfs:comment "Year of death of a person."@en .
+
+
+###  https://schema.org/name
+<https://schema.org/name> rdf:type owl:DatatypeProperty ;
+                         rdfs:comment "Name or title of an entity"@en .
+
+
+###  https://schema.org/startDate
+<https://schema.org/startDate> rdf:type owl:DatatypeProperty ;
+                              rdfs:comment "Year in which an event took place."@en .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+skos:prefLabel rdf:type owl:DatatypeProperty ;
+               rdfs:comment "Preferred label of a concept."@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://dbpedia.org/ontology/FictionalCharacter
+dbo:FictionalCharacter rdf:type owl:Class ;
+                       rdfs:comment "Characters of the novel, kept distinct from real persons."@en .
+
+
+###  https://schema.org/CreativeWork
+<https://schema.org/CreativeWork> rdf:type owl:Class ;
+                                 rdfs:comment "Works inside the graph: The novel, its adaptations and derivative works, its narrative sources and the cited texts."@en .
+
+
+###  https://schema.org/Event
+<https://schema.org/Event> rdf:type owl:Class ;
+                          rdfs:comment "Dated events in the history of the novel: Publications, releases, productions and acquisitions of rights."@en .
+
+
+###  https://schema.org/Organization
+<https://schema.org/Organization> rdf:type owl:Class ;
+                                 rdfs:comment "Publishers, imprints, production companies and groups involved in the novel's publication and adaptations."@en .
+
+
+###  https://schema.org/Person
+<https://schema.org/Person> rdf:type owl:Class ;
+                           rdfs:comment "Real people: The author, adapters, illustrators, composers, producers and all the figures connected to the novel."@en .
+
+
+###  https://schema.org/Place
+<https://schema.org/Place> rdf:type owl:Class ;
+                          rdfs:comment "Places where the story is set and where related events took place."@en .
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+skos:Concept rdf:type owl:Class ;
+             rdfs:comment "Key themes of the novel (Personal Legend, Soul of the World)."@en .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+dcterms:creator rdfs:comment "Links to the author of a work."@en .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
