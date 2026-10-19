@@ -95,7 +95,7 @@
                 <p> <title ref="#thealchemistSymphony">The Alchemist's Symphony</title> by the young <persName ref="#wtieb">Walter Taieb</persName> was released in <date when="1997">1997</date> with the support of <persName ref="#coelho">Paulo Coelho</persName>, who wrote an original text for the CD booklet. 
                     The work has eight movements and five interludes.</p>
                 
-                <p> In <date when="2002">2002</date>, a theatrical adaptation of <title ref="#theAlchemist">The Alchemist</title> was produced and performed in <placeName ref="#london">London</placeName>. Since then there have been several productions by the <orgName ref="#cornishCollective">Cornish Collective</orgName>. A later <placeName ref="#london">London</placeName> performance 
+                <p> In <date when="2002">2002</date>, a theatrical adaptation of <title ref="#theAlchemist">The Alchemist</title> was produced and performed in <placeName ref="#london">London</placeName>. Since then there have been several <rs type="work" ref="#cornishStage">productions</rs> by the <orgName ref="#cornishCollective">Cornish Collective</orgName>. A later <placeName ref="#london">London</placeName> performance 
                     was visited by the producer <persName ref="#ashvingidwani">Ashvin Gidwani</persName> who, finding it "verbose but colourful", decided to commission <rs type="work" ref="#indianStage">a new 90-minute version of the book</rs> from <persName ref="#deepaGahlot">Deepa Gahlot</persName> for the Indian stage. This was 
                     eventually launched in <date when="2009">2009</date>.</p>
                 
@@ -365,7 +365,8 @@
                 </bibl>
 
                 <bibl xml:id="aarnethompsonIndex">
-                    <title>Aarne-Thompson-Uther Index</title>
+                    <title>ATU 1645, The Treasure at Home</title>
+                    <note>Tale type no.1645 of the Aarne-Thompson-Uther Index of folktales.</note>
                     <idno type="Wikidata">http://www.wikidata.org/entity/Q136488217</idno>
                 </bibl>
 
@@ -379,7 +380,7 @@
                     <author ref="#coelho">Paulo Coelho</author>
                 </bibl>
 
-                                <bibl xml:id="comicJubran">
+                <bibl xml:id="comicJubran">
                     <title>The Alchemist (comic book adaptation)</title>
                     <author ref="#ajubran">Alexandre Jubran</author>
                     <date when="1994">1994</date>
@@ -401,6 +402,7 @@
                     commissioned by Ashvin Gidwani from Deepa Gahlot.</note>
                 </bibl>
 
+
                 <bibl xml:id="mangaAdaptation">
                     <title>The Alchemist (manga adaptation)</title>
                     <date when="2024">2024</date>
@@ -413,6 +415,10 @@
                     released at the time of encoding.</note>
                 </bibl>
 
+                <bibl xml:id="cornishStage">
+                    <title>The Alchemist (Cornish Collective Stage Production)</title>
+                    <note>Several stage productions after the 2002 London adaptation.</note>
+                </bibl>
             </listBibl>
 
             <list type="concept">
@@ -495,8 +501,9 @@
                 <relation name="subject" active="#theAlchemist" passive="#personalLegend #soulOfTheWorld"/>
 
                 <relation name="setIn" active="#theAlchemist"
-                          passive="#northAfrica #egypt #tangiers #egyptianPyramids #salem"/>
+                          passive="#northAfrica #egypt #tangiers #egyptianPyramids"/>
 
+                <relation name="homeLocation" active="#melchizedek" passive="#salem"/>
                 <!-- Characters -->
 
                 <relation name="characterIn"
@@ -553,15 +560,27 @@
 
                 <relation name="adapter" active="#sidharthaSiva" passive="#kochavvaPaulocoelho"/>
 
-                <relation name="producerOrg" active="#cornishCollective #mistakenIdentityband" passive="#theAlchemist"/>
+                <relation name="adaptationOf" active="#cornishStage" passive="#theAlchemist"/>
+
+                <relation name="producerOrg" active="#cornishCollective" passive="#cornishStage"/>
+
+                <relation name="performer" active="#mistakenIdentityband" passive="#ev2006track"/>
 
                 <!-- Organisations -->
 
                 <relation name="imprintOf" active="#harperOne" passive="#harperCollins"/>
 
+                <relation name="publisher" active="#harperOne" passive="#illustratedEdition"/>
+
                 <relation name="imprintOf" active="#kadokawamasterpieceComics" passive="#kadokawaCorp"/>
 
+                <relation name="publisher" active="#kadokawamasterpieceComics" passive="#mangaAdaptation"/>
+
+                <relation name="founder"   active="#harveyWeinstein" passive="#weinsteincomp"/>
+
                 <relation name="filmRightsHolder" active="#weinsteincomp #palmstarMedia #legendaryEnt" passive="#theAlchemist"/>
+
+                <relation name="about"     active="#nytArticle #coelhoStatement" passive="#theAlchemist"/>
 
                 <!-- Cited sources -->
 
