@@ -1,0 +1,154 @@
+/* ============ Palette — Rubedo ============ */
+:root {
+  --paper:  #fbf8f2;
+  --ink:    #22201c;
+  --soft:   #4a453d;
+  --muted:  #9a9284;
+  --red:    #8e2f1e;
+  --cream:  #fbf1e6;
+  --line:   #e4ddd0;
+  --serif:  'Fraunces', Georgia, serif;
+  --sans:   'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* ============ Base ============ */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--sans);
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ============ Title = red band (if an <h1> is added) ============ */
+body > h1 {
+  margin: 0;
+  background: var(--red);
+  color: var(--cream);
+  text-align: center;
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 1;
+  padding: 72px 32px;
+}
+
+/* ============ Navbar ============ */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--paper);
+  border-bottom: 0.5px solid var(--line);
+}
+nav ul {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 16px 32px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+}
+.breadcrumb a {
+  font-size: 13px;
+  color: var(--soft);
+  text-decoration: none;
+  padding-bottom: 3px;
+  border-bottom: 1px solid transparent;
+  transition: color .15s, border-color .15s;
+}
+.breadcrumb a:hover { color: var(--red); }
+.breadcrumb a[href="Entities.html"] {
+  color: var(--red);
+  border-bottom-color: var(--red);
+}
+
+/* ============ Table rendered as an analytical index ============ */
+#entities {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 56px 32px 64px;
+}
+
+.authorities {
+  display: block;
+  columns: 3 240px;
+  column-gap: 44px;
+}
+.authorities thead { display: none; }
+
+.authorities tbody {
+  display: block;
+  break-inside: avoid;
+  margin-bottom: 36px;
+}
+.authorities tr {
+  display: flex;
+  align-items: baseline;
+}
+
+/* Group heading (Persons, Places…) */
+.authorities tbody th {
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--red);
+  padding: 0 0 8px;
+  margin-bottom: 10px;
+  border-bottom: 0.5px solid var(--red);
+}
+
+/* Name + dotted leader */
+.authorities td:first-child {
+  flex: 1;
+  display: flex;
+  align-items: baseline;
+  font-family: var(--serif);
+  font-size: 16.5px;
+  line-height: 1.7;
+  color: var(--ink);
+}
+.authorities td:first-child::after {
+  content: "";
+  flex: 1;
+  margin: 0 6px;
+  border-bottom: 0.5px dotted var(--muted);
+  transform: translateY(-4px);
+}
+
+/* Wikidata ID */
+.authorities td:last-child a {
+  font-family: var(--sans);
+  font-size: 11.5px;
+  color: var(--red);
+  text-decoration: none;
+  font-variant-numeric: tabular-nums;
+}
+.authorities td:last-child a:hover { text-decoration: underline; }
+
+/* ============ Footer ============ */
+footer {
+  background: var(--red);
+  color: var(--cream);
+  text-align: center;
+  padding: 32px;
+  font-size: 13px;
+  line-height: 1.8;
+}
+footer p { margin: 0; opacity: .9; }
+
+/* ============ Responsive ============ */
+@media (max-width: 760px) {
+  body > h1 { font-size: 46px; padding: 52px 20px; }
+  nav ul { gap: 20px; padding: 14px 20px; }
+  #entities { padding: 40px 20px 48px; }
+}

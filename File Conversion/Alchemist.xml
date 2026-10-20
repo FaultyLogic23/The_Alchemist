@@ -254,6 +254,7 @@
 
                 <org xml:id="harperOne">
                     <orgName>HarperOne</orgName>
+                    <idno type="Wikidata">http://www.wikidata.org/entity/Q28228463</idno>
                 </org>
 
                 <org xml:id="harperCollins">
@@ -330,7 +331,7 @@
 
                 <place xml:id="singapore">
                     <placeName>Singapore</placeName>
-                    <idno type="Wikidata">http://www.wikidata.org/entity/Q344</idno>
+                    <idno type="Wikidata">http://www.wikidata.org/entity/Q334</idno>
                 </place>
             </listPlace>
 
