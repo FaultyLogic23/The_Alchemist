@@ -1,215 +1,161 @@
-/* ============ Palette — Rubedo ============ */
-:root {
-  --paper:  #fbf8f2;
-  --ink:    #22201c;
-  --soft:   #4a453d;
-  --muted:  #9a9284;
-  --red:    #8e2f1e;
-  --cream:  #fbf1e6;
-  --line:   #e4ddd0;
-  --tint:   #efe9de;
-  --serif:  'Fraunces', Georgia, serif;
-  --sans:   'Inter', system-ui, -apple-system, sans-serif;
-}
+/*
+Style for The Alchemist home page
+*/
+ 
+@import url("base.css");
+ 
 
-/* ============ Base ============ */
-*, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-
-body {
-  margin: 0;
-  font-family: var(--sans);
-  background: var(--paper);
-  color: var(--ink);
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-}
-
-/* ============ Title = red band ============ */
-body > h1 {
-  margin: 0;
-  background: var(--red);
-  color: var(--cream);
-  text-align: center;
-  font-family: var(--serif);
-  font-weight: 400;
-  font-size: 72px;
-  line-height: 1;
-  padding: 80px 32px;
-}
-
-/* ============ Navbar (full width, sticky) ============ */
-nav {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  background: var(--paper);
-  border-bottom: 0.5px solid var(--line);
-}
-nav ul {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 16px 32px;
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 36px;
-}
-.breadcrumb a {
-  font-size: 13px;
-  color: var(--soft);
-  text-decoration: none;
-  padding-bottom: 3px;
-  border-bottom: 1px solid transparent;
-  transition: color .15s, border-color .15s;
-}
-.breadcrumb a:hover { color: var(--red); }
+/* Current page in the navbar */
+ 
 .breadcrumb a[href="The_Alchemist.html"] {
   color: var(--red);
-  border-bottom-color: var(--red);
+  border-color: var(--red);
 }
-
-/* ============ Content column ============ */
+ 
+/* The four stages under the title */
+ 
+body > h1::after {
+  content: "♄ ☿ ☽ ☉";
+  display: block;
+  margin-top: 24px;
+  padding-left: 1.2em;         /* balances the letter-spacing */
+  font-size: 18px;
+  letter-spacing: 1.2em;
+}
+ 
+/* Content column */
+ 
 body > div {
-  max-width: 960px;
+  max-width: var(--col);
   margin: 0 auto;
-  padding: 0 32px;
+  padding: 0 var(--gutter);
 }
 body > div p {
-  font-family: var(--serif);
-  font-size: 18px;
-  line-height: 1.65;
-  color: var(--soft);
+  max-width: 720px;
   margin: 0 0 14px;
+  color: var(--soft);
+  font: var(--fs-text)/1.7 var(--serif);
+}
+body > div h2 {
+  margin: 0 0 12px;
+  font: 500 var(--fs-h2)/1.1 var(--serif);
 }
 body > div a {
   color: var(--red);
-  text-decoration: none;
-  border-bottom: 0.5px solid var(--red);
+  text-underline-offset: 3px;
+  overflow-wrap: anywhere;
 }
-body > div h2 {
-  font-family: var(--serif);
-  font-weight: 500;
-  font-size: 30px;
-  line-height: 1.15;
+ 
+/* Introduction */
+ 
+#introduction { padding-top: var(--space); }
+ 
+#introduction p:first-child {
   color: var(--ink);
-  margin: 0 0 10px;
+  font-size: calc(var(--fs-text) + 3px);
 }
-body > div p.kicker {
-  font-family: var(--sans);
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: .14em;
-  text-transform: uppercase;
+#introduction p:first-child::first-letter {
+  float: left;
+  padding: 6px 10px 0 0;
   color: var(--red);
-  margin: 0 0 8px;
+  font-size: 3.8em;
+  font-weight: 500;
+  line-height: .8;
 }
-
-/* ============ Introduction ============ */
-#introduction { padding-top: 56px; }
-#introduction p { max-width: 720px; }
-
-/* ============ Research question ============ */
-#research-question { margin: 24px auto 56px; }
-#research-question p {
-  max-width: 680px;
-  border-left: 2px solid var(--red);
-  padding-left: 22px;
+ 
+/* Research question */
+ 
+#research-question { margin-top: 40px; }
+ 
+#research-question > p {
   margin: 0;
+  padding: 0 0 12px 24px;
+  border-left: 2px solid var(--red);
 }
-#research-question p:not(.kicker) {
-  font-style: italic;
-  font-size: 23px;
-  line-height: 1.4;
+#research-question > p:last-child {
+  padding-bottom: 0;
   color: var(--ink);
-  padding-bottom: 4px;
+  font-size: 24px;
+  font-style: italic;
+  line-height: 1.4;
 }
-
-/* ============ Steps: text left, image right ============ */
+ 
+/* Steps */
+ 
 #theoretical-model,
 #conceptual-model,
 #RDF-Vis,
 #ontology {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto 1fr;
-  column-gap: 48px;
-  align-items: start;
-  padding-top: 44px;
-  padding-bottom: 44px;
-  border-top: 0.5px solid var(--line);
-  scroll-margin-top: 70px;
+  position: relative;
+  margin-top: var(--space);
+  padding-top: var(--space);
+  border-top: var(--border);
+  scroll-margin-top: 60px;
 }
-#theoretical-model > p, #theoretical-model > h2,
-#conceptual-model > p,  #conceptual-model > h2,
-#RDF-Vis > p,           #RDF-Vis > h2,
-#ontology > p,          #ontology > h2 {
-  grid-column: 1;
+ 
+/* A symbol sitting on each divider line */
+#theoretical-model::before,
+#conceptual-model::before,
+#RDF-Vis::before,
+#ontology::before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0 16px;
+  background: var(--paper);
+  color: var(--red);
+  font-size: 22px;
 }
-#theoretical-model > div,
-#conceptual-model > div,
-#RDF-Vis > div,
-#ontology > div {
-  grid-column: 2;
-  grid-row: 1 / span 3;
-}
-
-/* Alternate: image left, text right */
-#conceptual-model > p, #conceptual-model > h2,
-#ontology > p,         #ontology > h2 { grid-column: 2; }
-#conceptual-model > div,
-#ontology > div { grid-column: 1; }
-
-/* ============ Image frames ============ */
+#theoretical-model::before { content: "♄"; }
+#conceptual-model::before  { content: "☿"; }
+#RDF-Vis::before           { content: "☽"; }
+#ontology::before          { content: "☉"; }
+ 
+/* Diagrams: wider than the text, centred on the page */
+ 
 #theomod-img,
 .step-fi {
-  background: var(--tint);
-  border-radius: 4px;
-  min-height: 240px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 16px;
+  width: min(var(--wide), 100vw - 2 * var(--gutter));
+  margin: 32px 0 0 50%;
+  transform: translateX(-50%);
 }
 #theomod-img img,
 .step-fi img {
+  display: block;
   max-width: 100%;
   height: auto;
-  display: block;
+  margin: 0 auto;
+  border: var(--border);
+  border-radius: var(--radius);
 }
 img[src=""] { display: none; }
-
-/* ============ Project files ============ */
+ 
+/* Project files */
+ 
 #project-files {
-  padding-top: 44px;
-  padding-bottom: 56px;
-  border-top: 0.5px solid var(--line);
+  margin-top: var(--space);
+  padding-top: var(--space);
+  padding-bottom: var(--space);
+  border-top: var(--border);
 }
-
-/* ============ Footer (full width, rubedo) ============ */
-footer {
-  background: var(--red);
+#project-files a {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 20px;
+  border-radius: 999px;
+  background: var(--ink);
   color: var(--cream);
-  text-align: center;
-  padding: 32px;
-  font-size: 13px;
-  line-height: 1.8;
+  font: 500 13px var(--sans);
+  text-decoration: none;
+  transition: background .2s;
 }
-footer p { margin: 0; opacity: .9; }
+#project-files a:empty::before { content: "Open the GitHub repository →"; }
+#project-files a:hover { background: var(--red); }
 
-/* ============ Responsive ============ */
-@media (max-width: 760px) {
-  body > h1 { font-size: 50px; padding: 56px 20px; }
-  nav ul { gap: 20px; padding: 14px 20px; }
-  body > div { padding-left: 20px; padding-right: 20px; }
 
-  #theoretical-model, #conceptual-model, #RDF-Vis, #ontology {
-    grid-template-columns: 1fr;
-    grid-template-rows: none;
-  }
-  #theoretical-model > *, #conceptual-model > *,
-  #RDF-Vis > *, #ontology > * {
-    grid-column: 1;
-    grid-row: auto;
-  }
-}
+/* Drag Box-Bar Css part */
+
+.graph-box { width: 100%; height: 80vh; overflow: auto; cursor: grab; }
+.graph-box.dragging { cursor: grabbing; }
+.graph-box object, .graph-box img { pointer-events: none; }

@@ -1,0 +1,155 @@
+ 
+/* Global variables shared by every page */
+ 
+:root {
+
+  /* colours */
+
+  --paper:  #fbf8f2;
+  --ink:    #22201c;
+  --soft:   #4a453d;
+  --muted:  #9a9284;
+  --red:    #8e2f1e;
+  --cream:  #fbf1e6;
+  --line:   #e4ddd0;
+  --tint:   #f3eee4;
+ 
+  /* one colour per entity type (Entities page and annotated article) */
+  --c-person:  #8e2f1e;
+  --c-place:   #2f6b5a;
+  --c-org:     #2f4f7f;
+  --c-work:    #96650f;
+  --c-concept: #6a3d7c;
+ 
+  /* fonts and sizes */
+ 
+  --serif:    'Fraunces', Georgia, serif;
+  --sans:     'Inter', system-ui, sans-serif;
+  --fs-label: 11px;
+  --fs-text:  18px;
+  --fs-h2:    34px;
+  --fs-title: clamp(48px, 8vw, 88px);
+ 
+  /* layout */
+
+  --col:    960px;    /* text column */
+  --wide:   1200px;   /* diagrams */
+  --gutter: 32px;     /* side margin */
+  --space:  64px;     /* vertical gap between sections */
+  --radius: 8px;
+  --border: 0.5px solid var(--line);
+}
+ 
+ 
+/* Base */
+ 
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+ 
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  line-height: 1.6;
+}
+ 
+/* Title band */
+ 
+body > h1,
+main > h1 {
+  margin: 0;
+  padding: calc(var(--space) * 1.4) var(--gutter);
+  background: var(--red);
+  color: var(--cream);
+  text-align: center;
+  font: 400 var(--fs-title)/1 var(--serif);
+}
+ 
+/* Navbar */
+ 
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--paper);
+  border-bottom: var(--border);
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: calc(var(--gutter) * 1.25);
+  margin: 0;
+  padding: 16px var(--gutter);
+  list-style: none;
+}
+.breadcrumb a {
+  padding-bottom: 4px;
+  border-bottom: 1px solid transparent;
+  color: var(--soft);
+  font-size: 12px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color .2s, border-color .2s;
+}
+.breadcrumb a:hover {
+  color: var(--red);
+  border-color: var(--red);
+}
+ 
+/* Small red label above the headings */
+ 
+.kicker {
+  margin: 0 0 10px;
+  color: var(--red);
+  font: 500 var(--fs-label) var(--sans);
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+ 
+/* Footer */
+ 
+footer {
+  padding: 48px var(--gutter);
+  background: var(--red);
+  color: var(--cream);
+  text-align: center;
+  font-size: 13px;
+}
+footer p { margin: 0; }
+ 
+/* The four alchemist stages -> lead, mercury, silver, gold */
+
+footer::before {
+  content: "♄ ☿ ☽ ☉";
+  display: block;
+  margin-bottom: 16px;
+  padding-left: .6em;          /* balances the letter-spacing */
+  font-size: 20px;
+  letter-spacing: .6em;
+}
+ 
+/* logos adaptations */
+
+footer .logos {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 24px;
+}
+footer .logos img {
+  height: 28px;
+  filter: brightness(0) invert(1);   /* turns any logo white */
+}
+
+/* Small screens media queries */
+ 
+@media (max-width: 760px) {
+  :root {
+    --fs-text: 17px;
+    --fs-h2:   28px;
+    --gutter:  20px;
+    --space:   44px;
+  }
+}

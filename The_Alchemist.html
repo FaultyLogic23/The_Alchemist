@@ -23,8 +23,8 @@
     <nav>
         <ul>
             <li class="breadcrumb"><a href="The_Alchemist.html">The Alchemist</a></li>
-            <li class="breadcrumb"><a href="Entities.html">Entities</a></li>
-            <li class="breadcrumb"><a href="alchemist.html">Edition</a></li>
+            <li class="breadcrumb"><a href="/Pages/Entities.html">Entities</a></li>
+            <li class="breadcrumb"><a href="/Pages/Article.html">Article</a></li>
         </ul>
     </nav>
 
@@ -60,10 +60,10 @@
             property and the whole graph is expressed in terms that a machine can read
             and query.
         </p>
-            <div id="theomod-img">
-                <img src="" alt="Theoretical model visualization"/>
-            </div>
-    </div>
+        <div class="graph-box">
+            <object data="/Theoretical Model/Theoretical-model.svg" type="image/svg+xml"></object>
+        </div>
+   </div>
 
     <div class="reverse" id="conceptual-model">
         <p class="kicker">Step II</p>
@@ -72,31 +72,20 @@
             The conceptual model groups the article's entities into five categories
             and shows how each of them relates to the novel.
         </p>
-        <div class="step-fi" id="conceptmod-img">
-            <img src="" alt="Conceptual model visualization"/>
+        <div class="graph-box">
+            <object data="/Conceptual Model/Conceptual-model.svg" type="image/svg+xml"></object>
         </div>
-    </div>
+   </div>
 
     <div id="RDF-Vis">
         <p class="kicker">Step III</p>
         <h2>RDF Visualization</h2>
         <p></p>
 
-        <div class="step-fi" id="rdf-fi">
-            <img src=""  alt="Rdf image visualization" />
+        <div class="graph-box">
+            <object data="/Conceptual Model/AlchemistRDF.svg" type="image/svg+xml"></object>
         </div>
-    </div>
-
-
-    <div id="ontology">
-        <p class="kicker">Step IV</p>
-        <h2>Ontology</h2>
-        <p class = "text">The resulting ontology, visualized as a graph with OntoGraf</p>
-        
-        <div class="step-fi" id="ont-fi">
-            <img src=""  alt="Ontology graph" />
-        </div>
-    </div>
+   </div>
 
     <div id="project-files">
         <p> In this section you can find my GitHub repository made for this project with every file 
@@ -109,6 +98,7 @@
         <p>Project made for the Information Science and Cultural Heritage Course by <a href="https://github.com/FaultyLogic23/The_Alchemist">Samuele Bertelli</a></p>
         <p>UniBo - Digital Humanities and Digital Knowledge</p>
     </footer>  
+    <script src="/Site JS/drag.js"></script>
 </body>
 
 </html>

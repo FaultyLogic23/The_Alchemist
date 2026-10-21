@@ -156,6 +156,7 @@ alch:harperCollins a schema:Organization ;
     schema:name "HarperCollins"@en .
 
 alch:harperOne a schema:Organization ;
+    rdfs:seeAlso <http://www.wikidata.org/entity/Q28228463> ;
     schema:name "HarperOne"@en ;
     schema:parentOrganization alch:harperCollins .
 
@@ -247,7 +248,7 @@ alch:sidharthaSiva a schema:Person ;
     schema:name "Sidhartha Siva"@en .
 
 alch:singapore a schema:Place ;
-    rdfs:seeAlso <http://www.wikidata.org/entity/Q344> ;
+    rdfs:seeAlso <http://www.wikidata.org/entity/Q334> ;
     schema:name "Singapore"@en .
 
 alch:soulOfTheWorld a skos:Concept ;
