@@ -30,24 +30,26 @@
 
     <div id="introduction">
         <p>
-            The Alchemist is a project based on the book wrote by Paulo Coelho.
+            The Alchemist is a novel wrote by Paulo Coelho, first published in 1988 in Portoguese
+            and since then translated into more than 65 languages.
 
-            It is made a-top an existing Wikipedia article which can be found
-            by following this link <a
-                href="https://en.wikipedia.org/wiki/The_Alchemist_(novel)">https://en.wikipedia.org/wiki/The_Alchemist_(novel)</a>
-            and the main goal is to create a machine-readable RDF dataset based on the encoding
-            i made.
+            The projects is made upon an existing Wikipedia article which can be read
+            by following this link <a href="https://en.wikipedia.org/wiki/The_Alchemist_(novel)">https://en.wikipedia.org/wiki/The_Alchemist_(novel)</a>
+            which was encoded using the TEI Standard, therefore, every person, character, place, organisation, work, event and
+            concept it mentions is marked in text and resolved against an authority list in the back matter,
+            where entities are linked to Wikidata whenever an identifier exists.
         </p>
         <p>
-            Every person, place, organization, work and concept mentioned in the article is
-            marked in TEI and resolved against a back-matter authority list, where each entity
-            carries a Wikidata identifier.
+            From this encoding i devised two Python scripts to produce an annotaded HTML version
+            of the article and a machine-readable RDF dataset. Everything started with one simple
+            question:
         </p>
     </div>
 
     <div id="research-question">
         <p class="kicker">Research Question</p>
-        <p></p>
+        <p>"Which kind of works and traditions inspired The Alchemist and
+            how much it inspired other works? Across which media, countries and people?"</p>
     </div>
 
 
@@ -55,10 +57,10 @@
         <p class="kicker">Step I</p>    
         <h2>Theoretical Model</h2>
         <p>
-            The theoretical model translates the same picture into the vocabulary
-            of TEI and RDF: each category becomes a class, each relation a typed
-            property and the whole graph is expressed in terms that a machine can read
-            and query.
+            After devising the research question, i created the theoretical model which
+            describes the domain in natural language, before any formal vocabulary is chosen.
+            The novel is sitting at the centre and every node is an entity taken from the
+            article.
         </p>
         <div class="graph-box">
             <object data="/Theoretical Model/Theoretical-model.svg" type="image/svg+xml"></object>
@@ -69,8 +71,21 @@
         <p class="kicker">Step II</p>
         <h2>Conceptual Model</h2>
         <p>
-            The conceptual model groups the article's entities into five categories
-            and shows how each of them relates to the novel.
+            Starting from the theoretical model, i built the conceptual one, which abstracts it by
+            replacing each entity and names with the class they belongs to, while each relation becomes
+            a property taken from an existing vocabulary. In this case the model uses seven classes (creative works, 
+            persons, fictional characters, organisations, places, events and concepts) and reuses terms from
+            Schema.org, Dublin Core, SKOS, DBpedia, MARC Relators, and the RELATIONSHIP vocabulary.
+
+            New terms weren't coined because the existing vocabularies already covered the domain and reusing
+            them keeps the data interoperable with other Linked Open Data sources. 
+        </p>
+
+        <p>
+            The conceptual model is formalised in an ontology built with the software Protégé and
+            it works as an application profile since it declares and documents the reused classes
+            and properties without asserting domains or ranges.
+
         </p>
         <div class="graph-box">
             <object data="/Conceptual Model/Conceptual-model.svg" type="image/svg+xml"></object>
@@ -80,7 +95,15 @@
     <div id="RDF-Vis">
         <p class="kicker">Step III</p>
         <h2>RDF Visualization</h2>
-        <p></p>
+        <p>
+            The RDF dataset is generated automatically from the TEI file by a Python script with the
+            help of lxml and rdflib libraries. It reads the entity lists of the back matter and translates
+            each relation into a triple.
+
+            Every entity has its own IRI in the project namespace and, where available, a link to Wikidata
+            through rdfs:seeAlso.
+
+        </p>
 
         <div class="graph-box">
             <object data="/Conceptual Model/AlchemistRDF.svg" type="image/svg+xml"></object>
@@ -90,8 +113,8 @@
     <div id="project-files">
         <p> In this section you can find my GitHub repository made for this project with every file 
             and image showed here. 
-            <a href=""></a>
         </p>
+        <a href=""></a>
     </div>
 
     <footer>
