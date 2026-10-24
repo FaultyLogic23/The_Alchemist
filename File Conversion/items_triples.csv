@@ -1,0 +1,123 @@
+subject,predicate,object,object_type,datatype,language
+theAlchemist,rdf:type,schema:CreativeWork,uri,,
+theAlchemist,schema:name,The Alchemist,literal,,en
+theAlchemist,dcterms:type,novel,literal,,en
+theAlchemist,schema:datePublished,1988,literal,xsd:gYear,
+theAlchemist,dcterms:creator,coelho,local,,
+theAlchemist,schema:isBasedOn,aarnethompsonIndex,local,,
+theAlchemist,rdfs:seeAlso,http://www.wikidata.org/entity/Q179021,uri,,
+wikipediaArticle,rdf:type,schema:CreativeWork,uri,,
+wikipediaArticle,schema:name,The Alchemist (novel) – Wikipedia article,literal,,en
+wikipediaArticle,dcterms:type,encyclopedia article,literal,,en
+wikipediaArticle,dcterms:publisher,wikipedia,local,,
+wikipediaArticle,schema:about,theAlchemist,local,,
+comicJubran,rdf:type,schema:CreativeWork,uri,,
+comicJubran,schema:name,The Alchemist (comic book adaptation),literal,,en
+comicJubran,dcterms:type,comic,literal,,en
+comicJubran,schema:datePublished,1994,literal,xsd:gYear,
+comicJubran,dcterms:creator,ajubran,local,,
+comicJubran,dcterms:isVersionOf,theAlchemist,local,,
+illustratedEdition,rdf:type,schema:CreativeWork,uri,,
+illustratedEdition,schema:name,The Alchemist (illustrated edition),literal,,en
+illustratedEdition,dcterms:type,illustrated edition,literal,,en
+illustratedEdition,schema:illustrator,moebius,local,,
+illustratedEdition,dcterms:publisher,harperOne,local,,
+illustratedEdition,dcterms:isVersionOf,theAlchemist,local,,
+theAlchemistgraphic,rdf:type,schema:CreativeWork,uri,,
+theAlchemistgraphic,schema:name,The Alchemist: A Graphic Novel,literal,,en
+theAlchemistgraphic,dcterms:type,graphic novel,literal,,en
+theAlchemistgraphic,schema:datePublished,2010,literal,xsd:gYear,
+theAlchemistgraphic,marcrel:adp,derekr,local,,
+theAlchemistgraphic,schema:illustrator,danielSampere,local,,
+theAlchemistgraphic,dcterms:isVersionOf,theAlchemist,local,,
+cornishStage,rdf:type,schema:CreativeWork,uri,,
+cornishStage,schema:name,The Alchemist (Cornish Collective Stage Production),literal,,en
+cornishStage,dcterms:type,stage production,literal,,en
+cornishStage,schema:producer,cornishCollective,local,,
+cornishStage,dcterms:isVersionOf,theAlchemist,local,,
+indianStage,rdf:type,schema:CreativeWork,uri,,
+indianStage,schema:name,The Alchemist (Indian stage version),literal,,en
+indianStage,dcterms:type,stage production,literal,,en
+indianStage,schema:datePublished,2009,literal,xsd:gYear,
+indianStage,marcrel:adp,deepaGahlot,local,,
+indianStage,schema:producer,ashvingidwani,local,,
+indianStage,dcterms:isVersionOf,theAlchemist,local,,
+mangaAdaptation,rdf:type,schema:CreativeWork,uri,,
+mangaAdaptation,schema:name,The Alchemist (manga adaptation),literal,,en
+mangaAdaptation,dcterms:type,manga,literal,,en
+mangaAdaptation,schema:datePublished,2024,literal,xsd:gYear,
+mangaAdaptation,schema:illustrator,tamakiNakamura,local,,
+mangaAdaptation,dcterms:publisher,kadokawamasterpieceComics,local,,
+mangaAdaptation,dcterms:isVersionOf,theAlchemist,local,,
+filmAdaptation,rdf:type,schema:CreativeWork,uri,,
+filmAdaptation,schema:name,The Alchemist (film adaptation),literal,,en
+filmAdaptation,dcterms:type,film,literal,,en
+filmAdaptation,dcterms:creator,jackThorne,local,,
+filmAdaptation,schema:producer,tristarPictures,local,,
+filmAdaptation,dcterms:isVersionOf,theAlchemist,local,,
+thealchemistSymphony,rdf:type,schema:CreativeWork,uri,,
+thealchemistSymphony,schema:name,The Alchemist's Symphony,literal,,en
+thealchemistSymphony,dcterms:type,musical work,literal,,en
+thealchemistSymphony,schema:datePublished,1997,literal,xsd:gYear,
+thealchemistSymphony,dcterms:creator,wtieb,local,,
+thealchemistSymphony,schema:isBasedOn,theAlchemist,local,,
+kochavvaPaulocoelho,rdf:type,schema:CreativeWork,uri,,
+kochavvaPaulocoelho,schema:name,Kochavva Paulo Ayyappa Coelho,literal,,en
+kochavvaPaulocoelho,dcterms:type,film,literal,,en
+kochavvaPaulocoelho,marcrel:adp,sidharthaSiva,local,,
+kochavvaPaulocoelho,schema:isBasedOn,theAlchemist,local,,
+kochavvaPaulocoelho,rdfs:seeAlso,http://www.wikidata.org/entity/Q24807275,uri,,
+aarnethompsonIndex,rdf:type,schema:CreativeWork,uri,,
+aarnethompsonIndex,schema:name,"ATU 1645, The Treasure at Home",literal,,en
+aarnethompsonIndex,dcterms:type,tale type,literal,,en
+aarnethompsonIndex,rdfs:seeAlso,http://www.wikidata.org/entity/Q136488217,uri,,
+onethousandAndonenights,rdf:type,schema:CreativeWork,uri,,
+onethousandAndonenights,schema:name,One Thousand and One Nights,literal,,en
+onethousandAndonenights,dcterms:type,story collection,literal,,en
+onethousandAndonenights,dcterms:isVersionOf,aarnethompsonIndex,local,,
+onethousandAndonenights,rdfs:seeAlso,http://www.wikidata.org/entity/Q8258,uri,,
+coelho,rdf:type,schema:Person,uri,,
+coelho,schema:name,Paulo Coelho,literal,,en
+coelho,rdfs:seeAlso,http://www.wikidata.org/entity/Q12881,uri,,
+ajubran,rdf:type,schema:Person,uri,,
+ajubran,schema:name,Alexandre Jubran,literal,,en
+ajubran,rdfs:seeAlso,http://www.wikidata.org/entity/Q48871908,uri,,
+moebius,rdf:type,schema:Person,uri,,
+moebius,schema:name,Mœbius,literal,,en
+moebius,rdfs:seeAlso,http://www.wikidata.org/entity/Q309240,uri,,
+derekr,rdf:type,schema:Person,uri,,
+derekr,schema:name,Derek Ruiz,literal,,en
+danielSampere,rdf:type,schema:Person,uri,,
+danielSampere,schema:name,Daniel Sampere,literal,,en
+danielSampere,rdfs:seeAlso,http://www.wikidata.org/entity/Q112521933,uri,,
+wtieb,rdf:type,schema:Person,uri,,
+wtieb,schema:name,Walter Taieb,literal,,en
+wtieb,rdfs:seeAlso,http://www.wikidata.org/entity/Q7966251,uri,,
+ashvingidwani,rdf:type,schema:Person,uri,,
+ashvingidwani,schema:name,Ashvin Gidwani,literal,,en
+ashvingidwani,rdfs:seeAlso,http://www.wikidata.org/entity/Q125538019,uri,,
+deepaGahlot,rdf:type,schema:Person,uri,,
+deepaGahlot,schema:name,Deepa Gahlot,literal,,en
+deepaGahlot,rdfs:seeAlso,http://www.wikidata.org/entity/Q27863006,uri,,
+sidharthaSiva,rdf:type,schema:Person,uri,,
+sidharthaSiva,schema:name,Sidhartha Siva,literal,,en
+sidharthaSiva,rdfs:seeAlso,http://www.wikidata.org/entity/Q13220286,uri,,
+tamakiNakamura,rdf:type,schema:Person,uri,,
+tamakiNakamura,schema:name,Tamaki Nakamura,literal,,en
+jackThorne,rdf:type,schema:Person,uri,,
+jackThorne,schema:name,Jack Thorne,literal,,en
+jackThorne,rdfs:seeAlso,http://www.wikidata.org/entity/Q6115483,uri,,
+harperOne,rdf:type,schema:Organization,uri,,
+harperOne,schema:name,HarperOne,literal,,en
+harperOne,rdfs:seeAlso,http://www.wikidata.org/entity/Q28228463,uri,,
+cornishCollective,rdf:type,schema:Organization,uri,,
+cornishCollective,schema:name,Cornish Collective,literal,,en
+kadokawamasterpieceComics,rdf:type,schema:Organization,uri,,
+kadokawamasterpieceComics,schema:name,Kadokawa Masterpiece Comics,literal,,en
+kadokawamasterpieceComics,rdfs:seeAlso,http://www.wikidata.org/entity/Q115754348,uri,,
+tristarPictures,rdf:type,schema:Organization,uri,,
+tristarPictures,schema:name,TriStar Pictures,literal,,en
+tristarPictures,rdfs:seeAlso,http://www.wikidata.org/entity/Q651454,uri,,
+wikipedia,rdf:type,schema:Organization,uri,,
+wikipedia,schema:name,Wikipedia,literal,,en
+wikipedia,rdfs:seeAlso,http://www.wikidata.org/entity/Q52,uri,,

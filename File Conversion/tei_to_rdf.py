@@ -16,8 +16,13 @@ dcterms = Namespace("http://purl.org/dc/terms/")
 rel = Namespace("http://purl.org/vocab/relationship/")
 
 # Helper function
-
-def choose_typedate(value):
+'''
+The first function choose the right XSD for a date based on its length, some examples:
+1988 (4 characters) -> xsd:gYear
+1988-04 (7 characters) -> xsd:gYearMonth
+1988-04-12 (10 characters) -> xsd:date
+'''
+def choose_typedate(value): 
 
     if not value:
         return None
@@ -30,6 +35,11 @@ def choose_typedate(value):
         return XSD.date
     return None
 
+'''
+The function "add_authority_links" read <idno> inside a TEI entity and add a rdfs:seeAlso which
+points to the extral resource.
+'''
+
 def add_authority_links(entity_uri, element):
     for idno in element.findall("tei:idno", namespaces=TEI_ns):
         if not idno.text:
@@ -41,11 +51,22 @@ def add_authority_links(entity_uri, element):
         elif idno_type == "wikidata":
             g.add((entity_uri, RDFS.seeAlso, URIRef(Wikidata_base + value)))
 
+'''
+resolve_entity transform a TEI reference to an URI.
+'''
+
 def resolve_entity(ref):
     ref = ref.strip()
     if ref.startswith("http"):
         return URIRef(ref)
     return alch[ref.lstrip("#")]
+
+'''
+The process_entity function takes the xml:id (if there is not then it is skipped),
+creates the URI "alch:id" and assign a class to it with "rdf:type".
+Then it search for an element which contains the name (persName, placeName, etc...)
+and add it as a label with language tag, "en" in this case.
+'''
 
 def process_entity(list_xpath, item_tag, rdf_class, label_tag, label_prop=RDFS.label, extra=None):
     items = root.findall(f"{list_xpath}/tei:{item_tag}", namespaces=TEI_ns)
@@ -59,9 +80,19 @@ def process_entity(list_xpath, item_tag, rdf_class, label_tag, label_prop=RDFS.l
         label_el = item.find(f"tei:{label_tag}", namespaces=TEI_ns)
         if label_el is not None and label_el.text:
             g.add((uri, label_prop, Literal(label_el.text.strip(), lang="en")))
-        add_authority_links(uri, item)
+        add_authority_links(uri, item) # With this one we add external links
         if extra:
             extra(uri, item)
+
+
+'''
+Every "extra" function adds entites dates.
+
+extraperson -> It reads <birth when> and <death when>, it produces schema:birthDate and schema:deathDate
+extrabibl -> It reads <date when> and produce schema:datePublished
+extraevent -> It reads the attributes "when", "from" and "to", the first two becomes schema:startDate
+and the other one schema:endDate. 
+'''
 
 def extraperson(uri, element):
 
@@ -102,6 +133,10 @@ g.bind("dcterms", dcterms)
 g.bind("rel", rel)
 g.bind("skos", SKOS)
 
+'''
+Here we call process_entity one time for every entity.
+'''
+
 process_entity(".//tei:listPerson", "person", schema.Person, "persName", schema.name, extraperson)
 process_entity(".//tei:listPerson", "personGrp", schema.Person, "name", schema.name)
 process_entity(".//tei:listOrg",    "org",    schema.Organization, "orgName", schema.name)
@@ -139,9 +174,25 @@ relation_map = {
     
 }
 
+'''
+We need to define the relations in which the relation must be inverted.
+If we write active = "#coelho", passive="#alchemist" with "name=author" the triple
+is correct if we look at the TEI standard but it is not correct in RDF.
+
+The correct triple in RDF would be "works" -> "dcterms:creator" -> "author" and 
+it is for this reason that the script invert subject and object.
+'''
+
 inverted = {"author", "characterIn", "adapter", "founder", "illustrator",
             "filmRightsHolder", "earliestVersionBy", "producer", "producerOrg", "performer", "publisher"}
 
+
+'''
+For every <relation> in the listRelation we do two things:
+1. Mutual relations -> For every pairs of entities we add a triple in both directions
+2. Active/Passive relations ->  For every active-passive combination we create a triple and reverse it 
+if the name is in "inverted". We manage attributes with much more references.
+'''
 
 relations = root.findall(".//tei:listRelation/tei:relation", namespaces=TEI_ns)
 print(f"Found {len(relations)} relations.")
@@ -175,6 +226,12 @@ for relation in relations:
                 g.add((p_uri, predicate, a_uri))
             else:
                 g.add((a_uri, predicate, p_uri))
+
+'''
+Every entity which appears with "schema:character" is a character of the Novel
+so in this part we want to eliminate "schema:Person" (which is needed for real persons)
+and assign "dbo:FictionalCharacter" instead.
+'''
 
 for character in set(g.objects(None, schema.character)):
     g.remove((character, RDF.type, schema.Person))
