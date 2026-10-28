@@ -23,8 +23,7 @@ def draw(graph, name):
     # Second part is -> .dot to .svg
     
 
-    subprocess.run(["dot", "-Tsvg", f"{name}.dot", "-o", f"{name}.svg"], check=True)
-
+    subprocess.run(["dot", "-Grankdir=LR", "-Tsvg", f"{name}.dot", "-o", f"{name}.svg"], check=True)
     print(f"{name}.svg: {len(graph)} triples")
 
 '''

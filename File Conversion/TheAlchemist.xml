@@ -174,6 +174,7 @@
                 </person>
                 <person xml:id="tamakiNakamura">
                     <persName>Tamaki Nakamura</persName>
+                    <idno type="NDL">http://id.ndl.go.jp/auth/entity/033868223</idno>
                 </person>
 
                 <person xml:id="harveyWeinstein">
@@ -347,12 +348,14 @@
                 <bibl xml:id="theAlchemistgraphic">
                     <title>The Alchemist: A Graphic Novel</title>
                     <date when="2010">2010</date>
+                    <idno type="WorldCat">https://search.worldcat.org/title/613435942</idno>
                 </bibl>
 
                 <bibl xml:id="thealchemistSymphony">
                     <title>The Alchemist's Symphony</title>
                     <author ref="#wtieb">Walter Taieb</author>
                     <date when="1997">1997</date>
+                    <idno type="WorldCat">https://search.worldcat.org/title/39050076</idno>
                 </bibl>
 
                 <bibl xml:id="kochavvaPaulocoelho">
@@ -394,6 +397,7 @@
                     <publisher><orgName ref="#harperOne">HarperOne</orgName></publisher>
                     <note>Illustrated with paintings
                     by Mœbius; Coelho did not consent to a full graphic-novel treatment.</note>
+                        <idno type="WorldCat">https://search.worldcat.org/title/38879198</idno>
                 </bibl>
 
                 <bibl xml:id="indianStage">
@@ -408,6 +412,7 @@
                     <title>The Alchemist (manga adaptation)</title>
                     <date when="2024">2024</date>
                     <note>Published under the Kadokawa Masterpiece Comics label.</note>
+                    <idno type="NDL">https://ndlsearch.ndl.go.jp/books/R100000002-I033798168</idno>
                 </bibl>
 
                 <bibl xml:id="filmAdaptation">
