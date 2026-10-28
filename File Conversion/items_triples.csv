@@ -1,79 +1,83 @@
 subject,predicate,object,object_type,datatype,language
 theAlchemist,rdf:type,schema:CreativeWork,uri,,
 theAlchemist,schema:name,The Alchemist,literal,,en
-theAlchemist,dcterms:type,novel,literal,,en
+theAlchemist,schema:genre,novel,literal,,en
 theAlchemist,schema:datePublished,1988,literal,xsd:gYear,
 theAlchemist,dcterms:creator,coelho,local,,
 theAlchemist,schema:isBasedOn,aarnethompsonIndex,local,,
+theAlchemist,dcterms:rightsHolder,weinsteincomp,local,,
+theAlchemist,dcterms:rightsHolder,palmstarMedia,local,,
+theAlchemist,dcterms:rightsHolder,legendaryEnt,local,,
 theAlchemist,rdfs:seeAlso,http://www.wikidata.org/entity/Q179021,uri,,
 wikipediaArticle,rdf:type,schema:CreativeWork,uri,,
 wikipediaArticle,schema:name,The Alchemist (novel) – Wikipedia article,literal,,en
-wikipediaArticle,dcterms:type,encyclopedia article,literal,,en
+wikipediaArticle,schema:genre,encyclopedia article,literal,,en
 wikipediaArticle,dcterms:publisher,wikipedia,local,,
 wikipediaArticle,schema:about,theAlchemist,local,,
 comicJubran,rdf:type,schema:CreativeWork,uri,,
 comicJubran,schema:name,The Alchemist (comic book adaptation),literal,,en
-comicJubran,dcterms:type,comic,literal,,en
+comicJubran,schema:genre,comic,literal,,en
 comicJubran,schema:datePublished,1994,literal,xsd:gYear,
 comicJubran,dcterms:creator,ajubran,local,,
 comicJubran,dcterms:isVersionOf,theAlchemist,local,,
 illustratedEdition,rdf:type,schema:CreativeWork,uri,,
 illustratedEdition,schema:name,The Alchemist (illustrated edition),literal,,en
-illustratedEdition,dcterms:type,illustrated edition,literal,,en
+illustratedEdition,schema:genre,illustrated edition,literal,,en
 illustratedEdition,schema:illustrator,moebius,local,,
 illustratedEdition,dcterms:publisher,harperOne,local,,
 illustratedEdition,dcterms:isVersionOf,theAlchemist,local,,
 theAlchemistgraphic,rdf:type,schema:CreativeWork,uri,,
 theAlchemistgraphic,schema:name,The Alchemist: A Graphic Novel,literal,,en
-theAlchemistgraphic,dcterms:type,graphic novel,literal,,en
+theAlchemistgraphic,schema:genre,graphic novel,literal,,en
 theAlchemistgraphic,schema:datePublished,2010,literal,xsd:gYear,
 theAlchemistgraphic,marcrel:adp,derekr,local,,
 theAlchemistgraphic,schema:illustrator,danielSampere,local,,
 theAlchemistgraphic,dcterms:isVersionOf,theAlchemist,local,,
 cornishStage,rdf:type,schema:CreativeWork,uri,,
 cornishStage,schema:name,The Alchemist (Cornish Collective Stage Production),literal,,en
-cornishStage,dcterms:type,stage production,literal,,en
+cornishStage,schema:genre,stage production,literal,,en
 cornishStage,schema:producer,cornishCollective,local,,
 cornishStage,dcterms:isVersionOf,theAlchemist,local,,
 indianStage,rdf:type,schema:CreativeWork,uri,,
 indianStage,schema:name,The Alchemist (Indian stage version),literal,,en
-indianStage,dcterms:type,stage production,literal,,en
+indianStage,schema:genre,stage production,literal,,en
 indianStage,schema:datePublished,2009,literal,xsd:gYear,
 indianStage,marcrel:adp,deepaGahlot,local,,
 indianStage,schema:producer,ashvingidwani,local,,
 indianStage,dcterms:isVersionOf,theAlchemist,local,,
 mangaAdaptation,rdf:type,schema:CreativeWork,uri,,
 mangaAdaptation,schema:name,The Alchemist (manga adaptation),literal,,en
-mangaAdaptation,dcterms:type,manga,literal,,en
+mangaAdaptation,schema:genre,manga,literal,,en
 mangaAdaptation,schema:datePublished,2024,literal,xsd:gYear,
 mangaAdaptation,schema:illustrator,tamakiNakamura,local,,
 mangaAdaptation,dcterms:publisher,kadokawamasterpieceComics,local,,
 mangaAdaptation,dcterms:isVersionOf,theAlchemist,local,,
 filmAdaptation,rdf:type,schema:CreativeWork,uri,,
 filmAdaptation,schema:name,The Alchemist (film adaptation),literal,,en
-filmAdaptation,dcterms:type,film,literal,,en
+filmAdaptation,schema:genre,film,literal,,en
 filmAdaptation,dcterms:creator,jackThorne,local,,
 filmAdaptation,schema:producer,tristarPictures,local,,
 filmAdaptation,dcterms:isVersionOf,theAlchemist,local,,
 thealchemistSymphony,rdf:type,schema:CreativeWork,uri,,
 thealchemistSymphony,schema:name,The Alchemist's Symphony,literal,,en
-thealchemistSymphony,dcterms:type,musical work,literal,,en
+thealchemistSymphony,schema:genre,musical work,literal,,en
 thealchemistSymphony,schema:datePublished,1997,literal,xsd:gYear,
 thealchemistSymphony,dcterms:creator,wtieb,local,,
 thealchemistSymphony,schema:isBasedOn,theAlchemist,local,,
 kochavvaPaulocoelho,rdf:type,schema:CreativeWork,uri,,
 kochavvaPaulocoelho,schema:name,Kochavva Paulo Ayyappa Coelho,literal,,en
-kochavvaPaulocoelho,dcterms:type,film,literal,,en
+kochavvaPaulocoelho,schema:genre,film,literal,,en
 kochavvaPaulocoelho,marcrel:adp,sidharthaSiva,local,,
 kochavvaPaulocoelho,schema:isBasedOn,theAlchemist,local,,
 kochavvaPaulocoelho,rdfs:seeAlso,http://www.wikidata.org/entity/Q24807275,uri,,
 aarnethompsonIndex,rdf:type,schema:CreativeWork,uri,,
 aarnethompsonIndex,schema:name,"ATU 1645, The Treasure at Home",literal,,en
-aarnethompsonIndex,dcterms:type,tale type,literal,,en
+aarnethompsonIndex,schema:genre,tale type,literal,,en
+aarnethompsonIndex,dcterms:relation,rumi,local,,
 aarnethompsonIndex,rdfs:seeAlso,http://www.wikidata.org/entity/Q136488217,uri,,
 onethousandAndonenights,rdf:type,schema:CreativeWork,uri,,
 onethousandAndonenights,schema:name,One Thousand and One Nights,literal,,en
-onethousandAndonenights,dcterms:type,story collection,literal,,en
+onethousandAndonenights,schema:genre,story collection,literal,,en
 onethousandAndonenights,dcterms:isVersionOf,aarnethompsonIndex,local,,
 onethousandAndonenights,rdfs:seeAlso,http://www.wikidata.org/entity/Q8258,uri,,
 coelho,rdf:type,schema:Person,uri,,
@@ -121,3 +125,15 @@ tristarPictures,rdfs:seeAlso,http://www.wikidata.org/entity/Q651454,uri,,
 wikipedia,rdf:type,schema:Organization,uri,,
 wikipedia,schema:name,Wikipedia,literal,,en
 wikipedia,rdfs:seeAlso,http://www.wikidata.org/entity/Q52,uri,,
+rumi,rdf:type,schema:Person,uri,,
+rumi,schema:name,Rumi,literal,,en
+rumi,rdfs:seeAlso,http://www.wikidata.org/entity/Q43347,uri,,
+weinsteincomp,rdf:type,schema:Organization,uri,,
+weinsteincomp,schema:name,The Weinstein Company,literal,,en
+weinsteincomp,rdfs:seeAlso,http://www.wikidata.org/entity/Q1138789,uri,,
+palmstarMedia,rdf:type,schema:Organization,uri,,
+palmstarMedia,schema:name,PalmStar Media,literal,,en
+palmstarMedia,rdfs:seeAlso,http://www.wikidata.org/entity/Q24913707,uri,,
+legendaryEnt,rdf:type,schema:Organization,uri,,
+legendaryEnt,schema:name,Legendary Entertainment,literal,,en
+legendaryEnt,rdfs:seeAlso,http://www.wikidata.org/entity/Q621364,uri,,

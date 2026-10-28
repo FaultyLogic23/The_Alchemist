@@ -70,10 +70,12 @@ for row in rows:
     all_items.add((ALCH[row["subject"]], expand(row["predicate"]), make_object(row)))
 
 all_items.serialize("items.ttl", format="turtle")
+
 '''
 2. One dataset for each item: the item's triples plus the triples 
 of the agents it points to (so each file is self-contained).
 '''
+
 items = expand("schema:CreativeWork")
 os.makedirs("items_rdf", exist_ok=True)
 

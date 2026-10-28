@@ -1,0 +1,179 @@
+@prefix alch: <https://w3id.org/alchemist/ontology#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix marcrel: <http://id.loc.gov/vocabulary/relators/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+alch:comicJubran a schema:CreativeWork ;
+    dcterms:creator alch:ajubran ;
+    dcterms:isVersionOf alch:theAlchemist ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:genre "comic"@en ;
+    schema:name "The Alchemist (comic book adaptation)"@en .
+
+alch:cornishStage a schema:CreativeWork ;
+    dcterms:isVersionOf alch:theAlchemist ;
+    schema:genre "stage production"@en ;
+    schema:name "The Alchemist (Cornish Collective Stage Production)"@en ;
+    schema:producer alch:cornishCollective .
+
+alch:filmAdaptation a schema:CreativeWork ;
+    dcterms:creator alch:jackThorne ;
+    dcterms:isVersionOf alch:theAlchemist ;
+    schema:genre "film"@en ;
+    schema:name "The Alchemist (film adaptation)"@en ;
+    schema:producer alch:tristarPictures .
+
+alch:illustratedEdition a schema:CreativeWork ;
+    dcterms:isVersionOf alch:theAlchemist ;
+    dcterms:publisher alch:harperOne ;
+    schema:genre "illustrated edition"@en ;
+    schema:illustrator alch:moebius ;
+    schema:name "The Alchemist (illustrated edition)"@en .
+
+alch:indianStage a schema:CreativeWork ;
+    marcrel:adp alch:deepaGahlot ;
+    dcterms:isVersionOf alch:theAlchemist ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:genre "stage production"@en ;
+    schema:name "The Alchemist (Indian stage version)"@en ;
+    schema:producer alch:ashvingidwani .
+
+alch:kochavvaPaulocoelho a schema:CreativeWork ;
+    marcrel:adp alch:sidharthaSiva ;
+    rdfs:seeAlso wd:Q24807275 ;
+    schema:genre "film"@en ;
+    schema:isBasedOn alch:theAlchemist ;
+    schema:name "Kochavva Paulo Ayyappa Coelho"@en .
+
+alch:mangaAdaptation a schema:CreativeWork ;
+    dcterms:isVersionOf alch:theAlchemist ;
+    dcterms:publisher alch:kadokawamasterpieceComics ;
+    schema:datePublished "2024"^^xsd:gYear ;
+    schema:genre "manga"@en ;
+    schema:illustrator alch:tamakiNakamura ;
+    schema:name "The Alchemist (manga adaptation)"@en .
+
+alch:onethousandAndonenights a schema:CreativeWork ;
+    dcterms:isVersionOf alch:aarnethompsonIndex ;
+    rdfs:seeAlso wd:Q8258 ;
+    schema:genre "story collection"@en ;
+    schema:name "One Thousand and One Nights"@en .
+
+alch:theAlchemistgraphic a schema:CreativeWork ;
+    marcrel:adp alch:derekr ;
+    dcterms:isVersionOf alch:theAlchemist ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:genre "graphic novel"@en ;
+    schema:illustrator alch:danielSampere ;
+    schema:name "The Alchemist: A Graphic Novel"@en .
+
+alch:thealchemistSymphony a schema:CreativeWork ;
+    dcterms:creator alch:wtieb ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:genre "musical work"@en ;
+    schema:isBasedOn alch:theAlchemist ;
+    schema:name "The Alchemist's Symphony"@en .
+
+alch:wikipediaArticle a schema:CreativeWork ;
+    dcterms:publisher alch:wikipedia ;
+    schema:about alch:theAlchemist ;
+    schema:genre "encyclopedia article"@en ;
+    schema:name "The Alchemist (novel) – Wikipedia article"@en .
+
+alch:ajubran a schema:Person ;
+    rdfs:seeAlso wd:Q48871908 ;
+    schema:name "Alexandre Jubran"@en .
+
+alch:ashvingidwani a schema:Person ;
+    rdfs:seeAlso wd:Q125538019 ;
+    schema:name "Ashvin Gidwani"@en .
+
+alch:coelho a schema:Person ;
+    rdfs:seeAlso wd:Q12881 ;
+    schema:name "Paulo Coelho"@en .
+
+alch:cornishCollective a schema:Organization ;
+    schema:name "Cornish Collective"@en .
+
+alch:danielSampere a schema:Person ;
+    rdfs:seeAlso wd:Q112521933 ;
+    schema:name "Daniel Sampere"@en .
+
+alch:deepaGahlot a schema:Person ;
+    rdfs:seeAlso wd:Q27863006 ;
+    schema:name "Deepa Gahlot"@en .
+
+alch:derekr a schema:Person ;
+    schema:name "Derek Ruiz"@en .
+
+alch:harperOne a schema:Organization ;
+    rdfs:seeAlso wd:Q28228463 ;
+    schema:name "HarperOne"@en .
+
+alch:jackThorne a schema:Person ;
+    rdfs:seeAlso wd:Q6115483 ;
+    schema:name "Jack Thorne"@en .
+
+alch:kadokawamasterpieceComics a schema:Organization ;
+    rdfs:seeAlso wd:Q115754348 ;
+    schema:name "Kadokawa Masterpiece Comics"@en .
+
+alch:legendaryEnt a schema:Organization ;
+    rdfs:seeAlso wd:Q621364 ;
+    schema:name "Legendary Entertainment"@en .
+
+alch:moebius a schema:Person ;
+    rdfs:seeAlso wd:Q309240 ;
+    schema:name "Mœbius"@en .
+
+alch:palmstarMedia a schema:Organization ;
+    rdfs:seeAlso wd:Q24913707 ;
+    schema:name "PalmStar Media"@en .
+
+alch:rumi a schema:Person ;
+    rdfs:seeAlso wd:Q43347 ;
+    schema:name "Rumi"@en .
+
+alch:sidharthaSiva a schema:Person ;
+    rdfs:seeAlso wd:Q13220286 ;
+    schema:name "Sidhartha Siva"@en .
+
+alch:tamakiNakamura a schema:Person ;
+    schema:name "Tamaki Nakamura"@en .
+
+alch:tristarPictures a schema:Organization ;
+    rdfs:seeAlso wd:Q651454 ;
+    schema:name "TriStar Pictures"@en .
+
+alch:weinsteincomp a schema:Organization ;
+    rdfs:seeAlso wd:Q1138789 ;
+    schema:name "The Weinstein Company"@en .
+
+alch:wikipedia a schema:Organization ;
+    rdfs:seeAlso wd:Q52 ;
+    schema:name "Wikipedia"@en .
+
+alch:wtieb a schema:Person ;
+    rdfs:seeAlso wd:Q7966251 ;
+    schema:name "Walter Taieb"@en .
+
+alch:aarnethompsonIndex a schema:CreativeWork ;
+    dcterms:relation alch:rumi ;
+    rdfs:seeAlso wd:Q136488217 ;
+    schema:genre "tale type"@en ;
+    schema:name "ATU 1645, The Treasure at Home"@en .
+
+alch:theAlchemist a schema:CreativeWork ;
+    dcterms:creator alch:coelho ;
+    dcterms:rightsHolder alch:legendaryEnt,
+        alch:palmstarMedia,
+        alch:weinsteincomp ;
+    rdfs:seeAlso wd:Q179021 ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:genre "novel"@en ;
+    schema:isBasedOn alch:aarnethompsonIndex ;
+    schema:name "The Alchemist"@en .
+

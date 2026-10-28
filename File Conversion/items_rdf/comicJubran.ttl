@@ -1,0 +1,18 @@
+@prefix alch: <https://w3id.org/alchemist/ontology#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+alch:comicJubran a schema:CreativeWork ;
+    dcterms:creator alch:ajubran ;
+    dcterms:isVersionOf alch:theAlchemist ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:genre "comic"@en ;
+    schema:name "The Alchemist (comic book adaptation)"@en .
+
+alch:ajubran a schema:Person ;
+    rdfs:seeAlso wd:Q48871908 ;
+    schema:name "Alexandre Jubran"@en .
+

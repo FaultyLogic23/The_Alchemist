@@ -2,7 +2,7 @@ from lxml import etree
 from rdflib import Graph, Namespace, Literal, URIRef
 from rdflib.namespace import RDF, RDFS, XSD, SKOS
 
-Input_file = "Alchemist.xml"
+Input_file = "TheAlchemist.xml"
 Output_file = "alchemist-data.ttl"
 
 TEI_ns = {"tei": "http://www.tei-c.org/ns/1.0"}

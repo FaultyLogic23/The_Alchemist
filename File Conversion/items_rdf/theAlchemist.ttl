@@ -1,0 +1,34 @@
+@prefix alch: <https://w3id.org/alchemist/ontology#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+alch:theAlchemist a schema:CreativeWork ;
+    dcterms:creator alch:coelho ;
+    dcterms:rightsHolder alch:legendaryEnt,
+        alch:palmstarMedia,
+        alch:weinsteincomp ;
+    rdfs:seeAlso wd:Q179021 ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:genre "novel"@en ;
+    schema:isBasedOn alch:aarnethompsonIndex ;
+    schema:name "The Alchemist"@en .
+
+alch:coelho a schema:Person ;
+    rdfs:seeAlso wd:Q12881 ;
+    schema:name "Paulo Coelho"@en .
+
+alch:legendaryEnt a schema:Organization ;
+    rdfs:seeAlso wd:Q621364 ;
+    schema:name "Legendary Entertainment"@en .
+
+alch:palmstarMedia a schema:Organization ;
+    rdfs:seeAlso wd:Q24913707 ;
+    schema:name "PalmStar Media"@en .
+
+alch:weinsteincomp a schema:Organization ;
+    rdfs:seeAlso wd:Q1138789 ;
+    schema:name "The Weinstein Company"@en .
+

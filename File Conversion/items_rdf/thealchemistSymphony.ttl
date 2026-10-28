@@ -1,0 +1,18 @@
+@prefix alch: <https://w3id.org/alchemist/ontology#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+alch:thealchemistSymphony a schema:CreativeWork ;
+    dcterms:creator alch:wtieb ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:genre "musical work"@en ;
+    schema:isBasedOn alch:theAlchemist ;
+    schema:name "The Alchemist's Symphony"@en .
+
+alch:wtieb a schema:Person ;
+    rdfs:seeAlso wd:Q7966251 ;
+    schema:name "Walter Taieb"@en .
+

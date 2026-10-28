@@ -1,0 +1,12 @@
+@prefix alch: <https://w3id.org/alchemist/ontology#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+
+alch:onethousandAndonenights a schema:CreativeWork ;
+    dcterms:isVersionOf alch:aarnethompsonIndex ;
+    rdfs:seeAlso wd:Q8258 ;
+    schema:genre "story collection"@en ;
+    schema:name "One Thousand and One Nights"@en .
+

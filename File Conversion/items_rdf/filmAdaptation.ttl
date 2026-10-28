@@ -1,0 +1,21 @@
+@prefix alch: <https://w3id.org/alchemist/ontology#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+
+alch:filmAdaptation a schema:CreativeWork ;
+    dcterms:creator alch:jackThorne ;
+    dcterms:isVersionOf alch:theAlchemist ;
+    schema:genre "film"@en ;
+    schema:name "The Alchemist (film adaptation)"@en ;
+    schema:producer alch:tristarPictures .
+
+alch:jackThorne a schema:Person ;
+    rdfs:seeAlso wd:Q6115483 ;
+    schema:name "Jack Thorne"@en .
+
+alch:tristarPictures a schema:Organization ;
+    rdfs:seeAlso wd:Q651454 ;
+    schema:name "TriStar Pictures"@en .
+

@@ -12,9 +12,9 @@ in the text with the forms of the entities).
 
 from lxml import etree
 
-input_file = "Alchemist.xml"
-output_file = "alchemist.html"
-css_file = "stylemed.css"
+input_file = "TheAlchemist.xml"
+output_file = "Article.html"
+css_file = "alchart.css"
 
 # Namespaces
 

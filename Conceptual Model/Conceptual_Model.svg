@@ -161,86 +161,85 @@
       <text x="875.4858" xml:space="preserve" y="552.1029" clip-path="url(#clipPath2)" stroke="none">Prefixes</text>
       <rect fill="none" x="869.4859" width="484.7712" height="30" y="531.671" clip-path="url(#clipPath2)"/>
     </g>
-    <g stroke-linecap="butt" transform="matrix(1,0,0,1,1275,690)" fill="navy" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="navy" stroke-miterlimit="1.45">
+    <g fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,1275,690)" stroke="white">
+      <rect x="871.3508" width="161.8731" height="20.3441" y="-434.3441" clip-path="url(#clipPath2)" stroke="none"/>
+    </g>
+    <g stroke-linecap="butt" transform="matrix(1,0,0,1,1275,690)" fill="navy" text-rendering="geometricPrecision" font-family="sans-serif" shape-rendering="geometricPrecision" stroke="navy" stroke-miterlimit="1.45">
+      <text x="873.3508" xml:space="preserve" y="-419.516" clip-path="url(#clipPath2)" stroke="none">schema:parentOrganization</text>
       <path fill="none" d="M-134.2409 -33.0679 L-592.5182 -364.5876" clip-path="url(#clipPath2)"/>
       <path d="M-127.7591 -28.3789 C-129.0539 -26.589 -131.5546 -26.1877 -133.3445 -27.4825 C-135.1344 -28.7773 -135.5357 -31.278 -134.2409 -33.0679 C-132.9461 -34.8578 -130.4454 -35.2591 -128.6555 -33.9643 C-126.8656 -32.6695 -126.4643 -30.1688 -127.7591 -28.3789 Z" clip-path="url(#clipPath2)" stroke="none"/>
       <path d="M-599 -369.2766 L-592.2079 -358.192 L-591.7079 -364.0015 L-586.3467 -366.2943 Z" clip-path="url(#clipPath2)" stroke="none"/>
       <rect x="-417.9404" y="-242.8603" clip-path="url(#clipPath2)" fill="white" width="105.8807" height="85.7206" stroke="none"/>
-      <text x="-410.0723" xml:space="preserve" y="-228.0322" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none">dcterms:creator</text>
-      <text x="-415.9404" xml:space="preserve" y="-211.6881" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none">schema:illustrator</text>
-      <text x="-414.3683" xml:space="preserve" y="-195.344" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none">schema:producer</text>
-      <text x="-399.0982" xml:space="preserve" y="-178.9998" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none">marcrel:adp</text>
-      <text x="-411.5183" xml:space="preserve" y="-162.6557" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none">dcterms:relation</text>
+      <text x="-410.0723" xml:space="preserve" y="-228.0322" clip-path="url(#clipPath2)" stroke="none">dcterms:creator</text>
+      <text x="-415.9404" xml:space="preserve" y="-211.6881" clip-path="url(#clipPath2)" stroke="none">schema:illustrator</text>
+      <text x="-414.3683" xml:space="preserve" y="-195.344" clip-path="url(#clipPath2)" stroke="none">schema:producer</text>
+      <text x="-399.0982" xml:space="preserve" y="-178.9998" clip-path="url(#clipPath2)" stroke="none">marcrel:adp</text>
+      <text x="-411.5183" xml:space="preserve" y="-162.6557" clip-path="url(#clipPath2)" stroke="none">dcterms:relation</text>
       <path fill="none" d="M134.2409 -33.0679 L592.5182 -364.5876" clip-path="url(#clipPath2)"/>
       <path d="M127.7591 -28.3789 C126.4643 -30.1688 126.8656 -32.6695 128.6555 -33.9643 C130.4454 -35.2591 132.9461 -34.8578 134.2409 -33.0679 C135.5357 -31.278 135.1344 -28.7773 133.3445 -27.4825 C131.5546 -26.1877 129.0539 -26.589 127.7591 -28.3789 Z" clip-path="url(#clipPath2)" stroke="none"/>
       <path d="M599 -369.2766 L586.3467 -366.2943 L591.7079 -364.0015 L592.2079 -358.192 Z" clip-path="url(#clipPath2)" stroke="none"/>
       <rect x="302.6696" y="-226.5162" clip-path="url(#clipPath2)" fill="white" width="124.6609" height="53.0323" stroke="none"/>
-      <text x="315.6317" xml:space="preserve" y="-211.6881" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none">schema:producer</text>
-      <text x="313.6816" xml:space="preserve" y="-195.344" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none">dcterms:publisher</text>
-      <text x="304.6696" xml:space="preserve" y="-178.9998" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none">dcterms:rightsHolder</text>
+      <text x="315.6317" xml:space="preserve" y="-211.6881" clip-path="url(#clipPath2)" stroke="none">schema:producer</text>
+      <text x="313.6816" xml:space="preserve" y="-195.344" clip-path="url(#clipPath2)" stroke="none">dcterms:publisher</text>
+      <text x="304.6696" xml:space="preserve" y="-178.9998" clip-path="url(#clipPath2)" stroke="none">dcterms:rightsHolder</text>
       <path fill="none" d="M135 0 L561 0" clip-path="url(#clipPath2)"/>
       <path d="M127 0 C127 -2.2091 128.7909 -4 131 -4 C133.2091 -4 135 -2.2091 135 0 C135 2.2091 133.2091 4 131 4 C128.7909 4 127 2.2091 127 0 Z" clip-path="url(#clipPath2)" stroke="none"/>
       <path d="M569 0 L557 -5 L560 0 L557 5 Z" clip-path="url(#clipPath2)" stroke="none"/>
       <rect x="278.8555" y="-10.1721" clip-path="url(#clipPath2)" fill="white" width="142.289" height="20.3441" stroke="none"/>
-      <text x="280.8555" xml:space="preserve" y="4.656" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none">schema:contentLocation</text>
+      <text x="280.8555" xml:space="preserve" y="4.656" clip-path="url(#clipPath2)" stroke="none">schema:contentLocation</text>
       <path fill="none" d="M-135 0 L-561 0" clip-path="url(#clipPath2)"/>
       <path d="M-127 0 C-127 2.2091 -128.7909 4 -131 4 C-133.2091 4 -135 2.2091 -135 0 C-135 -2.2091 -133.2091 -4 -131 -4 C-128.7909 -4 -127 -2.2091 -127 0 Z" clip-path="url(#clipPath2)" stroke="none"/>
       <path d="M-569 0 L-557 5 L-560 0 L-557 -5 Z" clip-path="url(#clipPath2)" stroke="none"/>
       <rect x="-396.9403" y="-10.1721" clip-path="url(#clipPath2)" fill="white" width="93.8806" height="20.3441" stroke="none"/>
-      <text x="-394.9403" xml:space="preserve" y="4.656" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none">dcterms:subject</text>
+      <text x="-394.9403" xml:space="preserve" y="4.656" clip-path="url(#clipPath2)" stroke="none">dcterms:subject</text>
       <path fill="none" d="M-134.2409 33.0679 L-592.5182 364.5876" clip-path="url(#clipPath2)"/>
       <path d="M-127.7591 28.3789 C-126.4643 30.1688 -126.8656 32.6695 -128.6555 33.9643 C-130.4454 35.2591 -132.9461 34.8578 -134.2409 33.0679 C-135.5357 31.278 -135.1344 28.7773 -133.3445 27.4825 C-131.5546 26.1877 -129.0539 26.589 -127.7591 28.3789 Z" clip-path="url(#clipPath2)" stroke="none"/>
       <path d="M-599 369.2766 L-586.3467 366.2943 L-591.7079 364.0015 L-592.2079 358.192 Z" clip-path="url(#clipPath2)" stroke="none"/>
       <rect x="-417.1363" y="189.8279" clip-path="url(#clipPath2)" fill="white" width="104.2727" height="20.3441" stroke="none"/>
-      <text x="-415.1364" xml:space="preserve" y="204.656" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none">schema:character</text>
+      <text x="-415.1364" xml:space="preserve" y="204.656" clip-path="url(#clipPath2)" stroke="none">schema:character</text>
       <path fill="none" d="M-40 -35 L-40 -160 L40 -160 L40 -39" clip-path="url(#clipPath2)"/>
       <path d="M-40 -27 C-42.2091 -27 -44 -28.7909 -44 -31 C-44 -33.2091 -42.2091 -35 -40 -35 C-37.7909 -35 -36 -33.2091 -36 -31 C-36 -28.7909 -37.7909 -27 -40 -27 Z" clip-path="url(#clipPath2)" stroke="none"/>
       <path d="M40 -31 L45 -43 L40 -40 L35 -43 Z" clip-path="url(#clipPath2)" stroke="none"/>
       <rect x="-99.0844" y="-126.5787" clip-path="url(#clipPath2)" fill="white" width="118.1689" height="53.0323" stroke="none"/>
-      <text x="-93.4604" xml:space="preserve" y="-111.7506" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none">schema:isBasedOn</text>
-      <text x="-97.0844" xml:space="preserve" y="-95.4065" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none">dcterms:isVersionOf</text>
-      <text x="-79.9903" xml:space="preserve" y="-79.0624" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none">schema:about</text>
+      <text x="-93.4604" xml:space="preserve" y="-111.7506" clip-path="url(#clipPath2)" stroke="none">schema:isBasedOn</text>
+      <text x="-97.0844" xml:space="preserve" y="-95.4065" clip-path="url(#clipPath2)" stroke="none">dcterms:isVersionOf</text>
+      <text x="-79.9903" xml:space="preserve" y="-79.0624" clip-path="url(#clipPath2)" stroke="none">schema:about</text>
       <path fill="none" d="M0 365 L0 39" clip-path="url(#clipPath2)"/>
       <path d="M0 373 C-2.2091 373 -4 371.2091 -4 369 C-4 366.7909 -2.2091 365 0 365 C2.2091 365 4 366.7909 4 369 C4 371.2091 2.2091 373 0 373 Z" clip-path="url(#clipPath2)" stroke="none"/>
       <path d="M0 31 L-5 43 L0 40 L5 43 Z" clip-path="url(#clipPath2)" stroke="none"/>
       <rect x="-41.9903" y="189.8279" clip-path="url(#clipPath2)" fill="white" width="83.9805" height="20.3441" stroke="none"/>
-      <text x="-39.9903" xml:space="preserve" y="204.656" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none">schema:about</text>
+      <text x="-39.9903" xml:space="preserve" y="204.656" clip-path="url(#clipPath2)" stroke="none">schema:about</text>
       <path fill="none" d="M104.3479 367.1572 L612.3043 35.0318" clip-path="url(#clipPath2)"/>
       <path d="M97.6521 371.5352 C96.4432 369.6862 96.962 367.2072 98.811 365.9983 C100.66 364.7893 103.1389 365.3082 104.3479 367.1572 C105.5568 369.0061 105.038 371.4851 103.189 372.694 C101.34 373.903 98.8611 373.3841 97.6521 371.5352 Z" clip-path="url(#clipPath2)" stroke="none"/>
       <path d="M619 30.6538 L606.2201 33.036 L611.4673 35.5791 L611.6926 41.4057 Z" clip-path="url(#clipPath2)" stroke="none"/>
       <rect x="312.0937" y="189.8279" clip-path="url(#clipPath2)" fill="white" width="95.8126" height="20.3441" stroke="none"/>
-      <text x="314.0937" xml:space="preserve" y="204.656" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none">schema:location</text>
+      <text x="314.0937" xml:space="preserve" y="204.656" clip-path="url(#clipPath2)" stroke="none">schema:location</text>
       <path fill="none" d="M135 415 L1350 415 L1350 -500 L750 -500 L750 -439" clip-path="url(#clipPath2)"/>
       <path d="M127 415 C127 412.7909 128.7909 411 131 411 C133.2091 411 135 412.7909 135 415 C135 417.2091 133.2091 419 131 419 C128.7909 419 127 417.2091 127 415 Z" clip-path="url(#clipPath2)" stroke="none"/>
       <path d="M750 -431 L755 -443 L750 -440 L745 -443 Z" clip-path="url(#clipPath2)" stroke="none"/>
       <rect x="690.4361" y="404.8279" clip-path="url(#clipPath2)" fill="white" width="109.2528" height="20.3441" stroke="none"/>
-      <text x="692.4361" xml:space="preserve" y="419.656" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none">schema:performer</text>
-      <path fill="none" d="M835 -415 L950 -415 L950 -385 L839 -385" clip-path="url(#clipPath2)"/>
-      <path d="M827 -415 C827 -417.2091 828.7908 -419 831 -419 C833.2092 -419 835 -417.2091 835 -415 C835 -412.7909 833.2092 -411 831 -411 C828.7908 -411 827 -412.7909 827 -415 Z" clip-path="url(#clipPath2)" stroke="none"/>
-      <path d="M831 -385 L843 -380 L840 -385 L843 -390 Z" clip-path="url(#clipPath2)" stroke="none"/>
-      <rect x="814.126" y="-425.1721" clip-path="url(#clipPath2)" fill="white" width="161.8731" height="20.3441" stroke="none"/>
-      <text x="816.126" xml:space="preserve" y="-410.344" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none">schema:parentOrganization</text>
+      <text x="692.4361" xml:space="preserve" y="419.656" clip-path="url(#clipPath2)" stroke="none">schema:performer</text>
       <path fill="none" d="M565 -400 L-561 -400" clip-path="url(#clipPath2)"/>
       <path d="M573 -400 C573 -397.7909 571.2092 -396 569 -396 C566.7908 -396 565 -397.7909 565 -400 C565 -402.2091 566.7908 -404 569 -404 C571.2092 -404 573 -402.2091 573 -400 Z" clip-path="url(#clipPath2)" stroke="none"/>
       <path d="M-569 -400 L-557 -395 L-560 -400 L-557 -405 Z" clip-path="url(#clipPath2)" stroke="none"/>
       <rect x="-48.0923" y="-410.1721" clip-path="url(#clipPath2)" fill="white" width="96.1846" height="20.3441" stroke="none"/>
-      <text x="-46.0923" xml:space="preserve" y="-395.344" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none">schema:founder</text>
+      <text x="-46.0923" xml:space="preserve" y="-395.344" clip-path="url(#clipPath2)" stroke="none">schema:founder</text>
       <path fill="none" d="M-640 435 L-640 530 L-520 530 L-520 400 L-561 400" clip-path="url(#clipPath2)"/>
       <path d="M-640 427 C-637.7908 427 -636 428.7909 -636 431 C-636 433.2091 -637.7908 435 -640 435 C-642.2092 435 -644 433.2091 -644 431 C-644 428.7909 -642.2092 427 -640 427 Z" clip-path="url(#clipPath2)" stroke="none"/>
       <path d="M-569 400 L-557 405 L-560 400 L-557 395 Z" clip-path="url(#clipPath2)" stroke="none"/>
       <rect x="-562.8963" y="446.6559" clip-path="url(#clipPath2)" fill="white" width="85.7926" height="36.6882" stroke="none"/>
-      <text x="-556.7443" xml:space="preserve" y="461.484" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none">rel:mentorOf</text>
-      <text x="-560.8963" xml:space="preserve" y="477.8281" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none">rel:engagedTo</text>
+      <text x="-556.7443" xml:space="preserve" y="461.484" clip-path="url(#clipPath2)" stroke="none">rel:mentorOf</text>
+      <text x="-560.8963" xml:space="preserve" y="477.8281" clip-path="url(#clipPath2)" stroke="none">rel:engagedTo</text>
       <path fill="none" d="M-760 435 L-760 800 L800 800 L800 39" clip-path="url(#clipPath2)"/>
       <path d="M-760 427 C-757.7908 427 -756 428.7909 -756 431 C-756 433.2091 -757.7908 435 -760 435 C-762.2092 435 -764 433.2091 -764 431 C-764 428.7909 -762.2092 427 -760 427 Z" clip-path="url(#clipPath2)" stroke="none"/>
       <path d="M800 31 L795 43 L800 40 L805 43 Z" clip-path="url(#clipPath2)" stroke="none"/>
       <rect x="-45.8344" y="789.8279" clip-path="url(#clipPath2)" fill="white" width="131.6689" height="20.3441" stroke="none"/>
-      <text x="-43.8344" xml:space="preserve" y="804.656" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none">schema:homeLocation</text>
+      <text x="-43.8344" xml:space="preserve" y="804.656" clip-path="url(#clipPath2)" stroke="none">schema:homeLocation</text>
       <path fill="none" d="M-835 400 L-1129 400" clip-path="url(#clipPath2)"/>
       <path d="M-827 400 C-827 402.2091 -828.7908 404 -831 404 C-833.2092 404 -835 402.2091 -835 400 C-835 397.7909 -833.2092 396 -831 396 C-828.7908 396 -827 397.7909 -827 400 Z" clip-path="url(#clipPath2)" stroke="none"/>
       <path d="M-1137 400 L-1125 405 L-1128 400 L-1125 395 Z" clip-path="url(#clipPath2)" stroke="none"/>
       <rect x="-1039.4604" y="389.8279" clip-path="url(#clipPath2)" fill="white" width="110.9207" height="20.3441" stroke="none"/>
-      <text x="-1037.4603" xml:space="preserve" y="404.656" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none">schema:isBasedOn</text>
+      <text x="-1037.4603" xml:space="preserve" y="404.656" clip-path="url(#clipPath2)" stroke="none">schema:isBasedOn</text>
       <path fill="none" d="M-763.7658 -433.8649 L-938.5577 -613.2565" clip-path="url(#clipPath2)" stroke="green"/>
     </g>
     <g stroke-linecap="butt" transform="matrix(1,0,0,1,1275,690)" fill-opacity="0" fill="rgb(0,0,0)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="rgb(0,0,0)" stroke-opacity="0" stroke-miterlimit="1.45">
@@ -273,8 +272,9 @@
       <path fill="none" d="M-99.0409 27.2185 C-96.9524 27.9387 -95.8432 30.2155 -96.5633 32.304 C-97.2835 34.3924 -99.5603 35.5016 -101.6488 34.7815 C-103.7373 34.0613 -104.8465 31.7845 -104.1263 29.696 C-103.4062 27.6076 -101.1293 26.4983 -99.0409 27.2185 Z" clip-path="url(#clipPath2)"/>
       <path fill="white" d="M-149.6552 174 L-138.7671 160.83 L-150.1115 156.9181 Z" clip-path="url(#clipPath2)" stroke="none"/>
       <path fill="none" d="M-149.6552 174 L-138.7671 160.83 L-150.1115 156.9181 Z" clip-path="url(#clipPath2)"/>
-      <rect x="-166.4983" y="92.3279" clip-path="url(#clipPath2)" fill="white" width="82.9965" height="20.3441" stroke="none"/>
-      <text x="-164.4983" xml:space="preserve" y="107.156" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none">schema:name</text>
+      <rect x="-167.0743" y="84.1559" clip-path="url(#clipPath2)" fill="white" width="84.1486" height="36.6882" stroke="none"/>
+      <text x="-164.4983" xml:space="preserve" y="98.984" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none">schema:name</text>
+      <text x="-165.0743" xml:space="preserve" y="115.3281" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none">schema:genre</text>
       <path fill="none" d="M101.6488 34.7815 L144.7653 159.8194" clip-path="url(#clipPath2)"/>
     </g>
     <g stroke-linecap="butt" transform="matrix(1,0,0,1,1275,690)" fill-opacity="0" fill="rgb(0,0,0)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="rgb(0,0,0)" stroke-opacity="0" stroke-miterlimit="1.45">
@@ -352,6 +352,8 @@
       <path fill="none" d="M-949.2308 624 L-934.7197 614.9763 L-944.2311 607.6598 Z" clip-path="url(#clipPath2)"/>
       <rect x="-916.4983" y="517.3279" clip-path="url(#clipPath2)" fill="white" width="82.9965" height="20.3441" stroke="none"/>
       <text x="-914.4983" xml:space="preserve" y="532.156" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none">schema:name</text>
+      <path fill="none" d="M952.2874 -414 L952.2874 -385 L839 -385" clip-path="url(#clipPath2)" stroke="navy"/>
+      <path fill="navy" d="M831 -385 L843 -380 L840 -385 L843 -390 Z" clip-path="url(#clipPath2)" stroke="none"/>
     </g>
   </g>
 </svg>

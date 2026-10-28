@@ -1,0 +1,13 @@
+@prefix alch: <https://w3id.org/alchemist/ontology#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+
+alch:cornishStage a schema:CreativeWork ;
+    dcterms:isVersionOf alch:theAlchemist ;
+    schema:genre "stage production"@en ;
+    schema:name "The Alchemist (Cornish Collective Stage Production)"@en ;
+    schema:producer alch:cornishCollective .
+
+alch:cornishCollective a schema:Organization ;
+    schema:name "Cornish Collective"@en .
+
