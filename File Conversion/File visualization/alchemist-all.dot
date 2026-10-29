@@ -1,0 +1,393 @@
+digraph { 
+ node [ fontname="DejaVu Sans" ] ; 
+	node0 -> node1 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node3 -> node4 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node5 -> node4 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node6 -> node7 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdfs:seeAlso</font> > ] ;
+	node9 -> node10 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node11 -> node1 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node13 -> node4 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node14 -> node15 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node13 -> node16 [ color=BLACK, label=< <font point-size='10' color='#336633'>dcterms:subject</font> > ] ;
+	node18 -> node1 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node19 -> node20 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node21 -> node22 [ color=BLACK, label=< <font point-size='10' color='#336633'>schema:parentOrganization</font> > ] ;
+	node2 -> node15 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node23 -> node0 [ color=BLACK, label=< <font point-size='10' color='#336633'>rel:mentorOf</font> > ] ;
+	node24 -> node1 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node26 -> node15 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node6 -> node27 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node28 -> node29 [ color=BLACK, label=< <font point-size='10' color='#336633'>dcterms:creator</font> > ] ;
+	node31 -> node19 [ color=BLACK, label=< <font point-size='10' color='#336633'>schema:founder</font> > ] ;
+	node3 -> node13 [ color=BLACK, label=< <font point-size='10' color='#336633'>schema:isBasedOn</font> > ] ;
+	node34 -> node20 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node35 -> node36 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdfs:seeAlso</font> > ] ;
+	node37 -> node10 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node38 -> node15 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node12 -> node13 [ color=BLACK, label=< <font point-size='10' color='#336633'>dcterms:isVersionOf</font> > ] ;
+	node5 -> node40 [ color=BLACK, label=< <font point-size='10' color='#336633'>dcterms:publisher</font> > ] ;
+	node41 -> node20 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node42 -> node4 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node43 -> node4 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node44 -> node45 [ color=BLACK, label=< <font point-size='10' color='#336633'>marcrel:adp</font> > ] ;
+	node46 -> node47 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdfs:seeAlso</font> > ] ;
+	node8 -> node15 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node5 -> node25 [ color=BLACK, label=< <font point-size='10' color='#336633'>schema:illustrator</font> > ] ;
+	node48 -> node10 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node46 -> node27 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node35 -> node27 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node49 -> node1 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node13 -> node6 [ color=BLACK, label=< <font point-size='10' color='#336633'>schema:contentLocation</font> > ] ;
+	node43 -> node51 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdfs:seeAlso</font> > ] ;
+	node52 -> node53 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdfs:seeAlso</font> > ] ;
+	node40 -> node54 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdfs:seeAlso</font> > ] ;
+	node55 -> node15 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node48 -> node56 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdfs:seeAlso</font> > ] ;
+	node44 -> node34 [ color=BLACK, label=< <font point-size='10' color='#336633'>schema:illustrator</font> > ] ;
+	node2 -> node13 [ color=BLACK, label=< <font point-size='10' color='#336633'>schema:about</font> > ] ;
+	node13 -> node31 [ color=BLACK, label=< <font point-size='10' color='#336633'>dcterms:rightsHolder</font> > ] ;
+	node59 -> node60 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdfs:seeAlso</font> > ] ;
+	node23 -> node61 [ color=BLACK, label=< <font point-size='10' color='#336633'>schema:homeLocation</font> > ] ;
+	node62 -> node63 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdfs:seeAlso</font> > ] ;
+	node66 -> node67 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdfs:seeAlso</font> > ] ;
+	node3 -> node57 [ color=BLACK, label=< <font point-size='10' color='#336633'>dcterms:creator</font> > ] ;
+	node13 -> node68 [ color=BLACK, label=< <font point-size='10' color='#336633'>schema:isBasedOn</font> > ] ;
+	node43 -> node13 [ color=BLACK, label=< <font point-size='10' color='#336633'>schema:isBasedOn</font> > ] ;
+	node69 -> node70 [ color=BLACK, label=< <font point-size='10' color='#336633'>dcterms:publisher</font> > ] ;
+	node71 -> node72 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdfs:seeAlso</font> > ] ;
+	node14 -> node13 [ color=BLACK, label=< <font point-size='10' color='#336633'>schema:about</font> > ] ;
+	node45 -> node20 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node13 -> node49 [ color=BLACK, label=< <font point-size='10' color='#336633'>schema:character</font> > ] ;
+	node39 -> node15 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node58 -> node4 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node17 -> node4 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node40 -> node10 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node55 -> node13 [ color=BLACK, label=< <font point-size='10' color='#336633'>schema:about</font> > ] ;
+	node22 -> node74 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdfs:seeAlso</font> > ] ;
+	node5 -> node13 [ color=BLACK, label=< <font point-size='10' color='#336633'>dcterms:isVersionOf</font> > ] ;
+	node50 -> node13 [ color=BLACK, label=< <font point-size='10' color='#336633'>schema:about</font> > ] ;
+	node59 -> node27 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node68 -> node76 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdfs:seeAlso</font> > ] ;
+	node32 -> node77 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdfs:seeAlso</font> > ] ;
+	node78 -> node27 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node13 -> node24 [ color=BLACK, label=< <font point-size='10' color='#336633'>schema:character</font> > ] ;
+	node79 -> node1 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node19 -> node80 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdfs:seeAlso</font> > ] ;
+	node29 -> node20 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node13 -> node46 [ color=BLACK, label=< <font point-size='10' color='#336633'>schema:contentLocation</font> > ] ;
+	node71 -> node10 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node31 -> node83 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdfs:seeAlso</font> > ] ;
+	node13 -> node0 [ color=BLACK, label=< <font point-size='10' color='#336633'>schema:character</font> > ] ;
+	node38 -> node13 [ color=BLACK, label=< <font point-size='10' color='#336633'>schema:about</font> > ] ;
+	node8 -> node5 [ color=BLACK, label=< <font point-size='10' color='#336633'>schema:about</font> > ] ;
+	node39 -> node13 [ color=BLACK, label=< <font point-size='10' color='#336633'>schema:about</font> > ] ;
+	node28 -> node4 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node68 -> node41 [ color=BLACK, label=< <font point-size='10' color='#336633'>dcterms:relation</font> > ] ;
+	node32 -> node85 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdfs:seeAlso</font> > ] ;
+	node13 -> node32 [ color=BLACK, label=< <font point-size='10' color='#336633'>dcterms:creator</font> > ] ;
+	node12 -> node4 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node65 -> node4 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node86 -> node87 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node22 -> node10 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node12 -> node88 [ color=BLACK, label=< <font point-size='10' color='#336633'>schema:producer</font> > ] ;
+	node42 -> node21 [ color=BLACK, label=< <font point-size='10' color='#336633'>dcterms:publisher</font> > ] ;
+	node2 -> node78 [ color=BLACK, label=< <font point-size='10' color='#336633'>schema:location</font> > ] ;
+	node13 -> node33 [ color=BLACK, label=< <font point-size='10' color='#336633'>dcterms:rightsHolder</font> > ] ;
+	node42 -> node13 [ color=BLACK, label=< <font point-size='10' color='#336633'>dcterms:isVersionOf</font> > ] ;
+	node44 -> node4 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node13 -> node11 [ color=BLACK, label=< <font point-size='10' color='#336633'>schema:character</font> > ] ;
+	node65 -> node73 [ color=BLACK, label=< <font point-size='10' color='#336633'>dcterms:creator</font> > ] ;
+	node69 -> node4 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node91 -> node4 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node82 -> node15 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node68 -> node4 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node88 -> node92 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdfs:seeAlso</font> > ] ;
+	node13 -> node23 [ color=BLACK, label=< <font point-size='10' color='#336633'>schema:character</font> > ] ;
+	node81 -> node15 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node32 -> node20 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node64 -> node93 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdfs:seeAlso</font> > ] ;
+	node90 -> node15 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node17 -> node64 [ color=BLACK, label=< <font point-size='10' color='#336633'>dcterms:publisher</font> > ] ;
+	node89 -> node1 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node62 -> node10 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node43 -> node84 [ color=BLACK, label=< <font point-size='10' color='#336633'>marcrel:adp</font> > ] ;
+	node33 -> node94 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdfs:seeAlso</font> > ] ;
+	node33 -> node10 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node70 -> node10 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node88 -> node20 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node29 -> node95 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdfs:seeAlso</font> > ] ;
+	node75 -> node27 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node78 -> node96 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdfs:seeAlso</font> > ] ;
+	node12 -> node66 [ color=BLACK, label=< <font point-size='10' color='#336633'>marcrel:adp</font> > ] ;
+	node70 -> node97 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdfs:seeAlso</font> > ] ;
+	node26 -> node44 [ color=BLACK, label=< <font point-size='10' color='#336633'>schema:about</font> > ] ;
+	node91 -> node98 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdfs:seeAlso</font> > ] ;
+	node61 -> node27 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node13 -> node18 [ color=BLACK, label=< <font point-size='10' color='#336633'>schema:character</font> > ] ;
+	node84 -> node99 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdfs:seeAlso</font> > ] ;
+	node58 -> node13 [ color=BLACK, label=< <font point-size='10' color='#336633'>dcterms:isVersionOf</font> > ] ;
+	node82 -> node12 [ color=BLACK, label=< <font point-size='10' color='#336633'>schema:about</font> > ] ;
+	node90 -> node13 [ color=BLACK, label=< <font point-size='10' color='#336633'>schema:about</font> > ] ;
+	node75 -> node100 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdfs:seeAlso</font> > ] ;
+	node73 -> node20 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node64 -> node10 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node11 -> node0 [ color=BLACK, label=< <font point-size='10' color='#336633'>rel:engagedTo</font> > ] ;
+	node28 -> node13 [ color=BLACK, label=< <font point-size='10' color='#336633'>dcterms:isVersionOf</font> > ] ;
+	node23 -> node101 [ color=BLACK, label=< <font point-size='10' color='#336633'>schema:isBasedOn</font> > ] ;
+	node84 -> node20 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node57 -> node102 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdfs:seeAlso</font> > ] ;
+	node65 -> node13 [ color=BLACK, label=< <font point-size='10' color='#336633'>dcterms:isVersionOf</font> > ] ;
+	node13 -> node86 [ color=BLACK, label=< <font point-size='10' color='#336633'>dcterms:subject</font> > ] ;
+	node40 -> node71 [ color=BLACK, label=< <font point-size='10' color='#336633'>schema:parentOrganization</font> > ] ;
+	node81 -> node3 [ color=BLACK, label=< <font point-size='10' color='#336633'>schema:about</font> > ] ;
+	node52 -> node20 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node13 -> node35 [ color=BLACK, label=< <font point-size='10' color='#336633'>schema:contentLocation</font> > ] ;
+	node66 -> node20 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node57 -> node20 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node44 -> node13 [ color=BLACK, label=< <font point-size='10' color='#336633'>dcterms:isVersionOf</font> > ] ;
+	node21 -> node10 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node25 -> node20 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node42 -> node52 [ color=BLACK, label=< <font point-size='10' color='#336633'>schema:illustrator</font> > ] ;
+	node50 -> node32 [ color=BLACK, label=< <font point-size='10' color='#336633'>dcterms:creator</font> > ] ;
+	node65 -> node48 [ color=BLACK, label=< <font point-size='10' color='#336633'>schema:producer</font> > ] ;
+	node55 -> node75 [ color=BLACK, label=< <font point-size='10' color='#336633'>schema:location</font> > ] ;
+	node31 -> node10 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node30 -> node1 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node13 -> node62 [ color=BLACK, label=< <font point-size='10' color='#336633'>dcterms:rightsHolder</font> > ] ;
+	node21 -> node103 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdfs:seeAlso</font> > ] ;
+	node41 -> node104 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdfs:seeAlso</font> > ] ;
+	node13 -> node105 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdfs:seeAlso</font> > ] ;
+	node69 -> node13 [ color=BLACK, label=< <font point-size='10' color='#336633'>schema:about</font> > ] ;
+	node23 -> node1 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node34 -> node106 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdfs:seeAlso</font> > ] ;
+	node73 -> node107 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdfs:seeAlso</font> > ] ;
+	node0 -> node11 [ color=BLACK, label=< <font point-size='10' color='#336633'>rel:engagedTo</font> > ] ;
+	node13 -> node30 [ color=BLACK, label=< <font point-size='10' color='#336633'>schema:character</font> > ] ;
+	node24 -> node0 [ color=BLACK, label=< <font point-size='10' color='#336633'>rel:mentorOf</font> > ] ;
+	node13 -> node89 [ color=BLACK, label=< <font point-size='10' color='#336633'>schema:character</font> > ] ;
+	node55 -> node9 [ color=BLACK, label=< <font point-size='10' color='#336633'>schema:performer</font> > ] ;
+	node17 -> node13 [ color=BLACK, label=< <font point-size='10' color='#336633'>schema:about</font> > ] ;
+	node16 -> node87 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node50 -> node4 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node91 -> node68 [ color=BLACK, label=< <font point-size='10' color='#336633'>dcterms:isVersionOf</font> > ] ;
+	node13 -> node79 [ color=BLACK, label=< <font point-size='10' color='#336633'>schema:character</font> > ] ;
+	node58 -> node37 [ color=BLACK, label=< <font point-size='10' color='#336633'>schema:producer</font> > ] ;
+	node13 -> node59 [ color=BLACK, label=< <font point-size='10' color='#336633'>schema:contentLocation</font> > ] ;
+# https://w3id.org/alchemist/ontology#santiago node0
+node0 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>santiago</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#santiago' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#santiago</font></td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;Santiago&quot;@en</td></tr></table> > ] 
+# http://dbpedia.org/ontology/FictionalCharacter node1
+node1 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>FictionalCharacter</B></td></tr><tr><td href='http://dbpedia.org/ontology/FictionalCharacter' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://dbpedia.org/ontology/FictionalCharacter</font></td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#ev2002theatre node2
+node2 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>ev2002theatre</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#ev2002theatre' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#ev2002theatre</font></td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;First theatrical adaptation&quot;@en</td></tr><tr><td align='left'>schema:startDate</td><td align='left'>&quot;2002&quot;^^xsd:gYear</td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#thealchemistSymphony node3
+node3 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>thealchemistSymphony</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#thealchemistSymphony' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#thealchemistSymphony</font></td></tr><tr><td align='left'>schema:datePublished</td><td align='left'>&quot;1997&quot;^^xsd:gYear</td></tr><tr><td align='left'>schema:genre</td><td align='left'>&quot;musical work&quot;@en</td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;The Alchemist&#x27;s Symphony&quot;@en</td></tr></table> > ] 
+# https://schema.org/CreativeWork node4
+node4 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>CreativeWork</B></td></tr><tr><td href='https://schema.org/CreativeWork' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://schema.org/CreativeWork</font></td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#mangaAdaptation node5
+node5 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>mangaAdaptation</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#mangaAdaptation' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#mangaAdaptation</font></td></tr><tr><td align='left'>schema:datePublished</td><td align='left'>&quot;2024&quot;^^xsd:gYear</td></tr><tr><td align='left'>schema:genre</td><td align='left'>&quot;manga&quot;@en</td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;The Alchemist (manga adaptation)&quot;@en</td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#tangiers node6
+node6 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>tangiers</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#tangiers' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#tangiers</font></td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;Tangier&quot;@en</td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q126148 node7
+node7 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q126148</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q126148' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q126148</font></td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#ev2024manga node8
+node8 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>ev2024manga</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#ev2024manga' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#ev2024manga</font></td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;Announcement of the manga adaptation&quot;@en</td></tr><tr><td align='left'>schema:startDate</td><td align='left'>&quot;2024&quot;^^xsd:gYear</td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#mistakenIdentityband node9
+node9 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>mistakenIdentityband</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#mistakenIdentityband' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#mistakenIdentityband</font></td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;Mistaken Identity&quot;@en</td></tr></table> > ] 
+# https://schema.org/Organization node10
+node10 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Organization</B></td></tr><tr><td href='https://schema.org/Organization' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://schema.org/Organization</font></td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#fatima node11
+node11 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>fatima</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#fatima' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#fatima</font></td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;Fatima&quot;@en</td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#indianStage node12
+node12 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>indianStage</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#indianStage' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#indianStage</font></td></tr><tr><td align='left'>schema:datePublished</td><td align='left'>&quot;2009&quot;^^xsd:gYear</td></tr><tr><td align='left'>schema:genre</td><td align='left'>&quot;stage production&quot;@en</td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;The Alchemist (Indian stage version)&quot;@en</td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#theAlchemist node13
+node13 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>theAlchemist</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#theAlchemist' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#theAlchemist</font></td></tr><tr><td align='left'>schema:datePublished</td><td align='left'>&quot;1988&quot;^^xsd:gYear</td></tr><tr><td align='left'>schema:genre</td><td align='left'>&quot;novel&quot;@en</td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;The Alchemist&quot;@en</td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#ev1994comic node14
+node14 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>ev1994comic</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#ev1994comic' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#ev1994comic</font></td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;Publication of the comic book adaptation&quot;@en</td></tr><tr><td align='left'>schema:startDate</td><td align='left'>&quot;1994&quot;^^xsd:gYear</td></tr></table> > ] 
+# https://schema.org/Event node15
+node15 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Event</B></td></tr><tr><td href='https://schema.org/Event' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://schema.org/Event</font></td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#soulOfTheWorld node16
+node16 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>soulOfTheWorld</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#soulOfTheWorld' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#soulOfTheWorld</font></td></tr><tr><td align='left'>skos:prefLabel</td><td align='left'>&quot;Soul of the World&quot;@en</td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#nytArticle node17
+node17 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>nytArticle</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#nytArticle' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#nytArticle</font></td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;[Article on Paulo Coelho and The Alchemist]&quot;@en</td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#pyramidsThieves node18
+node18 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>pyramidsThieves</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#pyramidsThieves' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#pyramidsThieves</font></td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;The thieves at the pyramids&quot;@en</td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#harveyWeinstein node19
+node19 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>harveyWeinstein</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#harveyWeinstein' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#harveyWeinstein</font></td></tr><tr><td align='left'>schema:birthDate</td><td align='left'>&quot;1952&quot;^^xsd:gYear</td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;Harvey Weinstein&quot;@en</td></tr></table> > ] 
+# https://schema.org/Person node20
+node20 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Person</B></td></tr><tr><td href='https://schema.org/Person' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://schema.org/Person</font></td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#harperOne node21
+node21 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>harperOne</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#harperOne' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#harperOne</font></td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;HarperOne&quot;@en</td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#harperCollins node22
+node22 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>harperCollins</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#harperCollins' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#harperCollins</font></td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;HarperCollins&quot;@en</td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#melchizedek node23
+node23 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>melchizedek</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#melchizedek' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#melchizedek</font></td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;Melchizedek&quot;@en</td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#alchemistPers node24
+node24 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>alchemistPers</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#alchemistPers' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#alchemistPers</font></td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;The Alchemist&quot;@en</td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#tamakiNakamura node25
+node25 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>tamakiNakamura</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#tamakiNakamura' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#tamakiNakamura</font></td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;Tamaki Nakamura&quot;@en</td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#ev2010graphic node26
+node26 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>ev2010graphic</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#ev2010graphic' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#ev2010graphic</font></td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;Publication of The Alchemist: A Graphic Novel&quot;@en</td></tr><tr><td align='left'>schema:startDate</td><td align='left'>&quot;2010&quot;^^xsd:gYear</td></tr></table> > ] 
+# https://schema.org/Place node27
+node27 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Place</B></td></tr><tr><td href='https://schema.org/Place' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://schema.org/Place</font></td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#comicJubran node28
+node28 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>comicJubran</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#comicJubran' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#comicJubran</font></td></tr><tr><td align='left'>schema:datePublished</td><td align='left'>&quot;1994&quot;^^xsd:gYear</td></tr><tr><td align='left'>schema:genre</td><td align='left'>&quot;comic&quot;@en</td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;The Alchemist (comic book adaptation)&quot;@en</td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#ajubran node29
+node29 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>ajubran</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#ajubran' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#ajubran</font></td></tr><tr><td align='left'>schema:birthDate</td><td align='left'>&quot;1967&quot;^^xsd:gYear</td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;Alexandre Jubran&quot;@en</td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#theEnglishMan node30
+node30 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>theEnglishMan</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#theEnglishMan' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#theEnglishMan</font></td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;The Englishman&quot;@en</td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#weinsteincomp node31
+node31 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>weinsteincomp</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#weinsteincomp' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#weinsteincomp</font></td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;The Weinstein Company&quot;@en</td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#coelho node32
+node32 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>coelho</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#coelho' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#coelho</font></td></tr><tr><td align='left'>schema:birthDate</td><td align='left'>&quot;1947-08-24&quot;^^xsd:date</td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;Paulo Coelho&quot;@en</td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#palmstarMedia node33
+node33 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>palmstarMedia</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#palmstarMedia' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#palmstarMedia</font></td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;PalmStar Media&quot;@en</td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#danielSampere node34
+node34 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>danielSampere</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#danielSampere' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#danielSampere</font></td></tr><tr><td align='left'>schema:birthDate</td><td align='left'>&quot;1985&quot;^^xsd:gYear</td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;Daniel Sampere&quot;@en</td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#northAfrica node35
+node35 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>northAfrica</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#northAfrica' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#northAfrica</font></td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;North Africa&quot;@en</td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q27381 node36
+node36 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q27381</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q27381' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q27381</font></td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#cornishCollective node37
+node37 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>cornishCollective</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#cornishCollective' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#cornishCollective</font></td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;Cornish Collective&quot;@en</td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#ev2023rights node38
+node38 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>ev2023rights</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#ev2023rights' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#ev2023rights</font></td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;Acquisition of the film, television and ancillary rights
+                    by Legendary Entertainment&quot;@en</td></tr><tr><td align='left'>schema:startDate</td><td align='left'>&quot;2023&quot;^^xsd:gYear</td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#ev2008rights node39
+node39 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>ev2008rights</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#ev2008rights' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#ev2008rights</font></td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;Purchase of the film rights by The Weinstein Company&quot;@en</td></tr><tr><td align='left'>schema:startDate</td><td align='left'>&quot;2008&quot;^^xsd:gYear</td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#kadokawamasterpieceComics node40
+node40 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>kadokawamasterpieceComics</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#kadokawamasterpieceComics' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#kadokawamasterpieceComics</font></td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;Kadokawa Masterpiece Comics&quot;@en</td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#rumi node41
+node41 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>rumi</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#rumi' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#rumi</font></td></tr><tr><td align='left'>schema:birthDate</td><td align='left'>&quot;1207&quot;^^xsd:gYear</td></tr><tr><td align='left'>schema:deathDate</td><td align='left'>&quot;1273&quot;^^xsd:gYear</td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;Rumi&quot;@en</td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#illustratedEdition node42
+node42 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>illustratedEdition</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#illustratedEdition' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#illustratedEdition</font></td></tr><tr><td align='left'>schema:genre</td><td align='left'>&quot;illustrated edition&quot;@en</td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;The Alchemist (illustrated edition)&quot;@en</td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#kochavvaPaulocoelho node43
+node43 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>kochavvaPaulocoelho</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#kochavvaPaulocoelho' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#kochavvaPaulocoelho</font></td></tr><tr><td align='left'>schema:genre</td><td align='left'>&quot;film&quot;@en</td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;Kochavva Paulo Ayyappa Coelho&quot;@en</td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#theAlchemistgraphic node44
+node44 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>theAlchemistgraphic</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#theAlchemistgraphic' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#theAlchemistgraphic</font></td></tr><tr><td align='left'>schema:datePublished</td><td align='left'>&quot;2010&quot;^^xsd:gYear</td></tr><tr><td align='left'>schema:genre</td><td align='left'>&quot;graphic novel&quot;@en</td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;The Alchemist: A Graphic Novel&quot;@en</td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#derekr node45
+node45 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>derekr</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#derekr' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#derekr</font></td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;Derek Ruiz&quot;@en</td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#egyptianPyramids node46
+node46 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>egyptianPyramids</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#egyptianPyramids' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#egyptianPyramids</font></td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;Egyptian pyramids&quot;@en</td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q12508 node47
+node47 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q12508</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q12508' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q12508</font></td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#tristarPictures node48
+node48 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>tristarPictures</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#tristarPictures' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#tristarPictures</font></td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;TriStar Pictures&quot;@en</td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#gitanoTeller node49
+node49 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>gitanoTeller</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#gitanoTeller' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#gitanoTeller</font></td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;The Gitano fortune-teller&quot;@en</td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#coelhoStatement node50
+node50 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>coelhoStatement</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#coelhoStatement' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#coelhoStatement</font></td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;[Statement by Paulo Coelho on the writing of The Alchemist]&quot;@en</td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q24807275 node51
+node51 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q24807275</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q24807275' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q24807275</font></td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#moebius node52
+node52 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>moebius</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#moebius' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#moebius</font></td></tr><tr><td align='left'>schema:birthDate</td><td align='left'>&quot;1938&quot;^^xsd:gYear</td></tr><tr><td align='left'>schema:deathDate</td><td align='left'>&quot;2012&quot;^^xsd:gYear</td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;Mœbius&quot;@en</td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q309240 node53
+node53 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q309240</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q309240' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q309240</font></td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q115754348 node54
+node54 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q115754348</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q115754348' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q115754348</font></td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#ev2006track node55
+node55 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>ev2006track</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#ev2006track' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#ev2006track</font></td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;Release of the track &quot;The Alchemist&quot;&quot;@en</td></tr><tr><td align='left'>schema:startDate</td><td align='left'>&quot;2006&quot;^^xsd:gYear</td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q651454 node56
+node56 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q651454</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q651454' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q651454</font></td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#wtieb node57
+node57 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>wtieb</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#wtieb' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#wtieb</font></td></tr><tr><td align='left'>schema:birthDate</td><td align='left'>&quot;1973&quot;^^xsd:gYear</td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;Walter Taieb&quot;@en</td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#cornishStage node58
+node58 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>cornishStage</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#cornishStage' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#cornishStage</font></td></tr><tr><td align='left'>schema:genre</td><td align='left'>&quot;stage production&quot;@en</td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;The Alchemist (Cornish Collective Stage Production)&quot;@en</td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#egypt node59
+node59 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>egypt</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#egypt' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#egypt</font></td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;Egypt&quot;@en</td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q79 node60
+node60 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q79</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q79' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q79</font></td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#salem node61
+node61 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>salem</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#salem' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#salem</font></td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;Salem&quot;@en</td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#legendaryEnt node62
+node62 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>legendaryEnt</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#legendaryEnt' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#legendaryEnt</font></td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;Legendary Entertainment&quot;@en</td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q621364 node63
+node63 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q621364</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q621364' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q621364</font></td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#nyt node64
+node64 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>nyt</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#nyt' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#nyt</font></td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;The New York Times&quot;@en</td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#filmAdaptation node65
+node65 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>filmAdaptation</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#filmAdaptation' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#filmAdaptation</font></td></tr><tr><td align='left'>schema:genre</td><td align='left'>&quot;film&quot;@en</td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;The Alchemist (film adaptation)&quot;@en</td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#deepaGahlot node66
+node66 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>deepaGahlot</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#deepaGahlot' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#deepaGahlot</font></td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;Deepa Gahlot&quot;@en</td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q27863006 node67
+node67 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q27863006</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q27863006' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q27863006</font></td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#aarnethompsonIndex node68
+node68 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>aarnethompsonIndex</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#aarnethompsonIndex' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#aarnethompsonIndex</font></td></tr><tr><td align='left'>schema:genre</td><td align='left'>&quot;tale type&quot;@en</td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;ATU 1645, The Treasure at Home&quot;@en</td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#wikipediaArticle node69
+node69 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>wikipediaArticle</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#wikipediaArticle' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#wikipediaArticle</font></td></tr><tr><td align='left'>schema:genre</td><td align='left'>&quot;encyclopedia article&quot;@en</td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;The Alchemist (novel) – Wikipedia article&quot;@en</td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#wikipedia node70
+node70 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>wikipedia</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#wikipedia' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#wikipedia</font></td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;Wikipedia&quot;@en</td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#kadokawaCorp node71
+node71 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>kadokawaCorp</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#kadokawaCorp' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#kadokawaCorp</font></td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;Kadokawa Corporation&quot;@en</td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q17224985 node72
+node72 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q17224985</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q17224985' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q17224985</font></td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#jackThorne node73
+node73 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>jackThorne</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#jackThorne' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#jackThorne</font></td></tr><tr><td align='left'>schema:birthDate</td><td align='left'>&quot;1978&quot;^^xsd:gYear</td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;Jack Thorne&quot;@en</td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q95149 node74
+node74 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q95149</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q95149' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q95149</font></td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#singapore node75
+node75 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>singapore</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#singapore' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#singapore</font></td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;Singapore&quot;@en</td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q136488217 node76
+node76 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q136488217</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q136488217' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q136488217</font></td></tr></table> > ] 
+# https://viaf.org/viaf/52700 node77
+node77 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>52700</B></td></tr><tr><td href='https://viaf.org/viaf/52700' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://viaf.org/viaf/52700</font></td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#london node78
+node78 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>london</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#london' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#london</font></td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;London&quot;@en</td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#crystalMerch node79
+node79 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>crystalMerch</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#crystalMerch' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#crystalMerch</font></td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;The crystal merchant&quot;@en</td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q531599 node80
+node80 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q531599</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q531599' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q531599</font></td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#ev1997symphony node81
+node81 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>ev1997symphony</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#ev1997symphony' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#ev1997symphony</font></td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;Release of The Alchemist&#x27;s Symphony&quot;@en</td></tr><tr><td align='left'>schema:startDate</td><td align='left'>&quot;1997&quot;^^xsd:gYear</td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#ev2009indian node82
+node82 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>ev2009indian</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#ev2009indian' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#ev2009indian</font></td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;Launch of the Indian stage version&quot;@en</td></tr><tr><td align='left'>schema:startDate</td><td align='left'>&quot;2009&quot;^^xsd:gYear</td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q1138789 node83
+node83 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q1138789</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q1138789' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q1138789</font></td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#sidharthaSiva node84
+node84 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>sidharthaSiva</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#sidharthaSiva' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#sidharthaSiva</font></td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;Sidhartha Siva&quot;@en</td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q12881 node85
+node85 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q12881</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q12881' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q12881</font></td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#personalLegend node86
+node86 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>personalLegend</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#personalLegend' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#personalLegend</font></td></tr><tr><td align='left'>skos:prefLabel</td><td align='left'>&quot;Personal Legend&quot;@en</td></tr></table> > ] 
+# http://www.w3.org/2004/02/skos/core#Concept node87
+node87 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Concept</B></td></tr><tr><td href='http://www.w3.org/2004/02/skos/core#Concept' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.w3.org/2004/02/skos/core#Concept</font></td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#ashvingidwani node88
+node88 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>ashvingidwani</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#ashvingidwani' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#ashvingidwani</font></td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;Ashvin Gidwani&quot;@en</td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#bandit node89
+node89 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>bandit</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#bandit' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#bandit</font></td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;The thief of Tangier&quot;@en</td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#ev2016rights node90
+node90 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>ev2016rights</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#ev2016rights' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#ev2016rights</font></td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;Acquisition of the film rights by PalmStar Media&quot;@en</td></tr><tr><td align='left'>schema:startDate</td><td align='left'>&quot;2016&quot;^^xsd:gYear</td></tr></table> > ] 
+# https://w3id.org/alchemist/ontology#onethousandAndonenights node91
+node91 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>onethousandAndonenights</B></td></tr><tr><td href='https://w3id.org/alchemist/ontology#onethousandAndonenights' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://w3id.org/alchemist/ontology#onethousandAndonenights</font></td></tr><tr><td align='left'>schema:genre</td><td align='left'>&quot;story collection&quot;@en</td></tr><tr><td align='left'>schema:name</td><td align='left'>&quot;One Thousand and One Nights&quot;@en</td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q125538019 node92
+node92 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q125538019</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q125538019' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q125538019</font></td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q9684 node93
+node93 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q9684</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q9684' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q9684</font></td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q24913707 node94
+node94 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q24913707</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q24913707' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q24913707</font></td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q48871908 node95
+node95 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q48871908</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q48871908' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q48871908</font></td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q84 node96
+node96 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q84</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q84' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q84</font></td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q52 node97
+node97 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q52</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q52' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q52</font></td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q8258 node98
+node98 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q8258</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q8258' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q8258</font></td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q13220286 node99
+node99 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q13220286</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q13220286' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q13220286</font></td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q334 node100
+node100 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q334</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q334' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q334</font></td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q219395 node101
+node101 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q219395</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q219395' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q219395</font></td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q7966251 node102
+node102 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q7966251</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q7966251' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q7966251</font></td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q28228463 node103
+node103 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q28228463</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q28228463' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q28228463</font></td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q43347 node104
+node104 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q43347</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q43347' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q43347</font></td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q179021 node105
+node105 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q179021</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q179021' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q179021</font></td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q112521933 node106
+node106 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q112521933</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q112521933' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q112521933</font></td></tr></table> > ] 
+# http://www.wikidata.org/entity/Q6115483 node107
+node107 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Q6115483</B></td></tr><tr><td href='http://www.wikidata.org/entity/Q6115483' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.wikidata.org/entity/Q6115483</font></td></tr></table> > ] 
+}
