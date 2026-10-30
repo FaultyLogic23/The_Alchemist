@@ -6,6 +6,11 @@ Style for the Entities page
  
 @import url("base.css");
  
+
+* {
+  box-sizing: border-box;
+}
+
 /* Current page in the navbar */
  
 .breadcrumb a[href="Entities.html"] {

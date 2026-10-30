@@ -6,6 +6,12 @@
 @import url("base.css");
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@400;500&display=swap");
  
+
+* {
+  box-sizing: border-box;
+}
+
+
 body { overflow-x: hidden; }    /* the title band is wider than <main> */
  
 /* Reading column */
@@ -18,6 +24,7 @@ main {
 }
  
 /* Title band stretched to the full width of the page */
+
 main > h1 {
   margin: 0 calc(50% - 50vw) var(--space);
 }

@@ -3,7 +3,10 @@ Style for The Alchemist home page
 */
  
 @import url("base.css");
- 
+
+* {
+  box-sizing: border-box;
+}
 
 /* Current page in the navbar */
  
