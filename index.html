@@ -23,7 +23,7 @@
 
     <nav>
         <ul>
-            <li class="breadcrumb"><a href="The_Alchemist.html">The Alchemist</a></li>
+            <li class="breadcrumb"><a href="index.html">The Alchemist</a></li>
             <li class="breadcrumb"><a href="/Pages/Entities.html">Entities</a></li>
             <li class="breadcrumb"><a href="/Pages/Article.html">Article</a></li>
         </ul>
@@ -43,7 +43,7 @@
             where entities are linked to Wikidata whenever an identifier exists.
         </p>
         <p>
-            From this encoding i devised two Python scripts to produce an annotaded HTML version
+            From this encoding i devised two Python scripts to produce an annotated HTML version
             of the article and a machine-readable RDF dataset. Everything started with one simple
             question:
         </p>
@@ -51,8 +51,8 @@
 
     <div id="research-question">
         <p class="kicker">Research Question</p>
-        <p>"Which kind of works and traditions inspired The Alchemist and
-            how much it inspired other works? Across which media, countries and people?"</p>
+        <p> Which kind of works and traditions inspired The Alchemist and
+            how much it inspired other works? Across which media, countries and people?</p>
     </div>
 
 
@@ -91,13 +91,6 @@
             them keeps the data interoperable with other Linked Open Data sources.
         </p>
 
-        <p>
-            The conceptual model is formalised in an ontology built with the software Protégé and
-            it works as an application profile since it declares and documents the reused classes
-            and properties without asserting domains or ranges.
-
-        </p>
-
         <div class="zoom-controls">
             <button class="zoom-in">+</button>
             <button class="zoom-out">−</button>
@@ -105,25 +98,23 @@
         </div>
 
         <div class="graph-box">
-            <img src="/Conceptual Model/Conceptual_Model.svg" type="image/svg+xml" alt="Conceptual Model" />
+            <img src="/Conceptual Model/Conceptual_Model.svg"  alt="Conceptual Model" />
         </div>
     </div>
 
-    <div class="step" id="ontology-design">
+    <div class="step" id="ontology">
         <p class="kicker">Step III</p>
         <h2>Ontology Design</h2>
         <p>
             The conceptual model is formalised in an OWL ontology built with Protégé
             (<code>https://w3id.org/alchemist/ontology</code>). It works as an application profile:
-            no new class or property was coined, and every term is reused from an existing
+            No new class or property has been coined, and every term is reused from an existing
             vocabulary. Each term is declared with its type and documented with an
-            <code>rdfs:comment</code> explaining how it is used in the project. No domain or range
-            is asserted on the reused terms, since in OWL these would generate inferences on
-            vocabularies that belong to other projects.
+            <code>rdfs:comment</code> explaining how it is used in the project.
         </p>
 
         <details>
-            <summary>Classes (7)</summary>
+            <summary>Classes</summary>
             <table>
                 <thead>
                     <tr>
@@ -329,7 +320,7 @@
                     <tr>
                         <td><code>schema:genre</code></td>
                         <td>Schema.org</td>
-                        <td><code>xsd:string</code></td>
+                        <td><code>rdf:langString</code></td>
                         <td>Genre or medium of a work (novel, manga, film…).</td>
                     </tr>
                     <tr>
@@ -366,13 +357,29 @@
             </table>
         </details>
 
-        <a href="alchemist-ontology.ttl" download>Download the ontology (Turtle)</a>
+        <a class="download" href="alchemist-ontology.ttl" download>Download The Ontology</a>
     </div>
 
 
     <div id="RDF-Vis">
-        <p class="kicker">Step III</p>
+        <p class="kicker">Step IV</p>
         <h2>RDF Visualization</h2>
+
+        <p>
+            The Wikipedia article was encoded in XML following the TEI P5 Guidelines. The teiHeader
+            records the metadata of the digital edition, while in the body every person, place,
+            organisation, work and concept mentioned in the text is annotated with a dedicated element
+            and linked, through @ref, to its entry in the back matter. There, each entity is described
+            once and, whenever a record exists, reconciled with an external authority such as Wikidata,
+            VIAF, WorldCat or the National Diet Library.
+        </p>
+        <p>
+            From the same TEI file, a Python script generates an annotated HTML version
+            of the article, in which each type of entity is highlighted with its own colour. The XML
+            stays the single source of the project as it is used to produce both this reading view and the
+            RDF dataset.
+        </p>
+
         <p>
             The RDF dataset is generated automatically from the TEI file by a Python script with the
             help of lxml and rdflib libraries. It reads the entity lists of the back matter and translates
@@ -392,6 +399,16 @@
         <div class="graph-box">
             <img src="/File Conversion/File visualization/alchemist-data.svg" alt="RDF Visualization" />
         </div>
+    </div>
+
+     <div id="RDF-Vis">
+        <p class="kicker">Step V</p>
+        <p>
+            As an extra, a second dataset describes the 13 works related to the novel as
+            catalogue records: title, genre, year, creators and authority links. It is generated from a
+            CSV file by a separate Python script and uses the same ontology and URIs, therefore it merges with
+            the main dataset without conflicts.
+        </p>
     </div>
 
     <div id="project-files">
