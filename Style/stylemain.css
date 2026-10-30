@@ -131,6 +131,67 @@ body > div a {
   border-radius: var(--radius);
 }
 img[src=""] { display: none; }
+
+/* Ontology-design */
+
+#ontology details {
+  max-width: 720px;
+  margin: 16px 0;
+  border: var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+#ontology summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 18px;
+  list-style: none;
+  cursor: pointer;
+  background: var(--tint);
+  color: var(--ink);
+  font: 500 17px var(--serif);
+}
+#ontology summary::after {
+  content: "+";
+  color: var(--red);
+  font: 400 20px var(--sans);
+}
+#ontology details[open] summary::after { content: "−"; }
+#ontology details[open] summary { border-bottom: var(--border); }
+
+#ontology table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--soft);
+  font: 400 14px/1.5 var(--sans);
+}
+#ontology th {
+  padding: 10px 18px;
+  text-align: left;
+  color: var(--muted);
+  font: 500 var(--fs-label) var(--sans);
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+#ontology td {
+  padding: 10px 18px;
+  border-top: var(--border);
+  vertical-align: top;
+}
+#ontology tbody tr:hover { background: var(--tint); }
+#ontology code {
+  color: var(--red);
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+/* Media query for ontology-design */
+
+@media (max-width: 760px) {
+  #ontology details { overflow-x: auto; }
+  #ontology code { white-space: normal; }
+}
  
 /* Project files */
  

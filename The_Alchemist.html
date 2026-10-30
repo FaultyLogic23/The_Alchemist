@@ -11,7 +11,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@400;500&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@400;500&display=swap">
 </head>
 
 <body>
@@ -34,8 +35,10 @@
             and since then translated into more than 65 languages.
 
             The project is made upon an existing Wikipedia article which can be read
-            by following this link <a href="https://en.wikipedia.org/wiki/The_Alchemist_(novel)">https://en.wikipedia.org/wiki/The_Alchemist_(novel)</a>
-            which was encoded using the TEI Standard, therefore, every person, character, place, organisation, work, event and
+            by following this link <a
+                href="https://en.wikipedia.org/wiki/The_Alchemist_(novel)">https://en.wikipedia.org/wiki/The_Alchemist_(novel)</a>
+            which was encoded using the TEI Standard, therefore, every person, character, place, organisation, work,
+            event and
             concept it mentions is marked in text and resolved against an authority list in the back matter,
             where entities are linked to Wikidata whenever an identifier exists.
         </p>
@@ -54,7 +57,7 @@
 
 
     <div class="step" id="theoretical-model">
-        <p class="kicker">Step I</p>    
+        <p class="kicker">Step I</p>
         <h2>Theoretical Model</h2>
         <p>
             After devising the research question, i created the theoretical model which
@@ -72,7 +75,7 @@
         <div class="graph-box">
             <img src="/Theoretical Model/Theoretical_Model.svg" alt="Theoretical Model">
         </div>
-   </div>
+    </div>
 
     <div class="reverse" id="conceptual-model">
         <p class="kicker">Step II</p>
@@ -80,12 +83,12 @@
         <p>
             Starting from the theoretical model, i built the conceptual one, which abstracts it by
             replacing each entity and names with the class they belongs to, while each relation becomes
-            a property taken from an existing vocabulary. In this case the model uses seven classes (creative works, 
+            a property taken from an existing vocabulary. In this case the model uses seven classes (creative works,
             persons, fictional characters, organisations, places, events and concepts) and reuses terms from
             Schema.org, Dublin Core, SKOS, DBpedia, MARC Relators, and the RELATIONSHIP vocabulary.
 
             New terms weren't coined because the existing vocabularies already covered the domain and reusing
-            them keeps the data interoperable with other Linked Open Data sources. 
+            them keeps the data interoperable with other Linked Open Data sources.
         </p>
 
         <p>
@@ -102,9 +105,270 @@
         </div>
 
         <div class="graph-box">
-            <img src="/Conceptual Model/Conceptual_Model.svg" type="image/svg+xml" alt="Conceptual Model"/>
+            <img src="/Conceptual Model/Conceptual_Model.svg" type="image/svg+xml" alt="Conceptual Model" />
         </div>
-   </div>
+    </div>
+
+    <div class="step" id="ontology-design">
+        <p class="kicker">Step III</p>
+        <h2>Ontology Design</h2>
+        <p>
+            The conceptual model is formalised in an OWL ontology built with Protégé
+            (<code>https://w3id.org/alchemist/ontology</code>). It works as an application profile:
+            no new class or property was coined, and every term is reused from an existing
+            vocabulary. Each term is declared with its type and documented with an
+            <code>rdfs:comment</code> explaining how it is used in the project. No domain or range
+            is asserted on the reused terms, since in OWL these would generate inferences on
+            vocabularies that belong to other projects.
+        </p>
+
+        <details>
+            <summary>Classes (7)</summary>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Term</th>
+                        <th>Vocabulary</th>
+                        <th>Use in the project</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>schema:CreativeWork</code></td>
+                        <td>Schema.org</td>
+                        <td>The novel, its adaptations and derivative works, its narrative sources and the cited texts.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>schema:Person</code></td>
+                        <td>Schema.org</td>
+                        <td>Real people: the author, adapters, illustrators, composers, producers and the other figures
+                            connected to the novel.</td>
+                    </tr>
+                    <tr>
+                        <td><code>dbo:FictionalCharacter</code></td>
+                        <td>DBpedia Ontology</td>
+                        <td>Characters of the novel, kept distinct from real persons.</td>
+                    </tr>
+                    <tr>
+                        <td><code>schema:Organization</code></td>
+                        <td>Schema.org</td>
+                        <td>Publishers, imprints, production companies and groups involved in the novel's publication
+                            and adaptations.</td>
+                    </tr>
+                    <tr>
+                        <td><code>schema:Place</code></td>
+                        <td>Schema.org</td>
+                        <td>Places where the story is set and where related events took place.</td>
+                    </tr>
+                    <tr>
+                        <td><code>schema:Event</code></td>
+                        <td>Schema.org</td>
+                        <td>Dated events in the history of the novel: publications, releases, productions and
+                            acquisitions of rights.</td>
+                    </tr>
+                    <tr>
+                        <td><code>skos:Concept</code></td>
+                        <td>SKOS</td>
+                        <td>Key themes of the novel (Personal Legend, Soul of the World).</td>
+                    </tr>
+                </tbody>
+            </table>
+        </details>
+
+        <details>
+            <summary>Object properties</summary>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Term</th>
+                        <th>Vocabulary</th>
+                        <th>Use in the project</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>dcterms:creator</code></td>
+                        <td>Dublin Core Terms</td>
+                        <td>Links a work to the person who created it.</td>
+                    </tr>
+                    <tr>
+                        <td><code>dcterms:publisher</code></td>
+                        <td>Dublin Core Terms</td>
+                        <td>Links a work to the organisation that published it.</td>
+                    </tr>
+                    <tr>
+                        <td><code>dcterms:rightsHolder</code></td>
+                        <td>Dublin Core Terms</td>
+                        <td>Links the novel to the companies that held its film rights.</td>
+                    </tr>
+                    <tr>
+                        <td><code>dcterms:subject</code></td>
+                        <td>Dublin Core Terms</td>
+                        <td>Links the novel to its main themes.</td>
+                    </tr>
+                    <tr>
+                        <td><code>dcterms:isVersionOf</code></td>
+                        <td>Dublin Core Terms</td>
+                        <td>Links an adaptation to the work it adapts.</td>
+                    </tr>
+                    <tr>
+                        <td><code>dcterms:relation</code></td>
+                        <td>Dublin Core Terms</td>
+                        <td>Generic link between the ATU 1645 tale type and Rumi, author of its earliest known version.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>dcterms:language</code></td>
+                        <td>Dublin Core Terms</td>
+                        <td>Language of a work. Declared but not used in the current data.</td>
+                    </tr>
+                    <tr>
+                        <td><code>marcrel:adp</code></td>
+                        <td>MARC Relators</td>
+                        <td>Links an adaptation to the person who adapted the work.</td>
+                    </tr>
+                    <tr>
+                        <td><code>schema:illustrator</code></td>
+                        <td>Schema.org</td>
+                        <td>Links a work to its illustrator.</td>
+                    </tr>
+                    <tr>
+                        <td><code>schema:producer</code></td>
+                        <td>Schema.org</td>
+                        <td>Links a work to the person or organisation that produced it.</td>
+                    </tr>
+                    <tr>
+                        <td><code>schema:isBasedOn</code></td>
+                        <td>Schema.org</td>
+                        <td>Links a work to a source of inspiration that is not a direct adaptation.</td>
+                    </tr>
+                    <tr>
+                        <td><code>schema:character</code></td>
+                        <td>Schema.org</td>
+                        <td>Links the novel to its characters.</td>
+                    </tr>
+                    <tr>
+                        <td><code>schema:contentLocation</code></td>
+                        <td>Schema.org</td>
+                        <td>Links the novel to the places where the story is set.</td>
+                    </tr>
+                    <tr>
+                        <td><code>schema:about</code></td>
+                        <td>Schema.org</td>
+                        <td>Links an event or a text to the work it concerns.</td>
+                    </tr>
+                    <tr>
+                        <td><code>schema:location</code></td>
+                        <td>Schema.org</td>
+                        <td>Links an event to the place where it happened.</td>
+                    </tr>
+                    <tr>
+                        <td><code>schema:performer</code></td>
+                        <td>Schema.org</td>
+                        <td>Links an event to the band that performed.</td>
+                    </tr>
+                    <tr>
+                        <td><code>schema:parentOrganization</code></td>
+                        <td>Schema.org</td>
+                        <td>Links an imprint to its parent company.</td>
+                    </tr>
+                    <tr>
+                        <td><code>schema:founder</code></td>
+                        <td>Schema.org</td>
+                        <td>Links a company to its founder.</td>
+                    </tr>
+                    <tr>
+                        <td><code>schema:homeLocation</code></td>
+                        <td>Schema.org</td>
+                        <td>Links a character to his home place.</td>
+                    </tr>
+                    <tr>
+                        <td><code>rel:mentorOf</code></td>
+                        <td>RELATIONSHIP</td>
+                        <td>Links a character to the character he guides.</td>
+                    </tr>
+                    <tr>
+                        <td><code>rel:engagedTo</code></td>
+                        <td>RELATIONSHIP</td>
+                        <td>Links Santiago and Fatima, who promise to marry.</td>
+                    </tr>
+                    <tr>
+                        <td><code>rdfs:seeAlso</code></td>
+                        <td>RDF Schema</td>
+                        <td>Links an entity to its record in an external authority (Wikidata, VIAF).</td>
+                    </tr>
+                </tbody>
+            </table>
+        </details>
+
+        <details>
+            <summary>Data properties</summary>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Term</th>
+                        <th>Vocabulary</th>
+                        <th>Datatype</th>
+                        <th>Use in the project</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>schema:name</code></td>
+                        <td>Schema.org</td>
+                        <td><code>rdf:langString</code></td>
+                        <td>Name or title of an entity.</td>
+                    </tr>
+                    <tr>
+                        <td><code>skos:prefLabel</code></td>
+                        <td>SKOS</td>
+                        <td><code>rdf:langString</code></td>
+                        <td>Preferred label of a concept.</td>
+                    </tr>
+                    <tr>
+                        <td><code>schema:genre</code></td>
+                        <td>Schema.org</td>
+                        <td><code>xsd:string</code></td>
+                        <td>Genre or medium of a work (novel, manga, film…).</td>
+                    </tr>
+                    <tr>
+                        <td><code>schema:birthDate</code></td>
+                        <td>Schema.org</td>
+                        <td><code>xsd:gYear</code> / <code>xsd:date</code></td>
+                        <td>Year or date of birth of a person.</td>
+                    </tr>
+                    <tr>
+                        <td><code>schema:deathDate</code></td>
+                        <td>Schema.org</td>
+                        <td><code>xsd:gYear</code></td>
+                        <td>Year of death of a person.</td>
+                    </tr>
+                    <tr>
+                        <td><code>schema:datePublished</code></td>
+                        <td>Schema.org</td>
+                        <td><code>xsd:gYear</code></td>
+                        <td>Year of publication or release of a work.</td>
+                    </tr>
+                    <tr>
+                        <td><code>schema:startDate</code></td>
+                        <td>Schema.org</td>
+                        <td><code>xsd:gYear</code></td>
+                        <td>Year in which an event took place.</td>
+                    </tr>
+                    <tr>
+                        <td><code>schema:endDate</code></td>
+                        <td>Schema.org</td>
+                        <td><code>xsd:gYear</code></td>
+                        <td>End of an event. Declared but not used in the current data.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </details>
+
+        <a href="alchemist-ontology.ttl" download>Download the ontology (Turtle)</a>
+    </div>
+
 
     <div id="RDF-Vis">
         <p class="kicker">Step III</p>
@@ -126,13 +390,13 @@
         </div>
 
         <div class="graph-box">
-            <img src="/File Conversion/File visualization/alchemist-data.svg" alt="RDF Visualization"/>
+            <img src="/File Conversion/File visualization/alchemist-data.svg" alt="RDF Visualization" />
         </div>
-   </div>
+    </div>
 
     <div id="project-files">
-        <p> In this section you can find my GitHub repository made for this project with every file 
-            and image showed here. 
+        <p> In this section you can find my GitHub repository made for this project with every file
+            and image showed here.
         </p>
         <a href="https://github.com/FaultyLogic23/The_Alchemist">GitHub Repository</a>
     </div>
@@ -140,7 +404,7 @@
     <footer>
         <p>Project made for the Information Science and Cultural Heritage Course by Samuele Bertelli</p>
         <p>UniBo - Digital Humanities and Digital Knowledge</p>
-    </footer>  
+    </footer>
     <script src="/Site JS/drag.js"></script>
 </body>
 
