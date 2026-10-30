@@ -1,4 +1,4 @@
-# The Alchemist – a LODLAM project
+# The Alchemist 
 
 Linked Open Data project on *The Alchemist* by Paulo Coelho, built from its English Wikipedia
 article. The article is encoded in XML/TEI, its entities are reconciled with external
